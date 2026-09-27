@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and the preregistration."
+title: "p3audit: semi-synthetic ground-truth test of physiological shortcut audits for EEG decoders"
+authors:
+  - family-names: Gao
+    given-names: Yu
+    affiliation: "Faculty of Engineering, University of Porto (FEUP); CISTER/ISEP"
+license: MIT
+repository-code: "https://github.com/jabarrick/physio-shortcut-audit"
+version: 1.0.0
+date-released: 2026-09-27
+keywords: [EEG, brain-computer interface, shortcut learning, interpretability, preregistration]
+references:
+  - type: generic
+    title: "Preregistration: Do physiological shortcut audits work for EEG decoders?"
+    authors:
+      - family-names: Gao
+        given-names: Yu
+    doi: 10.17605/OSF.IO/8Q7N6
+    url: "https://osf.io/8q7n6"

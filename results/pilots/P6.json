@@ -1,0 +1,453 @@
+{
+  "feasible": true,
+  "n_failed": 1,
+  "n_pilot": 15,
+  "main_pool": [
+    12,
+    39,
+    53,
+    61,
+    74,
+    87,
+    90,
+    94,
+    103,
+    105
+  ],
+  "mismatch_pool": [
+    70,
+    80,
+    86,
+    101
+  ],
+  "per_subject": [
+    {
+      "subject": 9,
+      "ok": false,
+      "split_half_r": NaN,
+      "halves": [
+        {
+          "ok": false,
+          "r": NaN,
+          "threshold": 10.0,
+          "component": 6,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": "only 6 events (< 10)"
+        },
+        {
+          "ok": false,
+          "r": NaN,
+          "threshold": 10.0,
+          "component": 5,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": "only 5 events (< 10)"
+        }
+      ]
+    },
+    {
+      "subject": 12,
+      "ok": true,
+      "split_half_r": 0.9009090805609773,
+      "halves": [
+        {
+          "ok": true,
+          "r": 55.0,
+          "threshold": 10.0,
+          "component": 55,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 55.0,
+          "threshold": 10.0,
+          "component": 55,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 39,
+      "ok": true,
+      "split_half_r": 0.931100474392161,
+      "halves": [
+        {
+          "ok": true,
+          "r": 18.0,
+          "threshold": 10.0,
+          "component": 18,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 18.0,
+          "threshold": 10.0,
+          "component": 18,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 53,
+      "ok": true,
+      "split_half_r": 0.989969322250411,
+      "halves": [
+        {
+          "ok": true,
+          "r": 156.0,
+          "threshold": 10.0,
+          "component": 156,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 156.0,
+          "threshold": 10.0,
+          "component": 156,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 61,
+      "ok": true,
+      "split_half_r": 0.9901318447765487,
+      "halves": [
+        {
+          "ok": true,
+          "r": 135.0,
+          "threshold": 10.0,
+          "component": 135,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 135.0,
+          "threshold": 10.0,
+          "component": 135,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 70,
+      "ok": true,
+      "split_half_r": 0.9724602030487286,
+      "halves": [
+        {
+          "ok": true,
+          "r": 80.0,
+          "threshold": 10.0,
+          "component": 80,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 80.0,
+          "threshold": 10.0,
+          "component": 80,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 74,
+      "ok": true,
+      "split_half_r": 0.7468076704380174,
+      "halves": [
+        {
+          "ok": true,
+          "r": 14.0,
+          "threshold": 10.0,
+          "component": 14,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 14.0,
+          "threshold": 10.0,
+          "component": 14,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 80,
+      "ok": true,
+      "split_half_r": 0.9869019437114478,
+      "halves": [
+        {
+          "ok": true,
+          "r": 54.0,
+          "threshold": 10.0,
+          "component": 54,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 54.0,
+          "threshold": 10.0,
+          "component": 54,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 86,
+      "ok": true,
+      "split_half_r": 0.9872573204475414,
+      "halves": [
+        {
+          "ok": true,
+          "r": 109.0,
+          "threshold": 10.0,
+          "component": 109,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 108.0,
+          "threshold": 10.0,
+          "component": 108,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 87,
+      "ok": true,
+      "split_half_r": 0.9328135460902657,
+      "halves": [
+        {
+          "ok": true,
+          "r": 15.0,
+          "threshold": 10.0,
+          "component": 15,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 14.0,
+          "threshold": 10.0,
+          "component": 14,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 90,
+      "ok": true,
+      "split_half_r": 0.9736954309912882,
+      "halves": [
+        {
+          "ok": true,
+          "r": 100.0,
+          "threshold": 10.0,
+          "component": 100,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 99.0,
+          "threshold": 10.0,
+          "component": 99,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 94,
+      "ok": true,
+      "split_half_r": 0.5560772863576926,
+      "halves": [
+        {
+          "ok": true,
+          "r": 89.0,
+          "threshold": 10.0,
+          "component": 89,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 89.0,
+          "threshold": 10.0,
+          "component": 89,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 101,
+      "ok": true,
+      "split_half_r": 0.9717331250077246,
+      "halves": [
+        {
+          "ok": true,
+          "r": 40.0,
+          "threshold": 10.0,
+          "component": 40,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 40.0,
+          "threshold": 10.0,
+          "component": 40,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 103,
+      "ok": true,
+      "split_half_r": 0.9316342271486641,
+      "halves": [
+        {
+          "ok": true,
+          "r": 47.0,
+          "threshold": 10.0,
+          "component": 47,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 47.0,
+          "threshold": 10.0,
+          "component": 47,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "subject": 105,
+      "ok": true,
+      "split_half_r": 0.9808817016664427,
+      "halves": [
+        {
+          "ok": true,
+          "r": 43.0,
+          "threshold": 10.0,
+          "component": 43,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        },
+        {
+          "ok": true,
+          "r": 42.0,
+          "threshold": 10.0,
+          "component": 42,
+          "n_gated": -1,
+          "enrichment": NaN,
+          "bipolarity": NaN,
+          "reason": ""
+        }
+      ]
+    }
+  ],
+  "cue_saccade_amplitude_uv": {
+    "n": 389,
+    "median": 149.34086666402038,
+    "q25": 121.72740897754716,
+    "q75": 188.5478367847386,
+    "note": "truncated by the detector threshold; see P10a (EEGEyeNet)"
+  },
+  "split_half_r": [
+    0.9009090805609773,
+    0.931100474392161,
+    0.989969322250411,
+    0.9901318447765487,
+    0.9724602030487286,
+    0.7468076704380174,
+    0.9869019437114478,
+    0.9872573204475414,
+    0.9328135460902657,
+    0.9736954309912882,
+    0.5560772863576926,
+    0.9717331250077246,
+    0.9316342271486641,
+    0.9808817016664427
+  ]
+}

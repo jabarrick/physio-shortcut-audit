@@ -1,0 +1,13 @@
+{
+  "n": 17830,
+  "median": 288.275587699423,
+  "quantiles": {
+    "5": 100.64639314643112,
+    "25": 183.76879495714175,
+    "50": 288.275587699423,
+    "75": 413.83605751136594,
+    "95": 593.454753005982
+  },
+  "unit": "label units",
+  "note": "paradigm/montage/reference differ from EEGMMIDB: approximate reference only"
+}

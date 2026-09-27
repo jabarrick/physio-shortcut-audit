@@ -1,0 +1,57 @@
+{
+  "fold": 1,
+  "model": "labram",
+  "seed": 0,
+  "qualitative_only": true,
+  "ba": 0.5,
+  "counts": {
+    "3": [
+      0,
+      241,
+      0,
+      243
+    ],
+    "6": [
+      0,
+      238,
+      0,
+      231
+    ],
+    "8": [
+      0,
+      240,
+      0,
+      239
+    ],
+    "17": [
+      0,
+      245,
+      0,
+      248
+    ],
+    "22": [
+      0,
+      238,
+      0,
+      242
+    ]
+  },
+  "ba_post_alpha": 0.5,
+  "ba_post_ctrl": 0.5,
+  "sri_post": 0.0,
+  "alpha_erasure": {
+    "ba": 0.5,
+    "ba_erased": 0.5,
+    "delta_ba_keep": 0.0
+  },
+  "ig_alpha": {
+    "share": 0.01612207666039467,
+    "norm_abs": 0.01385610428777902,
+    "signed_target": 3.188820119248703e-05
+  },
+  "ig_frontal_delta": {
+    "share": 0.036705292761325836,
+    "norm_abs": 0.03154633007824728,
+    "signed_target": 0.0006111731054261327
+  }
+}

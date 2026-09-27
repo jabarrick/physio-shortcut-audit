@@ -1,0 +1,97 @@
+{
+  "counts": [
+    {
+      "subject": 9,
+      "congruent": 1,
+      "incongruent": 0,
+      "none": 44
+    },
+    {
+      "subject": 12,
+      "congruent": 5,
+      "incongruent": 5,
+      "none": 35
+    },
+    {
+      "subject": 39,
+      "congruent": 3,
+      "incongruent": 0,
+      "none": 42
+    },
+    {
+      "subject": 53,
+      "congruent": 7,
+      "incongruent": 8,
+      "none": 30
+    },
+    {
+      "subject": 61,
+      "congruent": 8,
+      "incongruent": 16,
+      "none": 21
+    },
+    {
+      "subject": 70,
+      "congruent": 23,
+      "incongruent": 1,
+      "none": 21
+    },
+    {
+      "subject": 74,
+      "congruent": 0,
+      "incongruent": 2,
+      "none": 43
+    },
+    {
+      "subject": 80,
+      "congruent": 9,
+      "incongruent": 1,
+      "none": 35
+    },
+    {
+      "subject": 86,
+      "congruent": 26,
+      "incongruent": 2,
+      "none": 17
+    },
+    {
+      "subject": 87,
+      "congruent": 0,
+      "incongruent": 1,
+      "none": 44
+    },
+    {
+      "subject": 90,
+      "congruent": 13,
+      "incongruent": 1,
+      "none": 31
+    },
+    {
+      "subject": 94,
+      "congruent": 11,
+      "incongruent": 0,
+      "none": 34
+    },
+    {
+      "subject": 101,
+      "congruent": 27,
+      "incongruent": 0,
+      "none": 18
+    },
+    {
+      "subject": 103,
+      "congruent": 15,
+      "incongruent": 0,
+      "none": 30
+    },
+    {
+      "subject": 105,
+      "congruent": 12,
+      "incongruent": 0,
+      "none": 33
+    }
+  ],
+  "k_min": 10,
+  "fraction_eligible": 0.4666666666666667,
+  "provisional": true
+}

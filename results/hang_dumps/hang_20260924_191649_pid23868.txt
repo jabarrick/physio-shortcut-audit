@@ -1,0 +1,103 @@
+Process 23868: D:\miniconda\python.exe -u -m p3audit.cli --confirmatory run-units
+Python v3.12.7 (D:\miniconda\python.exe)
+
+Thread 29068 (active): "MainThread"
+    predict_logits (p3audit\training\trainer.py:64)
+        Arguments:
+            model: <FoundationAdapter at 0x1fdf3096570>
+            X: <numpy.ndarray at 0x1ff8608d410>
+            device: <torch.device at 0x1fd3332da30>
+            batch_size: 256
+        Locals:
+            out: []
+            b: <numpy.ndarray at 0x1ff8608d170>
+            xb: <Tensor at 0x1ff86030960>
+    decorate_context (torch\utils\_contextlib.py:116)
+        Locals:
+            args: (<FoundationAdapter at 0x1fdf3096570>, <numpy.ndarray at 0x1ff8608d410>, <torch.device at 0x1fd3332da30>)
+            kwargs: {}
+    <lambda> (p3audit\experiments\unit.py:114)
+        Arguments:
+            X: <numpy.ndarray at 0x1ff8608d410>
+    run_unit (p3audit\experiments\unit.py:124)
+        Arguments:
+            ctx: <Context at 0x1fd6c830860>
+            unit: <Unit at 0x1fd2b47dc10>
+            device: <cell at 0x1fd2b225030>
+            fallback_standin: False
+            max_epochs: None
+            overwrite: False
+            verbose: False
+            metrics: ("truth", "probe", "erasure", "sri", "heog", "ig")
+            roles: {...}
+            out_dir: "units"
+        Locals:
+            cfg: {...}
+            out_path: <WindowsPath at 0x1fd333404a0>
+            t0: 1790273614.9774103
+            cell: <Cell at 0x1fd2b1f5880>
+            seed: 0
+            sp: <Split at 0x1fd2b2253a0>
+            tr_s: [1, 10, 11, 12, 14, 18, 24, 28, 29, 32, 33, 34, 38, 41, 43, 47, 48, 53, 55, 57, 60, 61, 64, 66, 69, 70, 74, 75, 77, 79, ...]
+            va_s: [4, 27, 54, 83, 85, 99, 108]
+            te_s: [2, 13, 15, 16, 19, 25, 35, 42, 44, 46, 50, 52, 62, 65, 72, 78, 95, 97, 102, 106, 109]
+            caches: {1: <SubjectCache at 0x1fd2b4abf20>, 10: <SubjectCache at 0x1fd2b4b4470>, 11: <SubjectCache at 0x1fd2b4b4e30>, ...}
+            ch: ["FC5", "FC3", "FC1", "FCz", "FC2", "FC4", "FC6", "C5", "C3", "C1", "Cz", "C2", "C4", "C6", "CP5", "CP3", "CP1", "CPz", ...]
+            rec: {"uid": "labram__alpha_pnone_s_star_a1__seed0", "model": "labram", ...}
+            _moderator: <function at 0x1fd2b497060>
+            tr: <ComposedSet at 0x1fd2b47cf80>
+            va: <ComposedSet at 0x1fdf1d9d610>
+            X_tr: <numpy.ndarray at 0x1fdf31f3bd0>
+            X_va: <numpy.ndarray at 0x1fd33345470>
+            is_random: False
+            predict: <function at 0x1fe2e4a23e0>
+            k: "matched"
+            tests: {"matched": <ComposedSet at 0x1ff85e864b0>}
+            base: <ComposedSet at 0x1ff85e864b0>
+            half: <numpy.ndarray at 0x1ff85ee7270>
+            preds: {}
+            counts: {}
+            cs: <ComposedSet at 0x1ff85e864b0>
+    cmd_run_units (p3audit\cli.py:135)
+        Arguments:
+            args: <Namespace at 0x1fd6d148e60>
+        Locals:
+            run_unit: <function at 0x1fd2b495120>
+            ctx: <Context at 0x1fd6c830860>
+            units: [<Unit at 0x1fd6d14a000>, <Unit at 0x1fd2b3f19a0>, <Unit at 0x1fd2a0a7530>, <Unit at 0x1fd2b359ca0>, ...]
+            failed: []
+            u: <Unit at 0x1fd2b47dc10>
+    main (p3audit\cli.py:210)
+        Arguments:
+            argv: None
+        Locals:
+            ap: <ArgumentParser at 0x1fd3c49fe00>
+            sub: <_SubParsersAction at 0x1fd6d1487a0>
+            p: <ArgumentParser at 0x1fd6d149c40>
+            a: "--shard"
+            name: "shu-audit"
+            fn: <function at 0x1fd6d1056c0>
+            args: <Namespace at 0x1fd6d148e60>
+    <module> (p3audit\cli.py:214)
+    _run_code (<frozen runpy>:88)
+        Arguments:
+            code: <code at 0x1fd3c06fc50>
+            run_globals: {"__name__": "__main__", ...}
+            init_globals: None
+            mod_name: "__main__"
+            mod_spec: <ModuleSpec at 0x1fd3c461d30>
+            pkg_name: "p3audit"
+            script_name: None
+        Locals:
+            loader: <SourceFileLoader at 0x1fd3c461df0>
+            fname: "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\cli.py"
+            cached: "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\__pycache__\cli.cpython-312.pyc"
+    _run_module_as_main (<frozen runpy>:198)
+        Arguments:
+            mod_name: "p3audit.cli"
+            alter_argv: True
+        Locals:
+            mod_spec: <ModuleSpec at 0x1fd3c461d30>
+            code: <code at 0x1fd3c06fc50>
+            main_globals: {"__name__": "__main__", ...}
+Thread 32980 (idle)

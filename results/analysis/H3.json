@@ -1,0 +1,221 @@
+{
+  "degenerate": {
+    "alpha": {
+      "degenerate": [],
+      "fraction": 0.0,
+      "generator_unusable": false
+    },
+    "saccade": {
+      "degenerate": [],
+      "fraction": 0.0,
+      "generator_unusable": false
+    }
+  },
+  "alpha/erasure_keep": {
+    "corr_cross_fitted": {
+      "estimate": 0.8900383092779277,
+      "ci_low": 0.7765822841445662,
+      "ci_high": 0.895700549904571,
+      "n_boot": 1929
+    },
+    "reliability_truth": 0.989986908492615,
+    "reliability_metric": 0.973545802468672,
+    "overlap_moderation": {
+      "slope": 0.7779581818643098,
+      "ci_low": 0.7132231399866924,
+      "ci_high": 0.8426932237419271,
+      "overlap_slope": -0.2559825446472961,
+      "overlap_ci_low": -0.41564840319128166,
+      "overlap_ci_high": -0.09631668610331051,
+      "overlap_p": 0.001692037791253484
+    },
+    "decision": "pass",
+    "confirmatory": true,
+    "n_units": 87,
+    "n_subjects": 20
+  },
+  "alpha/sri_post": {
+    "corr_cross_fitted": {
+      "estimate": 0.5208355621327416,
+      "ci_low": 0.2328487815788188,
+      "ci_high": 0.7106947524787751,
+      "n_boot": 1929
+    },
+    "reliability_truth": 0.989986908492615,
+    "reliability_metric": 0.9764425360984487,
+    "overlap_moderation": {
+      "slope": 0.4454156346513122,
+      "ci_low": 0.35828962390485747,
+      "ci_high": 0.5325416453977669,
+      "overlap_slope": -0.25422564920076857,
+      "overlap_ci_low": -0.45931811646599924,
+      "overlap_ci_high": -0.049133181935537895,
+      "overlap_p": 0.015149658176778916
+    },
+    "decision": "fail",
+    "confirmatory": true,
+    "n_units": 87,
+    "n_subjects": 20
+  },
+  "alpha/ig_share": {
+    "corr_cross_fitted": {
+      "estimate": 0.8048902618580049,
+      "ci_low": 0.715742648725883,
+      "ci_high": 0.8352056111250253,
+      "n_boot": 1933
+    },
+    "reliability_truth": 0.989986908492615,
+    "reliability_metric": 0.9862082437319208,
+    "overlap_moderation": {
+      "slope": 0.6247609643526139,
+      "ci_low": 0.556113264933183,
+      "ci_high": 0.6934086637720447,
+      "overlap_slope": -0.024004882736981176,
+      "overlap_ci_low": -0.2024449394063075,
+      "overlap_ci_high": 0.15443517393234515,
+      "overlap_p": 0.7919258457026984
+    },
+    "decision": "pass",
+    "confirmatory": true,
+    "n_units": 87,
+    "n_subjects": 20
+  },
+  "alpha/ig_norm_abs": {
+    "corr_cross_fitted": {
+      "estimate": -0.2670888458411864,
+      "ci_low": -0.46386123981748734,
+      "ci_high": -0.0006071880279470256,
+      "n_boot": 1931
+    },
+    "reliability_truth": 0.989986908492615,
+    "reliability_metric": 0.9747251107343449,
+    "overlap_moderation": {
+      "slope": 0.086812964457288,
+      "ci_low": 0.008740236780727745,
+      "ci_high": 0.16488569213384827,
+      "overlap_slope": 0.05631469375837728,
+      "overlap_ci_low": -0.13312415210126888,
+      "overlap_ci_high": 0.24575353961802343,
+      "overlap_p": 0.5599364866935651
+    },
+    "decision": "fail",
+    "confirmatory": false,
+    "n_units": 87,
+    "n_subjects": 20
+  },
+  "alpha/heog_reg": {
+    "corr_cross_fitted": {
+      "estimate": 0.010343161109711299,
+      "ci_low": -0.21933862783861505,
+      "ci_high": 0.22446851999576503,
+      "n_boot": 1929
+    },
+    "reliability_truth": 0.989986908492615,
+    "reliability_metric": 0.457847178007141,
+    "overlap_moderation": {
+      "slope": 0.11665990965521704,
+      "ci_low": 0.021096828159695505,
+      "ci_high": 0.21222299115073856,
+      "overlap_slope": 0.03131894462331286,
+      "overlap_ci_low": -0.21767836688173692,
+      "overlap_ci_high": 0.28031625612836264,
+      "overlap_p": 0.8051716587542522
+    },
+    "decision": "fail (metric reliability)",
+    "confirmatory": false,
+    "n_units": 87,
+    "n_subjects": 20
+  },
+  "saccade/erasure_keep": {
+    "corr_cross_fitted": {
+      "estimate": 0.7609698081737412,
+      "ci_low": 0.4452804508044883,
+      "ci_high": 0.7767078514736865,
+      "n_boot": 1929
+    },
+    "reliability_truth": 0.966683216948501,
+    "reliability_metric": 0.9798742598354016,
+    "overlap_moderation": {
+      "slope": 0.3758615192334619,
+      "ci_low": 0.2896425315742009,
+      "ci_high": 0.4620805068927229,
+      "overlap_slope": -0.38488327032807224,
+      "overlap_ci_low": -0.6071582479237189,
+      "overlap_ci_high": -0.16260829273242558,
+      "overlap_p": 0.0007001862324162527
+    },
+    "decision": "pass",
+    "confirmatory": true,
+    "n_units": 76,
+    "n_subjects": 20
+  },
+  "saccade/heog_reg": {
+    "corr_cross_fitted": {
+      "estimate": 0.8991863565985388,
+      "ci_low": 0.5854620783164937,
+      "ci_high": 0.9172633748833517,
+      "n_boot": 1965
+    },
+    "reliability_truth": 0.966683216948501,
+    "reliability_metric": 0.9855042011776223,
+    "overlap_moderation": {
+      "slope": 0.8172396667214785,
+      "ci_low": 0.7706657255649491,
+      "ci_high": 0.863813607878008,
+      "overlap_slope": 0.08908264804156535,
+      "overlap_ci_low": -0.05645156229494222,
+      "overlap_ci_high": 0.23461685837807292,
+      "overlap_p": 0.23006691527141268
+    },
+    "decision": "pass",
+    "confirmatory": true,
+    "n_units": 76,
+    "n_subjects": 20
+  },
+  "saccade/ig_share": {
+    "corr_cross_fitted": {
+      "estimate": 0.8340213169689009,
+      "ci_low": 0.6610742008298819,
+      "ci_high": 0.8576634453960258,
+      "n_boot": 1962
+    },
+    "reliability_truth": 0.966683216948501,
+    "reliability_metric": 0.9952839512358796,
+    "overlap_moderation": {
+      "slope": 0.85736692487441,
+      "ci_low": 0.7881347542815978,
+      "ci_high": 0.9265990954672222,
+      "overlap_slope": -0.6068497697059145,
+      "overlap_ci_low": -0.7839548844422572,
+      "overlap_ci_high": -0.42974465496957187,
+      "overlap_p": 2.546712481365996e-11
+    },
+    "decision": "pass",
+    "confirmatory": true,
+    "n_units": 76,
+    "n_subjects": 20
+  },
+  "saccade/ig_norm_abs": {
+    "corr_cross_fitted": {
+      "estimate": 0.20131915168356296,
+      "ci_low": -0.04499459045781151,
+      "ci_high": 0.31901496173899885,
+      "n_boot": 1956
+    },
+    "reliability_truth": 0.966683216948501,
+    "reliability_metric": 0.9358740120959672,
+    "overlap_moderation": {
+      "slope": 0.02274816470008831,
+      "ci_low": -0.06553664698464633,
+      "ci_high": 0.11103297638482294,
+      "overlap_slope": -0.3594411080584198,
+      "overlap_ci_low": -0.6338364443169564,
+      "overlap_ci_high": -0.08504577179988321,
+      "overlap_p": 0.010279981797728757
+    },
+    "decision": "fail",
+    "confirmatory": false,
+    "n_units": 76,
+    "n_subjects": 20
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "alpha/cbramod": {
+    "amp": 1.0,
+    "D_by_amp": {
+      "0.5": 0.23233461169702785,
+      "1.5": 0.7916276577745193,
+      "1.0": 0.6359831180794465
+    },
+    "tost": {
+      "mean_diff": -0.03400095839163686,
+      "ci90_low": -0.07332758170957229,
+      "ci90_high": 0.00532566492629858,
+      "p_tost": 0.24515213666785918,
+      "equivalent": false,
+      "n": 20
+    },
+    "manipulation_check": {
+      "mean_delta_ba_neu_diff": -0.07865976818444767,
+      "p": 0.0001410511085637145
+    },
+    "decision": "not supported"
+  },
+  "alpha/csoanet": {
+    "amp": 1.0,
+    "D_by_amp": {
+      "0.5": 0.183620495177937,
+      "1.5": 0.668989340702724,
+      "1.0": 0.5110992047825842
+    },
+    "tost": {
+      "mean_diff": -0.05629603474562843,
+      "ci90_low": -0.10921852610519078,
+      "ci90_high": -0.0033735433860660677,
+      "p_tost": 0.5803972126618381,
+      "equivalent": false,
+      "n": 20
+    },
+    "manipulation_check": {
+      "mean_delta_ba_neu_diff": -0.09168004405774295,
+      "p": 7.968320339632894e-05
+    },
+    "decision": "not supported"
+  },
+  "alpha/eegnet": {
+    "amp": 1.0,
+    "D_by_amp": {
+      "0.5": 0.25925920703852023,
+      "1.5": 0.7076264734081552,
+      "1.0": 0.5217519222454082
+    },
+    "tost": {
+      "mean_diff": -0.07300140749733068,
+      "ci90_low": -0.12859069183350527,
+      "ci90_high": -0.01741212316115609,
+      "p_tost": 0.7584905467229537,
+      "equivalent": false,
+      "n": 20
+    },
+    "manipulation_check": {
+      "mean_delta_ba_neu_diff": -0.08922961783907277,
+      "p": 4.5926729482250105e-05
+    },
+    "decision": "not supported"
+  },
+  "alpha/labram": {
+    "amp": 1.0,
+    "D_by_amp": {
+      "0.5": 0.2734758332863346,
+      "1.5": 0.9462368168744009,
+      "1.0": 0.72953772112872
+    },
+    "tost": {
+      "mean_diff": 0.0054087731055610265,
+      "ci90_low": -0.018151815852516368,
+      "ci90_high": 0.028969362063638423,
+      "p_tost": 0.002002509149368387,
+      "equivalent": true,
+      "n": 20
+    },
+    "manipulation_check": {
+      "mean_delta_ba_neu_diff": -0.014935920416034467,
+      "p": 0.16404989381503005
+    },
+    "decision": "encoding ≠ dependence supported"
+  },
+  "alpha/shallow": {
+    "amp": 1.0,
+    "D_by_amp": {
+      "0.5": 0.2466400654221419,
+      "1.5": 0.7504483672663697,
+      "1.0": 0.5839198766755025
+    },
+    "tost": {
+      "mean_diff": -0.033482009354288765,
+      "ci90_low": -0.07827886870209531,
+      "ci90_high": 0.011314849993517784,
+      "p_tost": 0.26567652470394254,
+      "equivalent": false,
+      "n": 20
+    },
+    "manipulation_check": {
+      "mean_delta_ba_neu_diff": -0.06039726112419811,
+      "p": 0.0005986509508835882
+    },
+    "decision": "not supported"
+  },
+  "saccade/cbramod": {
+    "amp": 0.5,
+    "D_by_amp": {
+      "0.5": 0.7892828943658,
+      "1.5": 0.9395677062771417,
+      "1.0": 0.9087652510668697
+    },
+    "tost": {
+      "mean_diff": 0.025198357432208707,
+      "ci90_low": -0.0009702370111293913,
+      "ci90_high": 0.05136695187554681,
+      "p_tost": 0.058853268814803045,
+      "equivalent": false,
+      "n": 20
+    },
+    "manipulation_check": {
+      "mean_delta_ba_neu_diff": -0.07800654264207989,
+      "p": 9.831565629861821e-06
+    },
+    "decision": "not supported"
+  },
+  "saccade/csoanet": {
+    "decision": "undecidable (no training amplitude with D in range)",
+    "D_by_amp": {
+      "0.5": 0.809432632113248,
+      "1.5": 0.9689399921042243,
+      "1.0": 0.9339546556877784
+    }
+  },
+  "saccade/eegnet": {
+    "decision": "undecidable (no training amplitude with D in range)",
+    "D_by_amp": {
+      "0.5": 0.8169857876036322,
+      "1.5": 0.967263549715188,
+      "1.0": 0.9401293403267346
+    }
+  },
+  "saccade/shallow": {
+    "amp": 0.5,
+    "D_by_amp": {
+      "0.5": 0.5650499125824827,
+      "1.5": 0.8900287631831256,
+      "1.0": 0.8046594476716861
+    },
+    "tost": {
+      "mean_diff": -0.05895919370378224,
+      "ci90_low": -0.09502960778225727,
+      "ci90_high": -0.022888779625307207,
+      "p_tost": 0.66379869395535,
+      "equivalent": false,
+      "n": 20
+    },
+    "manipulation_check": {
+      "mean_delta_ba_neu_diff": -0.08604843995882674,
+      "p": 1.0815923697690154e-06
+    },
+    "decision": "not supported"
+  }
+}

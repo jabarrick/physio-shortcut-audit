@@ -1,0 +1,122 @@
+Process 12336: D:\miniconda\python.exe -u -m p3audit.cli pilot P8
+Python v3.12.7 (D:\miniconda\python.exe)
+
+Thread 31496 (active): "MainThread"
+    predict_logits (p3audit\training\trainer.py:64)
+        Arguments:
+            model: <FoundationAdapter at 0x25f614878f0>
+            X: <numpy.ndarray at 0x2600de539f0>
+            device: <torch.device at 0x25f62486290>
+            batch_size: 256
+        Locals:
+            out: []
+            b: <numpy.ndarray at 0x2600de514d0>
+            xb: <Tensor at 0x2600debfde0>
+    decorate_context (torch\utils\_contextlib.py:116)
+        Locals:
+            args: (<FoundationAdapter at 0x25f614878f0>, <numpy.ndarray at 0x2600de539f0>, <torch.device at 0x25f62486290>)
+            kwargs: {}
+    <lambda> (p3audit\experiments\unit.py:114)
+        Arguments:
+            X: <numpy.ndarray at 0x2600de539f0>
+    run_unit (p3audit\experiments\unit.py:124)
+        Arguments:
+            ctx: <Context at 0x25f24059f70>
+            unit: <Unit at 0x25f623bbe90>
+            device: <cell at 0x25f623bb160>
+            fallback_standin: False
+            max_epochs: None
+            overwrite: False
+            verbose: False
+            metrics: ("truth", "probe", "erasure", "sri", "heog", "ig")
+            roles: {...}
+            out_dir: "pilots/p8_units"
+        Locals:
+            cfg: {...}
+            out_path: <WindowsPath at 0x25f6237b060>
+            t0: 1790188832.1256065
+            cell: <Cell at 0x25f604163c0>
+            seed: 1
+            sp: <Split at 0x25f61af4a10>
+            tr_s: [12, 24, 28, 29, 32, 33, 34, 38, 41, 43, 47, 48, 53, 55, 57, 60, 61, 64, 66, 69, 70, 74, 75, 77, 79, 81, 87, 90, 94, 98, ...]
+            va_s: [1, 10, 11, 14, 18]
+            te_s: [4, 27, 54, 83, 85, 99, 108]
+            caches: {12: <SubjectCache at 0x25f62432c60>, 24: <SubjectCache at 0x25f62433320>, 28: <SubjectCache at 0x25f624339e0>, ...}
+            ch: ["FC5", "FC3", "FC1", "FCz", "FC2", "FC4", "FC6", "C5", "C3", "C1", "Cz", "C2", "C4", "C6", "CP5", "CP3", "CP1", "CPz", ...]
+            rec: {"uid": "cbramod__alpha_p0.9_s_star_a1__seed1", "model": "cbramod", ...}
+            _moderator: <function at 0x25f623be660>
+            tr: <ComposedSet at 0x25f62106180>
+            va: <ComposedSet at 0x25f62089d30>
+            X_tr: <numpy.ndarray at 0x25f62383750>
+            X_va: <numpy.ndarray at 0x25f62382d30>
+            is_random: False
+            predict: <function at 0x2600dca05e0>
+            k: "matched"
+            tests: {"matched": <ComposedSet at 0x2600dd582f0>, "neutral": <ComposedSet at 0x2600d1b4140>, ...}
+            base: <ComposedSet at 0x2600dd582f0>
+            half: <numpy.ndarray at 0x2600de53e10>
+            preds: {}
+            counts: {}
+            cs: <ComposedSet at 0x2600dd582f0>
+    p8 (p3audit\experiments\pilots.py:334)
+        Arguments:
+            ctx: <Context at 0x25f24059f70>
+            models: ("csoanet", "cbramod")
+            cells: [<Cell at 0x25f604163c0>, <Cell at 0x25f62356660>, <Cell at 0x25f614a4860>]
+            seeds: (0, 1)
+        Locals:
+            kw: {"max_epochs": None}
+            run_unit: <function at 0x25f623be520>
+            sp: <Split at 0x25f61af4a10>
+            cfg: {...}
+            nonpilot: [1, 7, 10, 11, 14, 17, 18, 20, 21, 22, 24, 26, 28, 29, 31, 32, 33, 34, 36, 38, 40, 41, 43, 47, 48, 49, 51, 55, 57, 60, ...]
+            es: [1, 7, 10, 11, 14, 17, 18]
+            roles: {...}
+            recs: [{"uid": "csoanet__alpha_p0.9_s_star_a1__seed0", "model": "csoanet", ...}, {...}, {...}, {...}, {...}, {...}, {...}]
+            m: "cbramod"
+            c: <Cell at 0x25f604163c0>
+            sd: 1
+    cmd_pilot (p3audit\cli.py:88)
+        Arguments:
+            args: <Namespace at 0x25f24058d40>
+        Locals:
+            calibration: <module at 0x25f24037970>
+            pilots: <module at 0x25f61ad8d60>
+            ctx: <Context at 0x25f24059f70>
+            kw: {}
+            name: "P8"
+            fn: {"P2": <function at 0x25f61af2840>, "P6": <function at 0x25f61af28e0>, "P1A": <function at 0x25f61af2980>, ...}
+    main (p3audit\cli.py:204)
+        Arguments:
+            argv: None
+        Locals:
+            ap: <ArgumentParser at 0x25f7f6ff5f0>
+            sub: <_SubParsersAction at 0x25f24058950>
+            p: <ArgumentParser at 0x25f24059c10>
+            a: "--shard"
+            name: "shu-audit"
+            fn: <function at 0x25f240156c0>
+            args: <Namespace at 0x25f24058d40>
+    <module> (p3audit\cli.py:208)
+    _run_code (<frozen runpy>:88)
+        Arguments:
+            code: <code at 0x25f72f8fc50>
+            run_globals: {"__name__": "__main__", ...}
+            init_globals: None
+            mod_name: "__main__"
+            mod_spec: <ModuleSpec at 0x25f73355bb0>
+            pkg_name: "p3audit"
+            script_name: None
+        Locals:
+            loader: <SourceFileLoader at 0x25f73355c70>
+            fname: "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\cli.py"
+            cached: "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\__pycache__\cli.cpython-312.pyc"
+    _run_module_as_main (<frozen runpy>:198)
+        Arguments:
+            mod_name: "p3audit.cli"
+            alter_argv: True
+        Locals:
+            mod_spec: <ModuleSpec at 0x25f73355bb0>
+            code: <code at 0x25f72f8fc50>
+            main_globals: {"__name__": "__main__", ...}
+Thread 36432 (idle)

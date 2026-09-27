@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "('ba', 'mean')": {
+      "cbramod": 0.8330810018,
+      "csoanet": 0.8105356937,
+      "eegnet": 0.8130708033,
+      "shallow": 0.8119433858
+    },
+    "('ba', 'std')": {
+      "cbramod": 0.0246925037,
+      "csoanet": 0.0305639402,
+      "eegnet": 0.0311680906,
+      "shallow": 0.0321624277
+    },
+    "('sri_post', 'mean')": {
+      "cbramod": 0.0008734898,
+      "csoanet": -0.0006121944,
+      "eegnet": -0.0005281759,
+      "shallow": 0.0013424381
+    },
+    "('sri_post', 'std')": {
+      "cbramod": 0.0048816103,
+      "csoanet": 0.0023209446,
+      "eegnet": 0.0009710879,
+      "shallow": 0.006280748
+    },
+    "('heog_reg', 'mean')": {
+      "cbramod": 0.0599634157,
+      "csoanet": 0.0549320966,
+      "eegnet": 0.0551112311,
+      "shallow": 0.0425088967
+    },
+    "('heog_reg', 'std')": {
+      "cbramod": 0.0165014326,
+      "csoanet": 0.0172232716,
+      "eegnet": 0.0186293193,
+      "shallow": 0.0167718214
+    },
+    "('ig_alpha_share', 'mean')": {
+      "cbramod": 0.0458020879,
+      "csoanet": 0.0065206967,
+      "eegnet": 0.0056443599,
+      "shallow": 0.0496427829
+    },
+    "('ig_alpha_share', 'std')": {
+      "cbramod": 0.0164082558,
+      "csoanet": 0.0038299489,
+      "eegnet": 0.0016329633,
+      "shallow": 0.0087222699
+    },
+    "('ig_saccade_share', 'mean')": {
+      "cbramod": 0.11956012,
+      "csoanet": 0.2181057056,
+      "eegnet": 0.2063473145,
+      "shallow": 0.1055515056
+    },
+    "('ig_saccade_share', 'std')": {
+      "cbramod": 0.0257973479,
+      "csoanet": 0.024567361,
+      "eegnet": 0.026722806,
+      "shallow": 0.0113842839
+    },
+    "('alpha_erasure_keep', 'mean')": {
+      "cbramod": 0.0003559764,
+      "csoanet": 0.0015953988,
+      "eegnet": -8.33156e-05,
+      "shallow": 0.00052099
+    },
+    "('alpha_erasure_keep', 'std')": {
+      "cbramod": 0.0014530062,
+      "csoanet": 0.0043769648,
+      "eegnet": 0.0059374654,
+      "shallow": 0.0066707078
+    },
+    "('alpha_probe_D', 'mean')": {
+      "cbramod": 0.4985960309,
+      "csoanet": 0.570471557,
+      "eegnet": 0.553223831,
+      "shallow": 0.7812335574
+    },
+    "('alpha_probe_D', 'std')": {
+      "cbramod": 0.1547582373,
+      "csoanet": 0.1241424177,
+      "eegnet": 0.114541257,
+      "shallow": 0.0994535337
+    }
+  },
+  "interpretable": {
+    "sri_post": false,
+    "heog_reg": true,
+    "ig_alpha_share": true,
+    "ig_saccade_share": true,
+    "alpha_erasure_keep": true
+  },
+  "note": "metrics not passing H3/H3r are exploratory only (3.7)"
+}

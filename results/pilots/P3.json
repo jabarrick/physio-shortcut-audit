@@ -1,0 +1,70 @@
+{
+  "device": "cuda",
+  "models": {
+    "csoanet": {
+      "params": 3510,
+      "train_s_per_window_epoch": 0.001174649689346552,
+      "infer_s_per_window": 0.00014990614727139473,
+      "peak_mem_mb": 1001.7099609375,
+      "standin": false
+    },
+    "eegnet": {
+      "params": 2994,
+      "train_s_per_window_epoch": 0.00040102237835526466,
+      "infer_s_per_window": 8.509214967489243e-05,
+      "peak_mem_mb": 702.69140625,
+      "standin": false
+    },
+    "shallow": {
+      "params": 106842,
+      "train_s_per_window_epoch": 0.001807291992008686,
+      "infer_s_per_window": 0.00016191508620977402,
+      "peak_mem_mb": 3699.046875,
+      "standin": false
+    },
+    "cbramod": {
+      "params": 4884202,
+      "train_s_per_window_epoch": 0.0033541619777679443,
+      "infer_s_per_window": 0.0006972905248403549,
+      "peak_mem_mb": 2792.99951171875,
+      "standin": false
+    },
+    "labram": {
+      "params": 85954,
+      "train_s_per_window_epoch": 0.00015280349180102348,
+      "infer_s_per_window": 4.693353548645973e-05,
+      "peak_mem_mb": 187.95458984375,
+      "standin": true
+    }
+  },
+  "module_estimates": {
+    "p_series": {
+      "units": 126,
+      "train_hours_est": 5.825218007813414
+    },
+    "factorial": {
+      "units": 136,
+      "train_hours_est": 6.620066530205724
+    },
+    "corner": {
+      "units": 64,
+      "train_hours_est": 3.2913705257409154
+    },
+    "mismatch": {
+      "units": 24,
+      "train_hours_est": 1.2342639471528432
+    },
+    "group_template": {
+      "units": 8,
+      "train_hours_est": 0.4114213157176144
+    }
+  },
+  "budget_assumptions": {
+    "windows_per_subject": 60.06666666666667,
+    "windows_per_subject_source": "P2 measured: window_s=3.0 mode=trim_and_drop trim_ms=900",
+    "n_train_subjects": 61,
+    "epochs_assumed": 30.0,
+    "excludes": "data loading, per-epoch validation, memmap reads - expect 1.5-2x wall clock"
+  },
+  "note": "inference-side cost (IG, probes, LEACE, bootstrap) measured in P9"
+}

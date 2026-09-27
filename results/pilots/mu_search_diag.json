@@ -1,0 +1,480 @@
+{
+ "budget": 40,
+ "scope": "pilot",
+ "n_subjects": 15,
+ "pass_counts": {
+  "before": {
+   "mu_L": 5,
+   "mu_R": 7
+  },
+  "after": {
+   "mu_L": 6,
+   "mu_R": 7
+  }
+ },
+ "both_mu_before": 3,
+ "both_mu_after": 3,
+ "recovered_sides": 1,
+ "accepted_rank": {
+  "median": 0.0,
+  "p90": 4.200000000000003,
+  "max": 7,
+  "n_beyond_old_cap_6": 1,
+  "histogram": {
+   "0": 8,
+   "1": 3,
+   "5": 1,
+   "7": 1
+  }
+ },
+ "still_failing_signatures": {
+  "mu_L:band_peak": 7,
+  "mu_R:no_candidate": 3,
+  "mu_R:band_peak+emg_not_rising": 2,
+  "mu_R:band_peak": 2,
+  "mu_L:band_peak+task_lt_rest": 1,
+  "mu_R:band_peak+task_lt_rest": 1,
+  "mu_L:band_peak+emg_not_rising": 1
+ },
+ "per_subject": [
+  {
+   "subject": 9,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 0,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 1.760441173293543,
+    "band_peak_db": -0.6004762382088347,
+    "emg_slope": -1.215820270888025
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 4,
+    "recovered": false,
+    "fails": [
+     "band_peak",
+     "emg_not_rising"
+    ],
+    "no_candidate": false,
+    "eigval": 1.2630808262089248,
+    "band_peak_db": -3.878861805025809,
+    "emg_slope": 0.8804032168483428
+   }
+  },
+  {
+   "subject": 12,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 3,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 1.4637125272030063,
+    "band_peak_db": -1.51349557284577,
+    "emg_slope": -1.4116500934643101
+   },
+   "mu_R": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 1.7860258638050368,
+    "band_peak_db": 2.754074205056108,
+    "emg_slope": -1.8273640969231382
+   }
+  },
+  {
+   "subject": 39,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 21,
+    "recovered": false,
+    "fails": [
+     "band_peak",
+     "task_lt_rest"
+    ],
+    "no_candidate": false,
+    "eigval": 0.9641069382045656,
+    "band_peak_db": -2.3642735052400266,
+    "emg_slope": -0.07385527514276984
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 5,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 1.3018601605127564,
+    "band_peak_db": -0.2204028054751772,
+    "emg_slope": -0.8847691235042875
+   }
+  },
+  {
+   "subject": 53,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 2.9932852415345144,
+    "band_peak_db": 8.289064969552308,
+    "emg_slope": -2.725759017700786
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 20,
+    "recovered": false,
+    "fails": [
+     "band_peak",
+     "task_lt_rest"
+    ],
+    "no_candidate": false,
+    "eigval": 0.9694860974192367,
+    "band_peak_db": -3.5916568407601246,
+    "emg_slope": -0.9050090994096395
+   }
+  },
+  {
+   "subject": 61,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 5,
+    "recovered": false,
+    "fails": [
+     "band_peak",
+     "emg_not_rising"
+    ],
+    "no_candidate": false,
+    "eigval": 1.1881884984738058,
+    "band_peak_db": -0.7382638411671,
+    "emg_slope": 0.07527504833878886
+   },
+   "mu_R": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 3.1473831543380486,
+    "band_peak_db": 7.04064270047545,
+    "emg_slope": -3.1166296222901932
+   }
+  },
+  {
+   "subject": 70,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": true,
+    "rank": 7,
+    "recovered": true,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 1.054714501882157,
+    "band_peak_db": 3.5133157550929086,
+    "emg_slope": -1.7419831339339753
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": null,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": true,
+    "eigval": 1.7833170243154768,
+    "band_peak_db": null,
+    "emg_slope": null
+   }
+  },
+  {
+   "subject": 74,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 1,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 2.1715984242349196,
+    "band_peak_db": 0.35815144549230515,
+    "emg_slope": -1.344055887164576
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": null,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": true,
+    "eigval": 3.1737180626549475,
+    "band_peak_db": null,
+    "emg_slope": null
+   }
+  },
+  {
+   "subject": 80,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 1,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 2.111164421815757,
+    "band_peak_db": -0.38461843417189057,
+    "emg_slope": -0.04496379591377498
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 2,
+    "recovered": false,
+    "fails": [
+     "band_peak",
+     "emg_not_rising"
+    ],
+    "no_candidate": false,
+    "eigval": 1.754014762266559,
+    "band_peak_db": -1.8643066048125168,
+    "emg_slope": 0.38358699810764374
+   }
+  },
+  {
+   "subject": 86,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 1,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 1.9446252646563025,
+    "band_peak_db": 0.1395825837190512,
+    "emg_slope": -1.7921005552896534
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": null,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": true,
+    "eigval": 2.0957838042217585,
+    "band_peak_db": null,
+    "emg_slope": null
+   }
+  },
+  {
+   "subject": 87,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 2.912082757869738,
+    "band_peak_db": 5.284618316582855,
+    "emg_slope": -3.3554151411243964
+   },
+   "mu_R": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 9,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 1.132085662505527,
+    "band_peak_db": 0.7428484185021467,
+    "emg_slope": -1.4124515036624918
+   }
+  },
+  {
+   "subject": 90,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 6,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 1.493885986791918,
+    "band_peak_db": -3.011067231725797,
+    "emg_slope": -0.7083015669489552
+   },
+   "mu_R": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 5,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 1.540694112394062,
+    "band_peak_db": 1.8742289344196106,
+    "emg_slope": -0.23223804028778094
+   }
+  },
+  {
+   "subject": 94,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 1,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 2.6017243634086364,
+    "band_peak_db": 6.011133259134409,
+    "emg_slope": -1.9583317201566977
+   },
+   "mu_R": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 3.1140022848759235,
+    "band_peak_db": 8.426505235873291,
+    "emg_slope": -2.0578378540696627
+   }
+  },
+  {
+   "subject": 101,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": false,
+    "now_passed": false,
+    "rank": 5,
+    "recovered": false,
+    "fails": [
+     "band_peak"
+    ],
+    "no_candidate": false,
+    "eigval": 1.3466779444174408,
+    "band_peak_db": -1.1693627274298435,
+    "emg_slope": -0.5264152641337482
+   },
+   "mu_R": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 1.6903279006523575,
+    "band_peak_db": 1.5592681884790682,
+    "emg_slope": -1.4836726379277632
+   }
+  },
+  {
+   "subject": 103,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 1,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 1.4448482732023344,
+    "band_peak_db": 2.7110782412719825,
+    "emg_slope": -1.8509617935511122
+   },
+   "mu_R": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 1.8397024248522271,
+    "band_peak_db": 6.436940883321358,
+    "emg_slope": -2.1854326214436792
+   }
+  },
+  {
+   "subject": 105,
+   "pilot": true,
+   "role": "train",
+   "mu_L": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 1,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 2.0589827262348717,
+    "band_peak_db": 6.9442731086197185,
+    "emg_slope": -2.446340753545315
+   },
+   "mu_R": {
+    "was_passed": true,
+    "now_passed": true,
+    "rank": 0,
+    "recovered": false,
+    "fails": [],
+    "no_candidate": false,
+    "eigval": 2.5986917998038064,
+    "band_peak_db": 8.463293532605956,
+    "emg_slope": -3.2912503373207835
+   }
+  }
+ ],
+ "note": "diagnostic only; results/components/ untouched. Inclusion criteria unchanged \u2014 only the number of GED components screened."
+}

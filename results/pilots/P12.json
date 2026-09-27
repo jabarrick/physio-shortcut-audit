@@ -1,0 +1,36 @@
+{
+  "sd_seed": 0.04444254030332812,
+  "cell_means": [
+    0.15526738516223118,
+    0.26631567854538823
+  ],
+  "power_grid": [
+    {
+      "beta": 1.0,
+      "sd_metric": 0.02222127015166406,
+      "power": 1.0,
+      "mean_r": 0.9652911528021489
+    },
+    {
+      "beta": 1.0,
+      "sd_metric": 0.04444254030332812,
+      "power": 1.0,
+      "mean_r": 0.8784419945141854
+    },
+    {
+      "beta": 0.5,
+      "sd_metric": 0.04444254030332812,
+      "power": 1.0,
+      "mean_r": 0.6738947869950321
+    }
+  ],
+  "cells_used": [
+    "alpha_p0.9_s_star_a1",
+    "saccade_p0.9_1.6_a1"
+  ],
+  "excluded": [
+    "alpha_p0.9_s_low_a1.5",
+    "saccade_p0.9_s_star_a1"
+  ],
+  "note": "set stats.sesoi_* and stats.h3_min_corr_lower from this grid"
+}

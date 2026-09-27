@@ -1,0 +1,2963 @@
+{
+  "config_hash": "d3d4d36229fe8662",
+  "code_sha256": "4e1ffab94988e93b1742059b57f1684da828dec6b0aea952c06aacf869226e21",
+  "split": {
+    "pilot": [
+      9,
+      12,
+      39,
+      53,
+      61,
+      70,
+      74,
+      80,
+      86,
+      87,
+      90,
+      94,
+      101,
+      103,
+      105
+    ],
+    "train": [
+      1,
+      7,
+      9,
+      10,
+      11,
+      12,
+      14,
+      17,
+      18,
+      20,
+      21,
+      22,
+      24,
+      26,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      36,
+      38,
+      39,
+      40,
+      41,
+      43,
+      47,
+      48,
+      49,
+      51,
+      53,
+      55,
+      57,
+      60,
+      61,
+      63,
+      64,
+      66,
+      68,
+      69,
+      70,
+      71,
+      73,
+      74,
+      75,
+      77,
+      79,
+      80,
+      81,
+      82,
+      86,
+      87,
+      89,
+      90,
+      94,
+      96,
+      98,
+      101,
+      103,
+      105,
+      107
+    ],
+    "val": [
+      4,
+      6,
+      8,
+      27,
+      54,
+      56,
+      83,
+      85,
+      99,
+      108
+    ],
+    "test": [
+      2,
+      3,
+      5,
+      13,
+      15,
+      16,
+      19,
+      23,
+      25,
+      30,
+      35,
+      37,
+      42,
+      44,
+      45,
+      46,
+      50,
+      52,
+      58,
+      59,
+      62,
+      65,
+      67,
+      72,
+      76,
+      78,
+      84,
+      91,
+      93,
+      95,
+      97,
+      102,
+      106,
+      109
+    ],
+    "seed_pilot": 20260918,
+    "seed_split": 20260919
+  },
+  "signal_access": [
+    {
+      "subject": 1,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 1,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 1,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 2,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 2,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 2,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 3,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 3,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 4,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 4,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 4,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 5,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 5,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 6,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 6,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 7,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 7,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 8,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 8,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 9,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 9,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 9,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 10,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 10,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 10,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 11,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 11,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 11,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 12,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 12,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 12,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 12,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 13,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 13,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 13,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 14,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 14,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 14,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 15,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 15,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 15,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 16,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 16,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 16,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 17,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 17,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 18,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 18,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 18,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 19,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 19,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 19,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 20,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 20,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 21,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 21,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 22,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 22,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 23,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 23,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 24,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 24,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 24,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 25,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 25,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 25,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 26,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 26,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 27,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 27,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 27,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 28,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 28,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 28,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 29,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 29,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 29,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 30,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 30,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 31,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 31,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 32,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 32,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 32,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 33,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 33,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 33,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 34,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 34,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 34,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 35,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 35,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 35,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 36,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 36,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 37,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 37,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 38,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 38,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 38,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 39,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 39,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 39,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 40,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 40,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 41,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 41,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 41,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 42,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 42,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 42,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 43,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 43,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 43,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 44,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 44,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 44,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 45,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 45,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 46,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 46,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 46,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 47,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 47,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 47,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 48,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 48,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 48,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 49,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 49,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 50,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 50,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 50,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 51,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 51,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 52,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 52,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 52,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 53,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 53,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 53,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 53,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 54,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 54,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 54,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 55,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 55,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 55,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 56,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 56,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 57,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 57,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 57,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 58,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 58,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 59,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 59,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 60,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 60,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 60,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 61,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 61,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 61,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 61,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 62,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 62,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 62,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 63,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 63,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 64,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 64,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 64,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 65,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 65,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 65,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 66,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 66,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 66,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 67,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 67,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 68,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 68,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 69,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 69,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 69,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 70,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 70,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 70,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 70,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 71,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 71,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 72,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 72,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 72,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 73,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 73,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 74,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 74,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 74,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 74,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 75,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 75,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 75,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 76,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 76,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 77,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 77,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 77,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 78,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 78,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 78,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 79,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 79,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 79,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 80,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 80,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 80,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 81,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 81,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 81,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 82,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 82,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 83,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 83,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 83,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 84,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 84,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 85,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 85,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 85,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 86,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 86,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 86,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 87,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 87,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 87,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 87,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 89,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 89,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 90,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 90,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 90,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 90,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 91,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 91,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 93,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 93,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 94,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 94,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 94,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 94,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 95,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 95,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 95,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 96,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 96,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 97,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 97,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 97,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 98,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 98,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 98,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 99,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 99,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 99,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 101,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 101,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 101,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 101,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 102,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 102,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 102,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 103,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 103,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 103,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 103,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 103,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 103,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 103,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 103,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 103,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 105,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 105,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 105,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_injection_check"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_return_saccades"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_saccade_amplitude"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_saccade_ica"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_saccade_regression"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_sensitivity_curve"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_t0_stats"
+    },
+    {
+      "subject": 105,
+      "purpose": "pilot_trial_counts"
+    },
+    {
+      "subject": 106,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 106,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 106,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 107,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 107,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 107,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 108,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 108,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 108,
+      "purpose": "gen_mu_component"
+    },
+    {
+      "subject": 109,
+      "purpose": "background_windows"
+    },
+    {
+      "subject": 109,
+      "purpose": "gen_alpha_component"
+    },
+    {
+      "subject": 109,
+      "purpose": "gen_mu_component"
+    }
+  ],
+  "pilot_reports": [
+    "P10a.json",
+    "P11.json",
+    "P11_VOID_encrypted_zip_20260923.json",
+    "P12.json",
+    "P1a.json",
+    "P1a_posterior_ratio_cap.json",
+    "P2.json",
+    "P3.json",
+    "P4_alpha.json",
+    "P4_alpha_run2_with_broken_cbramod.json",
+    "P4_saccade.json",
+    "P5_alpha.json",
+    "P5_alpha_sigma.json",
+    "P6.json",
+    "P6_components_diag.json",
+    "P7.json",
+    "P8.json",
+    "P8_labram.json",
+    "P8b.json",
+    "P8b_units.json",
+    "P8c.json",
+    "P8c_units.json",
+    "P9.json",
+    "P9_v2_20260923.json",
+    "bad_window_diag.json",
+    "cbramod_diag.json",
+    "cbramod_diag_AB_20260920.json",
+    "h2_power_diag.json",
+    "injection_cache_diag.json",
+    "mu_bandpeak_diag.json",
+    "mu_exists_diag.json",
+    "mu_search_diag.json",
+    "sensitivity.json",
+    "sensitivity_ext_diag.json"
+  ],
+  "tbd": [
+    {
+      "key": "background.window_s",
+      "source": "P2",
+      "value": 3.0,
+      "confirmed": true
+    },
+    {
+      "key": "background.trim_ms",
+      "source": "P2",
+      "value": 900,
+      "confirmed": true
+    },
+    {
+      "key": "background.trim_mode",
+      "source": "P2",
+      "value": "trim_and_drop",
+      "confirmed": true
+    },
+    {
+      "key": "background.bad_window",
+      "source": "prereg-6",
+      "value": {
+        "max_abs_uv": 200.0,
+        "min_std_uv": 0.5,
+        "max_abs_exclude": "none",
+        "min_windows": 8,
+        "amp_rule": "robust_z",
+        "robust_z_max": 3.0
+      },
+      "confirmed": true
+    },
+    {
+      "key": "streams.spectral.aperiodic_min_r2",
+      "source": "prereg-6",
+      "value": 0.9,
+      "confirmed": true
+    },
+    {
+      "key": "task_component.reg",
+      "source": "P1a",
+      "value": 0.01,
+      "confirmed": true
+    },
+    {
+      "key": "task_component.band_peak",
+      "source": "P1a",
+      "value": {
+        "fit_range": [
+          2.0,
+          30.0
+        ],
+        "exclude": [
+          7.0,
+          14.0
+        ],
+        "min_db": 1.0,
+        "psd_nperseg_s": 2.0,
+        "segments": "rest"
+      },
+      "confirmed": true
+    },
+    {
+      "key": "task_component.max_fail_fraction",
+      "source": "P1a",
+      "value": 0.2,
+      "confirmed": true
+    },
+    {
+      "key": "task_component.hemisphere",
+      "source": "P1a",
+      "value": "single",
+      "confirmed": true
+    },
+    {
+      "key": "task_component.side_rule",
+      "source": "P1a",
+      "value": "higher_rest_band_peak_db",
+      "confirmed": true
+    },
+    {
+      "key": "task_component.posterior_ratio_max",
+      "source": "P1a",
+      "value": 0.425,
+      "confirmed": true
+    },
+    {
+      "key": "alpha_component.band_peak",
+      "source": "P1a",
+      "value": {
+        "fit_range": [
+          2.0,
+          30.0
+        ],
+        "exclude": [
+          7.0,
+          14.0
+        ],
+        "min_db": 1.0,
+        "psd_nperseg_s": 2.0,
+        "segments": "eyes_closed"
+      },
+      "confirmed": true
+    },
+    {
+      "key": "task_component.s_star",
+      "source": "P4",
+      "value": 0.5,
+      "confirmed": true
+    },
+    {
+      "key": "task_component.s_low",
+      "source": "P4",
+      "value": 0.35,
+      "confirmed": true
+    },
+    {
+      "key": "task_component.s_high",
+      "source": "P4",
+      "value": 0.65,
+      "confirmed": true
+    },
+    {
+      "key": "task_component.by_confound",
+      "source": "P4+P8b/P8c",
+      "value": {
+        "alpha": {
+          "s_star": 1.077,
+          "s_low": 0.652,
+          "s_high": 1.8
+        },
+        "saccade": {
+          "s_star": 1.6,
+          "s_low": 0.974,
+          "s_high": 1.8
+        }
+      },
+      "confirmed": true
+    },
+    {
+      "key": "alpha_component.reg",
+      "source": "P1a",
+      "value": 0.01,
+      "confirmed": true
+    },
+    {
+      "key": "alpha_component.taper_s",
+      "source": "P1a",
+      "value": 0.25,
+      "confirmed": true
+    },
+    {
+      "key": "alpha_component.a_star",
+      "source": "P5",
+      "value": 1.0,
+      "confirmed": true
+    },
+    {
+      "key": "alpha_component.min_projection_ratio",
+      "source": "P1a",
+      "value": 0.1,
+      "confirmed": true
+    },
+    {
+      "key": "alpha_component.degenerate_truth",
+      "source": "P1a+P8",
+      "value": {
+        "min_delta_ba_neu": 0.02,
+        "min_split_half": 0.5
+      },
+      "confirmed": true
+    },
+    {
+      "key": "alpha_component.max_degenerate_fraction",
+      "source": "P1a",
+      "value": 0.2,
+      "confirmed": true
+    },
+    {
+      "key": "saccade.amplitude_uv",
+      "source": "P6/P10a",
+      "value": 149.34,
+      "confirmed": true
+    },
+    {
+      "key": "saccade.selection_order",
+      "source": "P6",
+      "value": "correlation_first",
+      "confirmed": true
+    },
+    {
+      "key": "saccade.ocular_enrichment_min",
+      "source": "P6",
+      "value": 1.0,
+      "confirmed": true
+    },
+    {
+      "key": "saccade.bipolarity_min",
+      "source": "P6",
+      "value": 1.0,
+      "confirmed": true
+    },
+    {
+      "key": "saccade.spike.amplitude_ratio",
+      "source": "待核实",
+      "value": 0.3,
+      "confirmed": true
+    },
+    {
+      "key": "design.regressor_contamination",
+      "source": "prereg",
+      "value": [
+        0.0,
+        0.1,
+        0.25
+      ],
+      "confirmed": true
+    },
+    {
+      "key": "intervention.control_band",
+      "source": "prereg",
+      "value": [
+        20.0,
+        25.0
+      ],
+      "confirmed": true
+    },
+    {
+      "key": "intervention.heog_method",
+      "source": "prereg",
+      "value": "saccade_locked",
+      "confirmed": true
+    },
+    {
+      "key": "ig.windows_per_unit",
+      "source": "P9",
+      "value": 200,
+      "confirmed": true
+    },
+    {
+      "key": "ig.batch",
+      "source": "P9",
+      "value": 16,
+      "confirmed": true
+    },
+    {
+      "key": "ig.batch_by_model",
+      "source": "P9",
+      "value": {
+        "shallow": 2,
+        "cbramod": 4,
+        "labram": 1
+      },
+      "confirmed": true
+    },
+    {
+      "key": "training.device",
+      "source": "P9",
+      "value": "cuda",
+      "confirmed": true
+    },
+    {
+      "key": "saccade_detection.step_mad_k",
+      "source": "pilot",
+      "value": 5.0,
+      "confirmed": true
+    },
+    {
+      "key": "saccade_detection.min_amplitude_uv",
+      "source": "pilot",
+      "value": 15.0,
+      "confirmed": true
+    },
+    {
+      "key": "stats.sesoi_ba_pp",
+      "source": "P12",
+      "value": 5.0,
+      "confirmed": true
+    },
+    {
+      "key": "stats.sesoi_delta_ba_neu",
+      "source": "P12",
+      "value": 0.05,
+      "confirmed": true
+    },
+    {
+      "key": "stats.h2_delta",
+      "source": "P12",
+      "value": 0.05,
+      "confirmed": true
+    },
+    {
+      "key": "stats.h3_min_corr_lower",
+      "source": "P12",
+      "value": 0.3,
+      "confirmed": true
+    },
+    {
+      "key": "stats.h3r_max_bias",
+      "source": "P12",
+      "value": 0.05,
+      "confirmed": true
+    },
+    {
+      "key": "foundation.cbramod.input_scale",
+      "source": "official_repo",
+      "value": 0.01,
+      "confirmed": true
+    },
+    {
+      "key": "foundation.labram.input_scale",
+      "source": "待核实",
+      "value": 0.01,
+      "confirmed": true
+    },
+    {
+      "key": "foundation.labram",
+      "source": "official_repo",
+      "value": {
+        "repo_path": "D:/project/LaBraM",
+        "checkpoint": "D:/project/LaBraM/checkpoints/labram-base.pth",
+        "patch_size": 200,
+        "input_scale": 0.01,
+        "model_kwargs": {
+          "qkv_bias": false,
+          "use_rel_pos_bias": false,
+          "use_abs_pos_emb": true,
+          "init_values": 0.1,
+          "drop_path": 0.1,
+          "init_scale": 0.001,
+          "use_mean_pooling": true
+        }
+      },
+      "confirmed": true
+    },
+    {
+      "key": "foundation.labram_finetune",
+      "source": "official_repo",
+      "value": {
+        "lr": 0.0005,
+        "min_lr": 1e-06,
+        "warmup_epochs": 5,
+        "layer_decay": 0.65,
+        "weight_decay": 0.05,
+        "label_smoothing": 0.0
+      },
+      "confirmed": true
+    }
+  ],
+  "config": {
+    "paths": {
+      "data_root": "~/mne_data",
+      "shu_root": "~/data/SHU-MI",
+      "eegeyenet_root": "~/data/EEGEyeNet",
+      "cache": "./cache",
+      "results": "./results",
+      "access_log": "./results/signal_access_log.jsonl"
+    },
+    "cache_dtype": "float32",
+    "seeds": {
+      "pilot_draw": 20260918,
+      "split": 20260919,
+      "half_split": 20260920,
+      "pseudo_label": 20260921,
+      "model_seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    "physionet": {
+      "n_subjects": 109,
+      "sfreq": 160.0,
+      "original_reference": null,
+      "baseline_runs": {
+        "eyes_open": 1,
+        "eyes_closed": 2
+      },
+      "exec_lr_runs": [
+        3,
+        7,
+        11
+      ],
+      "imag_lr_runs": [
+        4,
+        8,
+        12
+      ],
+      "imag_ff_runs": [
+        6,
+        10,
+        14
+      ],
+      "known_bad_sfreq": [
+        88
+      ]
+    },
+    "exclusion": {
+      "required_sfreq": 160.0,
+      "max_trial_count_dev": 2,
+      "max_duration_dev_s": 5.0
+    },
+    "split": {
+      "n_pilot": 15,
+      "n_test": 34,
+      "n_val": 10,
+      "real_audit_folds": 5
+    },
+    "streams": {
+      "model": {
+        "sfreq": 200.0,
+        "l_freq": 0.5,
+        "h_freq": 75.0,
+        "notch": 60.0,
+        "avg_ref": true
+      },
+      "spectral": {
+        "sfreq": 200.0,
+        "l_freq": 1.0,
+        "h_freq": 40.0,
+        "avg_ref": true,
+        "aperiodic_range": [
+          2.0,
+          30.0
+        ],
+        "aperiodic_min_r2": 0.9
+      },
+      "eye": {
+        "l_freq": 0.1,
+        "avg_ref": false,
+        "heog": [
+          "AF7",
+          "AF8"
+        ],
+        "veog": [
+          "Fp1",
+          "Fp2"
+        ]
+      },
+      "emg": {
+        "band": [
+          40.0,
+          55.0
+        ]
+      },
+      "pad_s": 1.0
+    },
+    "normalization": "global_train",
+    "background": {
+      "window_s": 3.0,
+      "trim_ms": 900,
+      "trim_mode": "trim_and_drop",
+      "align_samples": 4,
+      "bad_window": {
+        "max_abs_uv": 200.0,
+        "min_std_uv": 0.5,
+        "max_abs_exclude": "none",
+        "min_windows": 8,
+        "amp_rule": "robust_z",
+        "robust_z_max": 3.0
+      }
+    },
+    "task_component": {
+      "band": [
+        8.0,
+        13.0
+      ],
+      "fir_transition_hz": 2.0,
+      "reg": 0.01,
+      "left_neighborhood": [
+        "C3",
+        "C1",
+        "C5",
+        "FC3",
+        "FC1",
+        "FC5",
+        "CP3",
+        "CP1",
+        "CP5"
+      ],
+      "right_neighborhood": [
+        "C4",
+        "C2",
+        "C6",
+        "FC4",
+        "FC2",
+        "FC6",
+        "CP4",
+        "CP2",
+        "CP6"
+      ],
+      "emg_band": [
+        20.0,
+        40.0
+      ],
+      "band_peak": {
+        "fit_range": [
+          2.0,
+          30.0
+        ],
+        "exclude": [
+          7.0,
+          14.0
+        ],
+        "min_db": 1.0,
+        "psd_nperseg_s": 2.0,
+        "segments": "rest"
+      },
+      "n_candidates": 32,
+      "hemisphere": "single",
+      "side_rule": "higher_rest_band_peak_db",
+      "posterior_ratio_max": 0.425,
+      "max_fail_fraction": 0.2,
+      "s_star": 0.5,
+      "s_low": 0.35,
+      "s_high": 0.65,
+      "by_confound": {
+        "alpha": {
+          "s_star": 1.077,
+          "s_low": 0.652,
+          "s_high": 1.8
+        },
+        "saccade": {
+          "s_star": 1.6,
+          "s_low": 0.974,
+          "s_high": 1.8
+        }
+      }
+    },
+    "alpha_component": {
+      "band": [
+        8.0,
+        13.0
+      ],
+      "fir_transition_hz": 2.0,
+      "reg": 0.01,
+      "posterior": [
+        "O1",
+        "Oz",
+        "O2",
+        "PO7",
+        "PO3",
+        "POz",
+        "PO4",
+        "PO8",
+        "P7",
+        "P5",
+        "P3",
+        "P1",
+        "Pz",
+        "P2",
+        "P4",
+        "P6",
+        "P8",
+        "Iz"
+      ],
+      "central": [
+        "C3",
+        "Cz",
+        "C4"
+      ],
+      "band_peak": {
+        "fit_range": [
+          2.0,
+          30.0
+        ],
+        "exclude": [
+          7.0,
+          14.0
+        ],
+        "min_db": 1.0,
+        "psd_nperseg_s": 2.0,
+        "segments": "eyes_closed"
+      },
+      "taper_s": 0.25,
+      "k_ref": 1.0,
+      "reference": "ec_eo",
+      "ec_eo_log_ratio": 2.76,
+      "a_star": 1.0,
+      "min_projection_ratio": 0.1,
+      "degenerate_truth": {
+        "min_delta_ba_neu": 0.02,
+        "min_split_half": 0.5
+      },
+      "max_degenerate_fraction": 0.2
+    },
+    "saccade": {
+      "lateral_runs": [
+        3,
+        7,
+        11,
+        4,
+        8,
+        12
+      ],
+      "highpass": 0.1,
+      "epoch": [
+        -0.5,
+        1.5
+      ],
+      "activation_window": [
+        0.0,
+        1.0
+      ],
+      "activation_lowpass": 4.0,
+      "n_pca": 30,
+      "n_permutations": 1000,
+      "null_quantile": 0.95,
+      "max_failed_subjects": 5,
+      "selection_order": "correlation_first",
+      "template_method": "eog_regression",
+      "regression": {
+        "min_split_half": 0.5,
+        "min_events_per_half": 10,
+        "guard_ms": 50
+      },
+      "ocular_sites": [
+        "AF7",
+        "AF8",
+        "F7",
+        "F8",
+        "Fp1",
+        "Fp2",
+        "FT7",
+        "FT8"
+      ],
+      "ocular_enrichment_min": 1.0,
+      "bipolarity_min": 1.0,
+      "left_sites": [
+        "F7",
+        "AF7"
+      ],
+      "right_sites": [
+        "F8",
+        "AF8"
+      ],
+      "rightward_sign": -1,
+      "mode": "presence",
+      "ramp_ms": 40,
+      "onset_window_s": [
+        0.3,
+        1.5
+      ],
+      "topo_jitter": 0.1,
+      "amplitude_uv": 149.34,
+      "spike": {
+        "enabled": true,
+        "duration_ms": 25,
+        "amplitude_ratio": 0.3,
+        "latency_jitter_ms": 5,
+        "amp_jitter": 0.2
+      },
+      "mismatch_pool_n": 4,
+      "mismatch": {
+        "dipole_rotation_deg": 20,
+        "frontotemporal_ratio": [
+          0.7,
+          1.4
+        ]
+      }
+    },
+    "design": {
+      "p_series": [
+        null,
+        0.5,
+        0.75,
+        0.9,
+        1.0
+      ],
+      "factorial_p": 0.9,
+      "factorial_s": [
+        "s_low",
+        "s_star",
+        "s_high"
+      ],
+      "factorial_amp": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "corner_p": 1.0,
+      "corner_s": [
+        "s_low",
+        "s_high"
+      ],
+      "corner_amp": [
+        0.5,
+        1.5
+      ],
+      "mismatch_alpha_shift_hz": [
+        -2.0,
+        2.0
+      ],
+      "regressor_contamination": [
+        0.0,
+        0.1,
+        0.25
+      ],
+      "h1_test_amps": [
+        0.0,
+        0.125,
+        0.25,
+        0.5,
+        1.0
+      ],
+      "core_models": [
+        "csoanet",
+        "eegnet",
+        "shallow",
+        "cbramod"
+      ],
+      "supplementary_models": [
+        "labram"
+      ],
+      "seeds_p_series": 3,
+      "seeds_other": 2,
+      "p_series_seed_overrides": {
+        "0.75": 2
+      },
+      "supplementary": {
+        "confounds": [
+          "alpha"
+        ],
+        "p_series_seeds": 3,
+        "factorial_seeds": 2,
+        "factorial_cells": [
+          [
+            "s_star",
+            1.0
+          ],
+          [
+            "s_low",
+            1.0
+          ],
+          [
+            "s_high",
+            1.0
+          ],
+          [
+            "s_star",
+            0.5
+          ],
+          [
+            "s_star",
+            1.5
+          ]
+        ]
+      },
+      "reference_models": []
+    },
+    "calibration": {
+      "min_ba_p05": 0.65,
+      "target_delta_ba_neu": [
+        0.12,
+        0.28
+      ],
+      "calib_models": [
+        "csoanet",
+        "cbramod"
+      ],
+      "s_grid": [
+        0.222,
+        0.353,
+        0.5,
+        0.667,
+        0.857,
+        1.077,
+        1.333
+      ],
+      "amp_grid": [
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "amp_grid_by_confound": {
+        "alpha": [
+          1.0,
+          1.5,
+          2.0
+        ]
+      },
+      "p5_s_rule": "smallest_all_ba_ok",
+      "s_grid_extension": [
+        1.6,
+        1.8
+      ],
+      "p8b": {
+        "confound": "saccade",
+        "seeds": [
+          2,
+          3
+        ],
+        "rule": "mean_of_8_in_window"
+      }
+    },
+    "training": {
+      "batch_size": 64,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "max_epochs": 60,
+      "patience": 8,
+      "device": "cuda",
+      "num_workers": 0
+    },
+    "foundation": {
+      "cbramod": {
+        "repo_path": "D:/project/CBraMod",
+        "checkpoint": "D:/project/CBraMod/pretrained_weights/pretrained_weights.pth",
+        "patch_size": 200,
+        "input_scale": 0.01
+      },
+      "labram": {
+        "repo_path": "D:/project/LaBraM",
+        "checkpoint": "D:/project/LaBraM/checkpoints/labram-base.pth",
+        "patch_size": 200,
+        "input_scale": 0.01,
+        "model_kwargs": {
+          "qkv_bias": false,
+          "use_rel_pos_bias": false,
+          "use_abs_pos_emb": true,
+          "init_values": 0.1,
+          "drop_path": 0.1,
+          "init_scale": 0.001,
+          "use_mean_pooling": true
+        }
+      },
+      "labram_finetune": {
+        "lr": 0.0005,
+        "min_lr": 1e-06,
+        "warmup_epochs": 5,
+        "layer_decay": 0.65,
+        "weight_decay": 0.05,
+        "label_smoothing": 0.0
+      },
+      "finetune": {
+        "backbone_lr": 0.0001,
+        "head_lr_base": 0.001,
+        "head_lr_ref_batch": 256,
+        "weight_decay": 0.05,
+        "clip_grad_norm": 1.0,
+        "cosine_eta_min": 1e-06,
+        "label_smoothing": 0.1
+      },
+      "cbramod_head": {
+        "type": "all_patch_reps",
+        "dropout": 0.1
+      }
+    },
+    "probe": {
+      "Cs": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "inner_folds": 5,
+      "pca_dims": [
+        16,
+        64,
+        256
+      ],
+      "within_subject_folds": 5,
+      "max_train_windows": 3000
+    },
+    "erasure": {
+      "reg": 1e-06,
+      "p_levels": [
+        0.5,
+        0.75,
+        0.9,
+        1.0
+      ]
+    },
+    "intervention": {
+      "alpha_band": [
+        8.0,
+        13.0
+      ],
+      "control_band": [
+        20.0,
+        25.0
+      ],
+      "transition_hz": 1.0,
+      "heog_method": "saccade_locked"
+    },
+    "ig": {
+      "bands": {
+        "delta": [
+          0.0,
+          4.0
+        ],
+        "theta": [
+          4.0,
+          8.0
+        ],
+        "alpha": [
+          8.0,
+          13.0
+        ],
+        "beta": [
+          13.0,
+          30.0
+        ],
+        "gamma": [
+          30.0,
+          75.0
+        ]
+      },
+      "steps": 32,
+      "windows_per_unit": 200,
+      "p_levels": [
+        0.9,
+        1.0
+      ],
+      "zero_baseline": true,
+      "batch": 16,
+      "batch_by_model": {
+        "shallow": 2,
+        "cbramod": 4,
+        "labram": 1
+      },
+      "frontal_lateral": [
+        "F7",
+        "AF7",
+        "F8",
+        "AF8",
+        "FT7",
+        "FT8",
+        "Fp1",
+        "Fp2"
+      ]
+    },
+    "saccade_detection": {
+      "lowpass": 20.0,
+      "window": [
+        0.0,
+        1.0
+      ],
+      "step_window_ms": 100,
+      "step_mad_k": 5.0,
+      "min_amplitude_uv": 15.0,
+      "return_saccade_window": [
+        0.0,
+        1.5
+      ]
+    },
+    "h4": {
+      "k_min": 10
+    },
+    "real_audit": {
+      "window": [
+        0.0,
+        4.0
+      ]
+    },
+    "stats": {
+      "n_boot": 2000,
+      "ci": 0.95,
+      "sesoi_ba_pp": 5.0,
+      "sesoi_delta_ba_neu": 0.05,
+      "h2_delta": 0.05,
+      "h2_d_range": [
+        0.3,
+        0.8
+      ],
+      "h3_min_corr_lower": 0.3,
+      "h3r_max_bias": 0.05,
+      "min_reliability": 0.5,
+      "p12_exclude_cells": [
+        "alpha_p0.9_s_low_a1.5",
+        "saccade_p0.9_s_star_a1"
+      ],
+      "p12_extra_results": [
+        "P8c"
+      ]
+    },
+    "tbd_registry": [
+      {
+        "key": "background.window_s",
+        "source": "P2"
+      },
+      {
+        "key": "background.trim_ms",
+        "source": "P2"
+      },
+      {
+        "key": "background.trim_mode",
+        "source": "P2"
+      },
+      {
+        "key": "background.bad_window",
+        "source": "prereg-6"
+      },
+      {
+        "key": "streams.spectral.aperiodic_min_r2",
+        "source": "prereg-6"
+      },
+      {
+        "key": "task_component.reg",
+        "source": "P1a"
+      },
+      {
+        "key": "task_component.band_peak",
+        "source": "P1a"
+      },
+      {
+        "key": "task_component.max_fail_fraction",
+        "source": "P1a"
+      },
+      {
+        "key": "task_component.hemisphere",
+        "source": "P1a"
+      },
+      {
+        "key": "task_component.side_rule",
+        "source": "P1a"
+      },
+      {
+        "key": "task_component.posterior_ratio_max",
+        "source": "P1a"
+      },
+      {
+        "key": "alpha_component.band_peak",
+        "source": "P1a"
+      },
+      {
+        "key": "task_component.s_star",
+        "source": "P4"
+      },
+      {
+        "key": "task_component.s_low",
+        "source": "P4"
+      },
+      {
+        "key": "task_component.s_high",
+        "source": "P4"
+      },
+      {
+        "key": "task_component.by_confound",
+        "source": "P4+P8b/P8c"
+      },
+      {
+        "key": "alpha_component.reg",
+        "source": "P1a"
+      },
+      {
+        "key": "alpha_component.taper_s",
+        "source": "P1a"
+      },
+      {
+        "key": "alpha_component.a_star",
+        "source": "P5"
+      },
+      {
+        "key": "alpha_component.min_projection_ratio",
+        "source": "P1a"
+      },
+      {
+        "key": "alpha_component.degenerate_truth",
+        "source": "P1a+P8"
+      },
+      {
+        "key": "alpha_component.max_degenerate_fraction",
+        "source": "P1a"
+      },
+      {
+        "key": "saccade.amplitude_uv",
+        "source": "P6/P10a"
+      },
+      {
+        "key": "saccade.selection_order",
+        "source": "P6"
+      },
+      {
+        "key": "saccade.ocular_enrichment_min",
+        "source": "P6"
+      },
+      {
+        "key": "saccade.bipolarity_min",
+        "source": "P6"
+      },
+      {
+        "key": "saccade.spike.amplitude_ratio",
+        "source": "待核实"
+      },
+      {
+        "key": "design.regressor_contamination",
+        "source": "prereg"
+      },
+      {
+        "key": "intervention.control_band",
+        "source": "prereg"
+      },
+      {
+        "key": "intervention.heog_method",
+        "source": "prereg"
+      },
+      {
+        "key": "ig.windows_per_unit",
+        "source": "P9"
+      },
+      {
+        "key": "ig.batch",
+        "source": "P9"
+      },
+      {
+        "key": "ig.batch_by_model",
+        "source": "P9"
+      },
+      {
+        "key": "training.device",
+        "source": "P9"
+      },
+      {
+        "key": "saccade_detection.step_mad_k",
+        "source": "pilot"
+      },
+      {
+        "key": "saccade_detection.min_amplitude_uv",
+        "source": "pilot"
+      },
+      {
+        "key": "stats.sesoi_ba_pp",
+        "source": "P12"
+      },
+      {
+        "key": "stats.sesoi_delta_ba_neu",
+        "source": "P12"
+      },
+      {
+        "key": "stats.h2_delta",
+        "source": "P12"
+      },
+      {
+        "key": "stats.h3_min_corr_lower",
+        "source": "P12"
+      },
+      {
+        "key": "stats.h3r_max_bias",
+        "source": "P12"
+      },
+      {
+        "key": "foundation.cbramod.input_scale",
+        "source": "official_repo"
+      },
+      {
+        "key": "foundation.labram.input_scale",
+        "source": "待核实"
+      },
+      {
+        "key": "foundation.labram",
+        "source": "official_repo"
+      },
+      {
+        "key": "foundation.labram_finetune",
+        "source": "official_repo"
+      }
+    ],
+    "confirmed": [
+      "physionet.original_reference",
+      "background.window_s",
+      "background.trim_ms",
+      "background.trim_mode",
+      "foundation.cbramod.input_scale",
+      "saccade.amplitude_uv",
+      "ig.windows_per_unit",
+      "ig.batch",
+      "ig.batch_by_model",
+      "training.device",
+      "task_component.max_fail_fraction",
+      "alpha_component.degenerate_truth",
+      "background.bad_window",
+      "streams.spectral.aperiodic_min_r2",
+      "task_component.reg",
+      "task_component.band_peak",
+      "task_component.hemisphere",
+      "task_component.side_rule",
+      "task_component.posterior_ratio_max",
+      "alpha_component.band_peak",
+      "alpha_component.reg",
+      "alpha_component.taper_s",
+      "alpha_component.a_star",
+      "alpha_component.min_projection_ratio",
+      "alpha_component.max_degenerate_fraction",
+      "saccade.selection_order",
+      "saccade.ocular_enrichment_min",
+      "saccade.bipolarity_min",
+      "saccade.spike.amplitude_ratio",
+      "design.regressor_contamination",
+      "intervention.control_band",
+      "intervention.heog_method",
+      "saccade_detection.step_mad_k",
+      "saccade_detection.min_amplitude_uv",
+      "foundation.labram.input_scale",
+      "foundation.labram",
+      "foundation.labram_finetune",
+      "task_component.s_star",
+      "task_component.s_low",
+      "task_component.s_high",
+      "task_component.by_confound",
+      "stats.sesoi_ba_pp",
+      "stats.sesoi_delta_ba_neu",
+      "stats.h2_delta",
+      "stats.h3_min_corr_lower",
+      "stats.h3r_max_bias"
+    ]
+  }
+}

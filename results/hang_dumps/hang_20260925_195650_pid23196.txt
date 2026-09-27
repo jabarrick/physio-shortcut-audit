@@ -1,0 +1,111 @@
+Process 23196: D:\miniconda\python.exe -u -m p3audit.cli --confirmatory run-units
+Python v3.12.7 (D:\miniconda\python.exe)
+
+Thread 13220 (active): "MainThread"
+    train_model (p3audit\training\trainer.py:191)
+        Arguments:
+            model: <FoundationAdapter at 0x23e812740b0>
+            X_tr: <numpy.ndarray at 0x2410a49d830>
+            y_tr: <numpy.ndarray at 0x23e811bf210>
+            X_va: <numpy.ndarray at 0x2410a49edf0>
+            y_va: <numpy.ndarray at 0x2410a49f210>
+            cfg: {...}
+            seed: 1
+            device: <torch.device at 0x23f64ff5990>
+            max_epochs: None
+            verbose: False
+        Locals:
+            tc: {"batch_size": 64, "lr": 0.001, "weight_decay": 0, "max_epochs": 60, "patience": 8, "device": "cuda", "num_workers": 0}
+            epochs: 60
+            steps: 37
+            opt: <AdamW at 0x23f64f96f90>
+            sched: <CosineAnnealingLR at 0x23f64f97620>
+            clip: 1
+            loss_fn: <CrossEntropyLoss at 0x23f64f961e0>
+            rng: <numpy.random._generator.Generator at 0x2410a4b8580>
+            best: 0.8592325920524972
+            best_state: {"norm.mean": <Tensor at 0x2410a3d3e30>, "norm.std": <Tensor at 0x23f6501a4e0>, ...}
+            bad: 0
+            hist: [{"epoch": 0, "loss": 0.5719870907636037, "val_ba": 0.8592325920524972}]
+            t_start: 1790353163.3857536
+            ep: 1
+            tot: 0
+            b: <numpy.ndarray at 0x24201e38390>
+            xb: <Tensor at 0x23f64fa9310>
+            yb: <Tensor at 0x23f65047b60>
+            loss: <Tensor at 0x23f65046940>
+            va: 0.8592325920524972
+    run_unit (p3audit\experiments\unit.py:112)
+        Arguments:
+            ctx: <Context at 0x23ec24ffe00>
+            unit: <Unit at 0x23e8120c680>
+            device: <cell at 0x24201bd7e20>
+            fallback_standin: False
+            max_epochs: None
+            overwrite: False
+            verbose: False
+            metrics: ("truth", "probe", "erasure", "sri", "heog", "ig")
+            roles: {...}
+            out_dir: "units"
+        Locals:
+            cfg: {...}
+            out_path: <WindowsPath at 0x24201dcccf0>
+            t0: 1790353146.7832987
+            cell: <Cell at 0x23e811ffe60>
+            seed: 1
+            sp: <Split at 0x23ec2570860>
+            tr_s: [1, 10, 11, 12, 14, 24, 28, 29, 32, 33, 34, 38, 41, 43, 47, 48, 53, 55, 57, 60, 61, 64, 66, 69, 70, 74, 75, 77, 79, 81, ...]
+            va_s: [4, 27, 54, 83, 85, 99, 108]
+            te_s: [2, 13, 15, 16, 19, 25, 35, 42, 44, 46, 50, 52, 62, 65, 72, 78, 95, 102, 106, 109]
+            caches: {1: <SubjectCache at 0x23e81214260>, 10: <SubjectCache at 0x23e81214ad0>, 11: <SubjectCache at 0x23e81215100>, ...}
+            ch: ["FC5", "FC3", "FC1", "FCz", "FC2", "FC4", "FC6", "C5", "C3", "C1", "Cz", "C2", "C4", "C6", "CP5", "CP3", "CP1", "CPz", ...]
+            rec: {"uid": "cbramod__saccade_p0.9_s_star_a1__seed1", "model": "cbramod", ...}
+            _moderator: <function at 0x24201da7c40>
+            tr: <ComposedSet at 0x2410a088860>
+            va: <ComposedSet at 0x23e810d4c80>
+            X_tr: <numpy.ndarray at 0x2410a49d830>
+            X_va: <numpy.ndarray at 0x2410a49edf0>
+            is_random: False
+    cmd_run_units (p3audit\cli.py:135)
+        Arguments:
+            args: <Namespace at 0x23ec2e88cb0>
+        Locals:
+            run_unit: <function at 0x23e811f5120>
+            ctx: <Context at 0x23ec24ffe00>
+            units: [<Unit at 0x23e80649b80>, <Unit at 0x23e81182ea0>, <Unit at 0x23efebddfa0>, <Unit at 0x23e80fa66f0>, ...]
+            failed: []
+            u: <Unit at 0x23e8120c680>
+    main (p3audit\cli.py:210)
+        Arguments:
+            argv: None
+        Locals:
+            ap: <ArgumentParser at 0x23e926e3470>
+            sub: <_SubParsersAction at 0x23ec2e88a10>
+            p: <ArgumentParser at 0x23ec2e89d00>
+            a: "--shard"
+            name: "shu-audit"
+            fn: <function at 0x23ec2e456c0>
+            args: <Namespace at 0x23ec2e88cb0>
+    <module> (p3audit\cli.py:214)
+    _run_code (<frozen runpy>:88)
+        Arguments:
+            code: <code at 0x23e91e6fc50>
+            run_globals: {"__name__": "__main__", ...}
+            init_globals: None
+            mod_name: "__main__"
+            mod_spec: <ModuleSpec at 0x23e92181d30>
+            pkg_name: "p3audit"
+            script_name: None
+        Locals:
+            loader: <SourceFileLoader at 0x23e92181df0>
+            fname: "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\cli.py"
+            cached: "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\__pycache__\cli.cpython-312.pyc"
+    _run_module_as_main (<frozen runpy>:198)
+        Arguments:
+            mod_name: "p3audit.cli"
+            alter_argv: True
+        Locals:
+            mod_spec: <ModuleSpec at 0x23e92181d30>
+            code: <code at 0x23e91e6fc50>
+            main_globals: {"__name__": "__main__", ...}
+Thread 34300 (idle)

@@ -1,0 +1,4 @@
+# Keep every file byte-for-byte as committed.  The preregistered code hash is a
+# SHA-256 over the raw bytes of p3audit/**/*.py (LF line endings); a CRLF
+# conversion on Windows checkout would change it.  See scripts/verify_code_hash.py.
+* -text

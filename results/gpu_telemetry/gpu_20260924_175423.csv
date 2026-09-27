@@ -1,0 +1,3 @@
+local_time,timestamp,temperature.gpu,power.draw,clocks.sm,clocks.mem,utilization.gpu,memory.used,memory.total,pstate,clocks_throttle_reasons.active
+2026-09-24 17:54:23,2026/09/24 17:54:23.529, 56, 20.86 W, 2370 MHz, 8001 MHz, 0 %, 0 MiB, 8188 MiB, P0, 0x0000000000000004
+2026-09-24 17:54:33,2026/09/24 17:54:35.083, 58, 20.85 W, 2370 MHz, 8001 MHz, 0 %, 0 MiB, 8188 MiB, P0, 0x0000000000000004

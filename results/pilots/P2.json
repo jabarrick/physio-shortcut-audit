@@ -1,0 +1,93 @@
+{
+  "n_subjects": 109,
+  "n_excluded": 4,
+  "excluded": [
+    {
+      "subject": 88,
+      "reasons": "R1 sfreq [128.0, 160.0]; R3 run 4 trials 19 vs mode 15; R3 run 6 trials 19 vs mode 15; R3 run 8 trials 19 vs mode 15; R3 run 10 trials 19 vs mode 15; R3 run 12 trials 19 vs mode 15; R3 run 14 trials 19 vs mode 15"
+    },
+    {
+      "subject": 92,
+      "reasons": "R1 sfreq [128.0, 160.0]; R3 run 4 trials 19 vs mode 15; R3 run 6 trials 19 vs mode 15; R3 run 8 trials 19 vs mode 15; R3 run 10 trials 19 vs mode 15; R3 run 12 trials 19 vs mode 15; R3 run 14 trials 19 vs mode 15"
+    },
+    {
+      "subject": 100,
+      "reasons": "R1 sfreq [128.0, 160.0]; R3 run 4 trials 12 vs mode 15; R3 run 6 trials 12 vs mode 15; R3 run 8 trials 12 vs mode 15; R3 run 10 trials 12 vs mode 15; R3 run 12 trials 12 vs mode 15; R3 run 14 trials 12 vs mode 15"
+    },
+    {
+      "subject": 104,
+      "reasons": "R4 run 8 duration 106.0s vs mode 123.0"
+    }
+  ],
+  "t0_duration_s": {
+    "median": 4.1,
+    "p5": 4.1,
+    "p95": 4.2
+  },
+  "return_saccades": {
+    "detection_rate": 0.31746031746031744,
+    "latency_plus_duration_p95_ms": 1388.1249999999993,
+    "latency_plus_duration_quantiles_ms": {
+      "50": 618.7499999999999,
+      "75": 901.5625,
+      "90": 1213.1250000000002,
+      "95": 1388.1249999999993
+    }
+  },
+  "recommended_trim_ms": 1388.1249999999993,
+  "trim_headroom_ms": {
+    "3.0": 1099.9999999999995,
+    "4.0": 99.99999999999964
+  },
+  "window_counts": [
+    {
+      "window_s": 3.0,
+      "mode": "drop_saccade_windows",
+      "trim_ms": 0.0,
+      "mean": 50.8,
+      "min": 9.0,
+      "max": 81.0
+    },
+    {
+      "window_s": 3.0,
+      "mode": "trim_and_drop",
+      "trim_ms": 600.0,
+      "mean": 56.46666666666667,
+      "min": 11.0,
+      "max": 80.0
+    },
+    {
+      "window_s": 3.0,
+      "mode": "trim_and_drop",
+      "trim_ms": 900.0,
+      "mean": 60.06666666666667,
+      "min": 15.0,
+      "max": 80.0
+    },
+    {
+      "window_s": 3.0,
+      "mode": "trim_start",
+      "trim_ms": 1388.1249999999993,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "window_s": 4.0,
+      "mode": "drop_saccade_windows",
+      "trim_ms": 0.0,
+      "mean": 49.13333333333333,
+      "min": 6.0,
+      "max": 80.0
+    },
+    {
+      "window_s": 4.0,
+      "mode": "trim_start",
+      "trim_ms": 1388.1249999999993,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  ],
+  "decision_note": "set background.window_s / trim_mode / trim_ms (TBD P2) from these numbers; trim_start is infeasible here (trim + window_s > T0 duration), so the choice is drop_saccade_windows vs trim_and_drop at a sub-95th-percentile trim"
+}

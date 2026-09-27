@@ -1,0 +1,83 @@
+{
+  "device": "cuda",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "dedicated_vram_mb": 8187.5,
+  "bands": [
+    "delta",
+    "theta",
+    "alpha",
+    "beta",
+    "gamma",
+    "rest"
+  ],
+  "passes_band_removed": 6,
+  "zero_baseline_factor": 1.1666666666666667,
+  "steps": 32,
+  "windows_per_unit": 200,
+  "n_windows_timed": 32,
+  "filterbank_max_rel_reconstruction_error": 2.2896607276834402e-07,
+  "models": {
+    "csoanet": {
+      "standin": false,
+      "units_with_ig": 68,
+      "configured_batch": 16,
+      "at_batch_4": {
+        "seconds_per_window": 0.15857883542776108,
+        "peak_mem_mb": 746.0966796875
+      },
+      "predicted_peak_mem_mb_at_configured": 2984.38671875,
+      "at_configured_batch": {
+        "seconds_per_window": 0.10479208081960678,
+        "peak_mem_mb": 2917.6728515625
+      },
+      "configured_batch_measured": true,
+      "hours_basis_batch": 16,
+      "hours": 0.4618613932419707
+    },
+    "eegnet": {
+      "standin": false,
+      "units_with_ig": 68,
+      "configured_batch": 16,
+      "at_batch_4": {
+        "seconds_per_window": 0.09702243655920029,
+        "peak_mem_mb": 514.50390625
+      },
+      "predicted_peak_mem_mb_at_configured": 2058.015625,
+      "at_configured_batch": {
+        "seconds_per_window": 0.06719352304935455,
+        "peak_mem_mb": 2012.322265625
+      },
+      "configured_batch_measured": true,
+      "hours_basis_batch": 16,
+      "hours": 0.2961492312175257
+    },
+    "shallow": {
+      "standin": false,
+      "units_with_ig": 68,
+      "configured_batch": 2,
+      "at_batch_2": {
+        "seconds_per_window": 0.3279321864247322,
+        "peak_mem_mb": 3701.734375
+      },
+      "hours_basis_batch": 2,
+      "hours": 1.4453307475756716
+    },
+    "cbramod": {
+      "standin": false,
+      "units_with_ig": 68,
+      "configured_batch": 4,
+      "at_batch_4": {
+        "seconds_per_window": 1.0671401172876358,
+        "peak_mem_mb": 4839.60400390625
+      },
+      "hours_basis_batch": 4,
+      "hours": 4.703321257675136
+    }
+  },
+  "hours_total_timed_models": 6.906662629710304,
+  "units_with_ig_not_timed": {
+    "labram": 14
+  },
+  "note": "hours = units_with_ig x windows_per_unit x s/window x (K+1)/K, per model, at hours_basis_batch.  IG only: probes, LEACE, bootstrap not included.  Models in units_with_ig_not_timed (LaBraM, a stand-in) are not in the total."
+}

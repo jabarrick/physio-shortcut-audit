@@ -1,0 +1,98 @@
+{
+ "alpha/erasure_keep/mismatch": {
+  "bias": -0.02680185534875248,
+  "abs_bias": 0.03903157578133226,
+  "n": 16,
+  "pass": true
+ },
+ "alpha/sri_post/mismatch": {
+  "bias": -0.11358361706753206,
+  "abs_bias": 0.11358361706753206,
+  "n": 16,
+  "pass": false
+ },
+ "alpha/sri_post/p1": {
+  "bias": 0.03048340028842992,
+  "abs_bias": 0.052267640063605895,
+  "n": 16,
+  "pass": false
+ },
+ "alpha/ig_share/mismatch": {
+  "bias": -0.13741519895979176,
+  "abs_bias": 0.13741519895979176,
+  "n": 16,
+  "pass": false
+ },
+ "alpha/ig_share/p1": {
+  "bias": 0.017101447812590008,
+  "abs_bias": 0.024338412546249404,
+  "n": 16,
+  "pass": true
+ },
+ "alpha/ig_norm_abs/mismatch": {
+  "bias": -0.13020735261620425,
+  "abs_bias": 0.13020735261620425,
+  "n": 16,
+  "pass": false
+ },
+ "alpha/ig_norm_abs/p1": {
+  "bias": 0.03764143031529346,
+  "abs_bias": 0.04055337751688613,
+  "n": 16,
+  "pass": true
+ },
+ "alpha/heog_reg/mismatch": {
+  "bias": -0.0823366784882117,
+  "abs_bias": 0.0823366784882117,
+  "n": 16,
+  "pass": false
+ },
+ "alpha/heog_reg/p1": {
+  "bias": 0.03459776310082997,
+  "abs_bias": 0.035411063683730516,
+  "n": 16,
+  "pass": true
+ },
+ "saccade/erasure_keep/mismatch": {
+  "bias": -0.018238713268423475,
+  "abs_bias": 0.026414932037605164,
+  "n": 8,
+  "pass": true
+ },
+ "saccade/heog_reg/mismatch": {
+  "bias": -0.06473204766652514,
+  "abs_bias": 0.06473204766652514,
+  "n": 8,
+  "pass": false
+ },
+ "saccade/heog_reg/p1": {
+  "bias": 0.0014236430857596846,
+  "abs_bias": 0.013096732576789121,
+  "n": 32,
+  "pass": true
+ },
+ "saccade/ig_share/mismatch": {
+  "bias": -0.005999506557453238,
+  "abs_bias": 0.009034276134083294,
+  "n": 8,
+  "pass": true
+ },
+ "saccade/ig_share/p1": {
+  "bias": 0.011975019481884092,
+  "abs_bias": 0.040715690751069344,
+  "n": 32,
+  "pass": true
+ },
+ "saccade/ig_norm_abs/mismatch": {
+  "bias": -0.007788763984637168,
+  "abs_bias": 0.027957296670826692,
+  "n": 8,
+  "pass": true
+ },
+ "saccade/ig_norm_abs/p1": {
+  "bias": -0.10840740465491974,
+  "abs_bias": 0.113366394762903,
+  "n": 32,
+  "pass": false
+ }
+}

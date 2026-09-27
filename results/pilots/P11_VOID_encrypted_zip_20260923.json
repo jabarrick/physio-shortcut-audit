@@ -1,0 +1,631 @@
+{
+  "files": [
+    {
+      "subject": 1,
+      "session": 1,
+      "error": "Mat file appears to be corrupt (first 20 bytes == 0)"
+    },
+    {
+      "subject": 1,
+      "session": 2,
+      "error": "SHU-MI subject 1 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 1,
+      "session": 3,
+      "error": "SHU-MI subject 1 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 1,
+      "session": 4,
+      "error": "SHU-MI subject 1 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 1,
+      "session": 5,
+      "error": "SHU-MI subject 1 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 2,
+      "session": 1,
+      "error": "SHU-MI subject 2 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 2,
+      "session": 2,
+      "error": "SHU-MI subject 2 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 2,
+      "session": 3,
+      "error": "SHU-MI subject 2 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 2,
+      "session": 4,
+      "error": "SHU-MI subject 2 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 2,
+      "session": 5,
+      "error": "SHU-MI subject 2 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 3,
+      "session": 1,
+      "error": "SHU-MI subject 3 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 3,
+      "session": 2,
+      "error": "SHU-MI subject 3 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 3,
+      "session": 3,
+      "error": "SHU-MI subject 3 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 3,
+      "session": 4,
+      "error": "SHU-MI subject 3 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 3,
+      "session": 5,
+      "error": "SHU-MI subject 3 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 4,
+      "session": 1,
+      "error": "SHU-MI subject 4 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 4,
+      "session": 2,
+      "error": "SHU-MI subject 4 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 4,
+      "session": 3,
+      "error": "SHU-MI subject 4 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 4,
+      "session": 4,
+      "error": "SHU-MI subject 4 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 4,
+      "session": 5,
+      "error": "SHU-MI subject 4 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 5,
+      "session": 1,
+      "error": "SHU-MI subject 5 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 5,
+      "session": 2,
+      "error": "SHU-MI subject 5 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 5,
+      "session": 3,
+      "error": "SHU-MI subject 5 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 5,
+      "session": 4,
+      "error": "SHU-MI subject 5 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 5,
+      "session": 5,
+      "error": "SHU-MI subject 5 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 6,
+      "session": 1,
+      "error": "SHU-MI subject 6 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 6,
+      "session": 2,
+      "error": "SHU-MI subject 6 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 6,
+      "session": 3,
+      "error": "SHU-MI subject 6 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 6,
+      "session": 4,
+      "error": "SHU-MI subject 6 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 6,
+      "session": 5,
+      "error": "SHU-MI subject 6 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 7,
+      "session": 1,
+      "error": "SHU-MI subject 7 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 7,
+      "session": 2,
+      "error": "SHU-MI subject 7 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 7,
+      "session": 3,
+      "error": "SHU-MI subject 7 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 7,
+      "session": 4,
+      "error": "SHU-MI subject 7 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 7,
+      "session": 5,
+      "error": "SHU-MI subject 7 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 8,
+      "session": 1,
+      "error": "SHU-MI subject 8 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 8,
+      "session": 2,
+      "error": "SHU-MI subject 8 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 8,
+      "session": 3,
+      "error": "SHU-MI subject 8 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 8,
+      "session": 4,
+      "error": "SHU-MI subject 8 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 8,
+      "session": 5,
+      "error": "SHU-MI subject 8 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 9,
+      "session": 1,
+      "error": "SHU-MI subject 9 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 9,
+      "session": 2,
+      "error": "SHU-MI subject 9 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 9,
+      "session": 3,
+      "error": "SHU-MI subject 9 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 9,
+      "session": 4,
+      "error": "SHU-MI subject 9 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 9,
+      "session": 5,
+      "error": "SHU-MI subject 9 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 10,
+      "session": 1,
+      "error": "SHU-MI subject 10 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 10,
+      "session": 2,
+      "error": "SHU-MI subject 10 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 10,
+      "session": 3,
+      "error": "SHU-MI subject 10 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 10,
+      "session": 4,
+      "error": "SHU-MI subject 10 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 10,
+      "session": 5,
+      "error": "SHU-MI subject 10 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 11,
+      "session": 1,
+      "error": "SHU-MI subject 11 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 11,
+      "session": 2,
+      "error": "SHU-MI subject 11 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 11,
+      "session": 3,
+      "error": "SHU-MI subject 11 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 11,
+      "session": 4,
+      "error": "SHU-MI subject 11 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 11,
+      "session": 5,
+      "error": "SHU-MI subject 11 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 12,
+      "session": 1,
+      "error": "SHU-MI subject 12 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 12,
+      "session": 2,
+      "error": "SHU-MI subject 12 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 12,
+      "session": 3,
+      "error": "SHU-MI subject 12 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 12,
+      "session": 4,
+      "error": "SHU-MI subject 12 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 12,
+      "session": 5,
+      "error": "SHU-MI subject 12 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 13,
+      "session": 1,
+      "error": "SHU-MI subject 13 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 13,
+      "session": 2,
+      "error": "SHU-MI subject 13 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 13,
+      "session": 3,
+      "error": "SHU-MI subject 13 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 13,
+      "session": 4,
+      "error": "SHU-MI subject 13 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 13,
+      "session": 5,
+      "error": "SHU-MI subject 13 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 14,
+      "session": 1,
+      "error": "SHU-MI subject 14 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 14,
+      "session": 2,
+      "error": "SHU-MI subject 14 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 14,
+      "session": 3,
+      "error": "SHU-MI subject 14 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 14,
+      "session": 4,
+      "error": "SHU-MI subject 14 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 14,
+      "session": 5,
+      "error": "SHU-MI subject 14 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 15,
+      "session": 1,
+      "error": "SHU-MI subject 15 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 15,
+      "session": 2,
+      "error": "SHU-MI subject 15 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 15,
+      "session": 3,
+      "error": "SHU-MI subject 15 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 15,
+      "session": 4,
+      "error": "SHU-MI subject 15 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 15,
+      "session": 5,
+      "error": "SHU-MI subject 15 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 16,
+      "session": 1,
+      "error": "SHU-MI subject 16 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 16,
+      "session": 2,
+      "error": "SHU-MI subject 16 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 16,
+      "session": 3,
+      "error": "SHU-MI subject 16 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 16,
+      "session": 4,
+      "error": "SHU-MI subject 16 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 16,
+      "session": 5,
+      "error": "SHU-MI subject 16 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 17,
+      "session": 1,
+      "error": "SHU-MI subject 17 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 17,
+      "session": 2,
+      "error": "SHU-MI subject 17 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 17,
+      "session": 3,
+      "error": "SHU-MI subject 17 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 17,
+      "session": 4,
+      "error": "SHU-MI subject 17 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 17,
+      "session": 5,
+      "error": "SHU-MI subject 17 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 18,
+      "session": 1,
+      "error": "SHU-MI subject 18 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 18,
+      "session": 2,
+      "error": "SHU-MI subject 18 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 18,
+      "session": 3,
+      "error": "SHU-MI subject 18 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 18,
+      "session": 4,
+      "error": "SHU-MI subject 18 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 18,
+      "session": 5,
+      "error": "SHU-MI subject 18 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 19,
+      "session": 1,
+      "error": "SHU-MI subject 19 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 19,
+      "session": 2,
+      "error": "SHU-MI subject 19 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 19,
+      "session": 3,
+      "error": "SHU-MI subject 19 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 19,
+      "session": 4,
+      "error": "SHU-MI subject 19 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 19,
+      "session": 5,
+      "error": "SHU-MI subject 19 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 20,
+      "session": 1,
+      "error": "SHU-MI subject 20 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 20,
+      "session": 2,
+      "error": "SHU-MI subject 20 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 20,
+      "session": 3,
+      "error": "SHU-MI subject 20 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 20,
+      "session": 4,
+      "error": "SHU-MI subject 20 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 20,
+      "session": 5,
+      "error": "SHU-MI subject 20 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 21,
+      "session": 1,
+      "error": "SHU-MI subject 21 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 21,
+      "session": 2,
+      "error": "SHU-MI subject 21 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 21,
+      "session": 3,
+      "error": "SHU-MI subject 21 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 21,
+      "session": 4,
+      "error": "SHU-MI subject 21 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 21,
+      "session": 5,
+      "error": "SHU-MI subject 21 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 22,
+      "session": 1,
+      "error": "SHU-MI subject 22 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 22,
+      "session": 2,
+      "error": "SHU-MI subject 22 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 22,
+      "session": 3,
+      "error": "SHU-MI subject 22 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 22,
+      "session": 4,
+      "error": "SHU-MI subject 22 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 22,
+      "session": 5,
+      "error": "SHU-MI subject 22 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 23,
+      "session": 1,
+      "error": "SHU-MI subject 23 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 23,
+      "session": 2,
+      "error": "SHU-MI subject 23 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 23,
+      "session": 3,
+      "error": "SHU-MI subject 23 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 23,
+      "session": 4,
+      "error": "SHU-MI subject 23 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 23,
+      "session": 5,
+      "error": "SHU-MI subject 23 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 24,
+      "session": 1,
+      "error": "SHU-MI subject 24 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 24,
+      "session": 2,
+      "error": "SHU-MI subject 24 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 24,
+      "session": 3,
+      "error": "SHU-MI subject 24 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 24,
+      "session": 4,
+      "error": "SHU-MI subject 24 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 24,
+      "session": 5,
+      "error": "SHU-MI subject 24 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 25,
+      "session": 1,
+      "error": "SHU-MI subject 25 session 1 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 25,
+      "session": 2,
+      "error": "SHU-MI subject 25 session 2 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 25,
+      "session": 3,
+      "error": "SHU-MI subject 25 session 3 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 25,
+      "session": 4,
+      "error": "SHU-MI subject 25 session 4 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    },
+    {
+      "subject": 25,
+      "session": 5,
+      "error": "SHU-MI subject 25 session 5 not found under C:\\Users\\Yu Gao\\data\\SHU-MI"
+    }
+  ],
+  "continuous_available": false,
+  "note": "public release is epoched (verify); channel list and filter band to confirm"
+}

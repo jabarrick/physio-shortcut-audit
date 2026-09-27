@@ -1,0 +1,31 @@
+# Whitelist: only the code, configuration, deviation record, figures and the
+# small result files are tracked.  Manuscript drafts, outlines, memos and the
+# execution log live in the working folder (the log is on OSF), not in git.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/CITATION.cff
+!/pyproject.toml
+!/watchdog.py
+!/p3audit/
+!/tests/
+!/scripts/
+!/configs/
+!/deviations/
+!/figures/
+!/results/
+!/docs/
+
+# results: keep unit-level records, drop caches and build bundles
+/results/real_cache/
+/results/*.zip
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.idea/
+.vscode/

@@ -1,0 +1,98 @@
+{
+  "alpha/erasure_keep/mismatch": {
+    "bias": -0.03473057065921636,
+    "abs_bias": 0.03665309888533736,
+    "n": 16,
+    "pass": true
+  },
+  "alpha/sri_post/mismatch": {
+    "bias": -0.07952112591040432,
+    "abs_bias": 0.07952112591040432,
+    "n": 16,
+    "pass": false
+  },
+  "alpha/sri_post/p1": {
+    "bias": -0.0616639256381925,
+    "abs_bias": 0.11714313792498118,
+    "n": 32,
+    "pass": false
+  },
+  "alpha/ig_share/mismatch": {
+    "bias": -0.11968030761657222,
+    "abs_bias": 0.11968030761657222,
+    "n": 16,
+    "pass": false
+  },
+  "alpha/ig_share/p1": {
+    "bias": -0.0026127167895577934,
+    "abs_bias": 0.0547569073625545,
+    "n": 32,
+    "pass": false
+  },
+  "alpha/ig_norm_abs/mismatch": {
+    "bias": -0.022392751151255212,
+    "abs_bias": 0.032269014648449265,
+    "n": 16,
+    "pass": true
+  },
+  "alpha/ig_norm_abs/p1": {
+    "bias": -0.054651968729714714,
+    "abs_bias": 0.12093043695300812,
+    "n": 32,
+    "pass": false
+  },
+  "alpha/heog_reg/mismatch": {
+    "bias": -0.03791182539302517,
+    "abs_bias": 0.042559040896967604,
+    "n": 16,
+    "pass": true
+  },
+  "alpha/heog_reg/p1": {
+    "bias": -0.06522256736381776,
+    "abs_bias": 0.1363029582381716,
+    "n": 32,
+    "pass": false
+  },
+  "saccade/erasure_keep/mismatch": {
+    "bias": -0.018238713268423478,
+    "abs_bias": 0.02641493203760519,
+    "n": 8,
+    "pass": true
+  },
+  "saccade/heog_reg/mismatch": {
+    "bias": -0.06473204766652513,
+    "abs_bias": 0.06473204766652513,
+    "n": 8,
+    "pass": false
+  },
+  "saccade/heog_reg/p1": {
+    "bias": 0.0014236430857596932,
+    "abs_bias": 0.013096732576789068,
+    "n": 32,
+    "pass": true
+  },
+  "saccade/ig_share/mismatch": {
+    "bias": -0.005999506557453255,
+    "abs_bias": 0.009034276134083304,
+    "n": 8,
+    "pass": true
+  },
+  "saccade/ig_share/p1": {
+    "bias": 0.011975019481884144,
+    "abs_bias": 0.04071569075106943,
+    "n": 32,
+    "pass": true
+  },
+  "saccade/ig_norm_abs/mismatch": {
+    "bias": -0.007788763984637223,
+    "abs_bias": 0.027957296670826706,
+    "n": 8,
+    "pass": true
+  },
+  "saccade/ig_norm_abs/p1": {
+    "bias": -0.1084074046549198,
+    "abs_bias": 0.11336639476290303,
+    "n": 32,
+    "pass": false
+  }
+}

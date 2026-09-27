@@ -1,0 +1,2 @@
+{"s": 1.077, "amp": 1.0, "model": "csoanet", "seed": 0, "reference": "ec_eo", "ba_matched": 0.7054206161137441, "ba_neutral": 0.5738242799854174, "ba_reversed": 0.4353581844695589, "delta_ba_neu": 0.13159633612832666}
+{"s": 1.077, "amp": 1.0, "model": "cbramod", "seed": 0, "reference": "ec_eo", "ba_matched": 0.6955318082391542, "ba_neutral": 0.5354994531534816, "ba_reversed": 0.3611807327743347, "delta_ba_neu": 0.1600323550856726}

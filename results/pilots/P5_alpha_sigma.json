@@ -1,0 +1,41 @@
+{
+  "s": 1.077,
+  "rows": [
+    {
+      "amp": 1.0,
+      "median_delta_ba_neu": 0.007177360554137813,
+      "per_model": {
+        "csoanet": 0.0024038461538462563,
+        "cbramod": 0.011950874954429369
+      }
+    },
+    {
+      "amp": 1.5,
+      "median_delta_ba_neu": 0.017857956616842807,
+      "per_model": {
+        "csoanet": 0.0023696682464454666,
+        "cbramod": 0.03334624498724015
+      }
+    },
+    {
+      "amp": 2.0,
+      "median_delta_ba_neu": 0.02505240612468107,
+      "per_model": {
+        "csoanet": 0.016690211447320524,
+        "cbramod": 0.033414600802041616
+      }
+    },
+    {
+      "amp": 3.0,
+      "median_delta_ba_neu": 0.05723090594239877,
+      "per_model": {
+        "csoanet": 0.0358868027706889,
+        "cbramod": 0.07857500911410864
+      }
+    }
+  ],
+  "a_star_multiplier": null,
+  "status": "infeasible",
+  "infeasible": true,
+  "note": "report a*/reference in abstract-level conclusions if > 1"
+}

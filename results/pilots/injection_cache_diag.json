@@ -1,0 +1,312 @@
+[
+ {
+  "subject": 9,
+  "cache": false
+ },
+ {
+  "subject": 12,
+  "n_windows": 74,
+  "sigma_alpha": 0.479547047999271,
+  "alpha": {
+   "target": 0.479547047999271,
+   "comp_change_median": 0.4207479953323352,
+   "comp_ratio": 0.8773862691632601,
+   "peak_channel_idx": 47,
+   "sensor_change_median": 0.0711864308986847,
+   "sensor_sd_between_windows": 0.45201899412616015,
+   "sensor_d": 0.15748548583959796,
+   "scalp_change_median": 0.03627159259507717,
+   "B_to_X0_rms": 0.03821704733174356,
+   "wTa": 1.0000000000000016
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.9301455790709658,
+   "comp_ratio": 0.9104335567718757,
+   "peak_channel_idx": 19,
+   "sensor_change_median": 0.5671747354346053,
+   "sensor_sd_between_windows": 0.5827006492473854,
+   "sensor_d": 0.9733552488180108,
+   "scalp_change_median": 0.05033160088091382,
+   "B_to_X0_rms": 0.03800525234466105,
+   "wTa": 0.9999999999999993
+  }
+ },
+ {
+  "subject": 39,
+  "cache": false
+ },
+ {
+  "subject": 53,
+  "n_windows": 21,
+  "sigma_alpha": 0.23835583795877166,
+  "alpha": {
+   "target": 0.23835583795877166,
+   "comp_change_median": 0.20553192762328365,
+   "comp_ratio": 0.8622903025300955,
+   "peak_channel_idx": 59,
+   "sensor_change_median": 0.09396696961743523,
+   "sensor_sd_between_windows": 0.4345667362921795,
+   "sensor_d": 0.2162313904169988,
+   "scalp_change_median": 0.005059478487412505,
+   "B_to_X0_rms": 0.026635325470765733,
+   "wTa": 1.0000000000000002
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.9091871661838438,
+   "comp_ratio": 0.8899193030695955,
+   "peak_channel_idx": 15,
+   "sensor_change_median": 0.39373977374228275,
+   "sensor_sd_between_windows": 0.976352523886196,
+   "sensor_d": 0.40327623897060483,
+   "scalp_change_median": 0.01880737864395776,
+   "B_to_X0_rms": 0.06401294597046309,
+   "wTa": 0.9999999999999991
+  }
+ },
+ {
+  "subject": 61,
+  "n_windows": 15,
+  "sigma_alpha": 0.3283949811307461,
+  "alpha": {
+   "target": 0.3283949811307461,
+   "comp_change_median": 0.21328780260148505,
+   "comp_ratio": 0.6494855733394029,
+   "peak_channel_idx": 62,
+   "sensor_change_median": 0.12944968106136656,
+   "sensor_sd_between_windows": 0.6960848313271353,
+   "sensor_d": 0.18596825449358168,
+   "scalp_change_median": 0.02262291973712749,
+   "B_to_X0_rms": 0.08335022186013974,
+   "wTa": 0.9999999999999999
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.964832713293502,
+   "comp_ratio": 0.9443855871798357,
+   "peak_channel_idx": 20,
+   "sensor_change_median": 0.5904712180743399,
+   "sensor_sd_between_windows": 0.6466093086658569,
+   "sensor_d": 0.9131808190213868,
+   "scalp_change_median": 0.11206996200805364,
+   "B_to_X0_rms": 0.11380086156747421,
+   "wTa": 1.0000000000000018
+  }
+ },
+ {
+  "subject": 70,
+  "n_windows": 67,
+  "sigma_alpha": 0.6933972075781578,
+  "alpha": {
+   "target": 0.6933972075781578,
+   "comp_change_median": 0.6122162785958665,
+   "comp_ratio": 0.8829229075412149,
+   "peak_channel_idx": 59,
+   "sensor_change_median": 0.3433331236990913,
+   "sensor_sd_between_windows": 0.6924409420077832,
+   "sensor_d": 0.4958301897972292,
+   "scalp_change_median": 0.06388130003284509,
+   "B_to_X0_rms": 0.12167448361161083,
+   "wTa": 1.0000000000000013
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.8337448205344469,
+   "comp_ratio": 0.8160757622021575,
+   "peak_channel_idx": 7,
+   "sensor_change_median": 0.3710550600339566,
+   "sensor_sd_between_windows": 0.39698058689966076,
+   "sensor_d": 0.9346932124107696,
+   "scalp_change_median": 0.10472749632961964,
+   "B_to_X0_rms": 0.151756302608417,
+   "wTa": 0.9999999999999991
+  }
+ },
+ {
+  "subject": 74,
+  "n_windows": 69,
+  "sigma_alpha": 0.8641850424455606,
+  "alpha": {
+   "target": 0.8641850424455606,
+   "comp_change_median": 0.7981137670953977,
+   "comp_ratio": 0.923544990823739,
+   "peak_channel_idx": 62,
+   "sensor_change_median": 0.6176996591679753,
+   "sensor_sd_between_windows": 0.9243044247481644,
+   "sensor_d": 0.6682859484701412,
+   "scalp_change_median": 0.150660449707269,
+   "B_to_X0_rms": 0.16487251311598927,
+   "wTa": 1.0
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.9155416974999326,
+   "comp_ratio": 0.89613916658118,
+   "peak_channel_idx": 8,
+   "sensor_change_median": 0.29102296701026376,
+   "sensor_sd_between_windows": 0.6461747074033308,
+   "sensor_d": 0.4503781464609576,
+   "scalp_change_median": 0.059767143412086554,
+   "B_to_X0_rms": 0.0791434042567909,
+   "wTa": 1.0000000000000007
+  }
+ },
+ {
+  "subject": 80,
+  "cache": false
+ },
+ {
+  "subject": 86,
+  "cache": false
+ },
+ {
+  "subject": 87,
+  "n_windows": 77,
+  "sigma_alpha": 1.05073600036779,
+  "alpha": {
+   "target": 1.05073600036779,
+   "comp_change_median": 0.9784688400758874,
+   "comp_ratio": 0.9312223429418933,
+   "peak_channel_idx": 62,
+   "sensor_change_median": 0.7545491286410364,
+   "sensor_sd_between_windows": 1.073432684131815,
+   "sensor_d": 0.702931017282477,
+   "scalp_change_median": 0.2630828109203609,
+   "B_to_X0_rms": 0.22689382965612553,
+   "wTa": 0.9999999999999998
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.9211416547157025,
+   "comp_ratio": 0.90162044723277,
+   "peak_channel_idx": 15,
+   "sensor_change_median": 0.2589418347663788,
+   "sensor_sd_between_windows": 0.5607842504288676,
+   "sensor_d": 0.461749477750756,
+   "scalp_change_median": 0.035662283527619465,
+   "B_to_X0_rms": 0.0653201008572861,
+   "wTa": 1.0000000000000004
+  }
+ },
+ {
+  "subject": 90,
+  "n_windows": 37,
+  "sigma_alpha": 0.6875882737317406,
+  "alpha": {
+   "target": 0.6875882737317406,
+   "comp_change_median": 0.6407083093290407,
+   "comp_ratio": 0.9318197150916074,
+   "peak_channel_idx": 61,
+   "sensor_change_median": 0.378145031486083,
+   "sensor_sd_between_windows": 0.6651578929753297,
+   "sensor_d": 0.5685041634168929,
+   "scalp_change_median": 0.06463791308216393,
+   "B_to_X0_rms": 0.06989730657876352,
+   "wTa": 1.0
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.9278915613614522,
+   "comp_ratio": 0.9082273071196987,
+   "peak_channel_idx": 5,
+   "sensor_change_median": 0.30223382125528175,
+   "sensor_sd_between_windows": 0.28183880008728046,
+   "sensor_d": 1.0723641356750218,
+   "scalp_change_median": 0.06884141529367405,
+   "B_to_X0_rms": 0.05929275361622151,
+   "wTa": 0.9999999999999997
+  }
+ },
+ {
+  "subject": 94,
+  "n_windows": 42,
+  "sigma_alpha": 0.5262346963053346,
+  "alpha": {
+   "target": 0.5262346963053346,
+   "comp_change_median": 0.49395025928926906,
+   "comp_ratio": 0.9386501170623435,
+   "peak_channel_idx": 59,
+   "sensor_change_median": 0.1716130162622358,
+   "sensor_sd_between_windows": 0.7018825706104398,
+   "sensor_d": 0.24450388633098682,
+   "scalp_change_median": 0.01720597854112338,
+   "B_to_X0_rms": 0.07047022542905534,
+   "wTa": 0.9999999999999993
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.8910627247306824,
+   "comp_ratio": 0.8721789621294314,
+   "peak_channel_idx": 16,
+   "sensor_change_median": 0.14868056652593342,
+   "sensor_sd_between_windows": 0.5859311467344104,
+   "sensor_d": 0.25375091826843443,
+   "scalp_change_median": 0.03424442816929041,
+   "B_to_X0_rms": 0.08148102972386623,
+   "wTa": 0.9999999999999986
+  }
+ },
+ {
+  "subject": 101,
+  "n_windows": 65,
+  "sigma_alpha": 0.2093698977858962,
+  "alpha": {
+   "target": 0.2093698977858962,
+   "comp_change_median": 0.18774999415579252,
+   "comp_ratio": 0.8967382424181511,
+   "peak_channel_idx": 48,
+   "sensor_change_median": 0.04981592318222816,
+   "sensor_sd_between_windows": 0.32496707132385677,
+   "sensor_d": 0.15329529536419534,
+   "scalp_change_median": 0.007242992568311735,
+   "B_to_X0_rms": 0.04637439665441917,
+   "wTa": 1.0000000000000002
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.7533379299227825,
+   "comp_ratio": 0.7373728870224868,
+   "peak_channel_idx": 19,
+   "sensor_change_median": 0.26992713946313174,
+   "sensor_sd_between_windows": 0.30425537568282884,
+   "sensor_d": 0.8871729508717617,
+   "scalp_change_median": 0.0681819970921751,
+   "B_to_X0_rms": 0.0674176921122429,
+   "wTa": 1.0000000000000002
+  }
+ },
+ {
+  "subject": 103,
+  "cache": false
+ },
+ {
+  "subject": 105,
+  "n_windows": 75,
+  "sigma_alpha": 0.6468421619684107,
+  "alpha": {
+   "target": 0.6468421619684107,
+   "comp_change_median": 0.5993648891096406,
+   "comp_ratio": 0.9266014560425504,
+   "peak_channel_idx": 61,
+   "sensor_change_median": 0.4418694747800629,
+   "sensor_sd_between_windows": 0.8808838198444295,
+   "sensor_d": 0.5016206051532428,
+   "scalp_change_median": 0.08940517489397592,
+   "B_to_X0_rms": 0.12379416515157926,
+   "wTa": 1.0
+  },
+  "mu": {
+   "target": 1.0216512475319814,
+   "comp_change_median": 0.9484374407165692,
+   "comp_ratio": 0.9283377698678723,
+   "peak_channel_idx": 19,
+   "sensor_change_median": 0.5906494928906021,
+   "sensor_sd_between_windows": 0.4662336512765984,
+   "sensor_d": 1.2668529851359713,
+   "scalp_change_median": 0.13063126242203538,
+   "B_to_X0_rms": 0.10062447269471049,
+   "wTa": 0.9999999999999999
+  }
+ }
+]

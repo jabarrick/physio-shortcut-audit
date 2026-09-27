@@ -1,0 +1,2904 @@
+{
+  "curve": {
+    "5.0": 0.0022522522522522522,
+    "10.0": 0.0,
+    "15.0": 0.0045045045045045045,
+    "20.0": 0.0045045045045045045,
+    "30.0": 0.01126126126126126,
+    "40.0": 0.05405405405405406,
+    "60.0": 0.0990990990990991,
+    "80.0": 0.1554054054054054
+  },
+  "miss_rate_lower_bound": {
+    "5.0": 0.9977477477477478,
+    "10.0": 1.0,
+    "15.0": 0.9954954954954955,
+    "20.0": 0.9954954954954955,
+    "30.0": 0.9887387387387387,
+    "40.0": 0.9459459459459459,
+    "60.0": 0.9009009009009009,
+    "80.0": 0.8445945945945946
+  },
+  "rows": [
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 14,
+      "hits": 1,
+      "hit_rate": 0.07142857142857142
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 9,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 11,
+      "hits": 1,
+      "hit_rate": 0.09090909090909091
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 11,
+      "hits": 1,
+      "hit_rate": 0.09090909090909091
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 11,
+      "hits": 1,
+      "hit_rate": 0.09090909090909091
+    },
+    {
+      "subject": 12,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 11,
+      "hits": 2,
+      "hit_rate": 0.18181818181818182
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 39,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 4,
+      "hits": 1,
+      "hit_rate": 0.25
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 4,
+      "hits": 1,
+      "hit_rate": 0.25
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 53,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 3,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 61,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 1,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 11,
+      "hits": 1,
+      "hit_rate": 0.09090909090909091
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 70,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 9,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 9,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 9,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 9,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 9,
+      "hits": 1,
+      "hit_rate": 0.1111111111111111
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 9,
+      "hits": 5,
+      "hit_rate": 0.5555555555555556
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 9,
+      "hits": 9,
+      "hit_rate": 1.0
+    },
+    {
+      "subject": 74,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 9,
+      "hits": 9,
+      "hit_rate": 1.0
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 14,
+      "hits": 8,
+      "hit_rate": 0.5714285714285714
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 14,
+      "hits": 14,
+      "hit_rate": 1.0
+    },
+    {
+      "subject": 74,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 14,
+      "hits": 14,
+      "hit_rate": 1.0
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 14,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 14,
+      "hits": 3,
+      "hit_rate": 0.21428571428571427
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 14,
+      "hits": 5,
+      "hit_rate": 0.35714285714285715
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 14,
+      "hits": 14,
+      "hit_rate": 1.0
+    },
+    {
+      "subject": 74,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 14,
+      "hits": 14,
+      "hit_rate": 1.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 10,
+      "hits": 1,
+      "hit_rate": 0.1
+    },
+    {
+      "subject": 80,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 12,
+      "hits": 2,
+      "hit_rate": 0.16666666666666666
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 80,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 8,
+      "hits": 1,
+      "hit_rate": 0.125
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 86,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 1,
+      "hit_rate": 0.07692307692307693
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 1,
+      "hit_rate": 0.07692307692307693
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 87,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 12,
+      "hits": 1,
+      "hit_rate": 0.08333333333333333
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 8,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 8,
+      "hits": 2,
+      "hit_rate": 0.25
+    },
+    {
+      "subject": 90,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 8,
+      "hits": 5,
+      "hit_rate": 0.625
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 7,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 7,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 7,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 7,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 7,
+      "hits": 1,
+      "hit_rate": 0.14285714285714285
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 7,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 7,
+      "hits": 1,
+      "hit_rate": 0.14285714285714285
+    },
+    {
+      "subject": 90,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 7,
+      "hits": 4,
+      "hit_rate": 0.5714285714285714
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 90,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 5,
+      "hits": 1,
+      "hit_rate": 0.2
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 5,
+      "hits": 1,
+      "hit_rate": 0.2
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 4,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 4,
+      "hits": 2,
+      "hit_rate": 0.5
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 5,
+      "hits": 1,
+      "hit_rate": 0.2
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 5,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 5,
+      "hits": 2,
+      "hit_rate": 0.4
+    },
+    {
+      "subject": 94,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 5,
+      "hits": 2,
+      "hit_rate": 0.4
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 101,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 10,
+      "hits": 1,
+      "hit_rate": 0.1
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 11,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 103,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 5,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 10,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 15,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 20,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 30,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 40,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 60,
+      "n": 10,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 4,
+      "amplitude_uv": 80,
+      "n": 10,
+      "hits": 3,
+      "hit_rate": 0.3
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 5,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 10,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 15,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 20,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 30,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 40,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 60,
+      "n": 12,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 8,
+      "amplitude_uv": 80,
+      "n": 12,
+      "hits": 4,
+      "hit_rate": 0.3333333333333333
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 5,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 10,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 15,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 20,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 30,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 40,
+      "n": 13,
+      "hits": 1,
+      "hit_rate": 0.07692307692307693
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 60,
+      "n": 13,
+      "hits": 0,
+      "hit_rate": 0.0
+    },
+    {
+      "subject": 105,
+      "run": 12,
+      "amplitude_uv": 80,
+      "n": 13,
+      "hits": 4,
+      "hit_rate": 0.3076923076923077
+    }
+  ]
+}

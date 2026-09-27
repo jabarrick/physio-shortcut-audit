@@ -1,0 +1,26 @@
+{
+  "s": 1.077,
+  "reference": "ec_eo",
+  "grid": [
+    1.0,
+    1.5,
+    2.0
+  ],
+  "rows": [
+    {
+      "amp": 1.0,
+      "median_delta_ba_neu": 0.14581434560699963,
+      "per_model": {
+        "csoanet": 0.13159633612832666,
+        "cbramod": 0.1600323550856726
+      }
+    }
+  ],
+  "a_star_multiplier": 1.0,
+  "status": "ok",
+  "infeasible": false,
+  "note": "report a*/reference in abstract-level conclusions if > 1",
+  "config_snippet": {
+    "alpha_component.a_star": 1.0
+  }
+}

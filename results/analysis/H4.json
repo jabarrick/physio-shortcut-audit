@@ -1,0 +1,98 @@
+{
+  "n_eligible": 34,
+  "n_subjects": 90,
+  "glmm": {
+    "formula": "correct ~ C(type, Treatment('none')) * C(model)",
+    "glmm": {
+      "mean": {
+        "Intercept": 1.919792757212299,
+        "C(type, Treatment('none'))[T.congruent]": 1.6526681029517956,
+        "C(model)[T.csoanet]": -0.19433495317114738,
+        "C(model)[T.eegnet]": -0.23427170388542107,
+        "C(model)[T.shallow]": -0.19460045683647345,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.csoanet]": -0.13887162605461476,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.eegnet]": -0.01717648524182896,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.shallow]": -0.4609411328687455
+      },
+      "sd": {
+        "Intercept": 0.02443673676491548,
+        "C(type, Treatment('none'))[T.congruent]": 0.057210904756232625,
+        "C(model)[T.csoanet]": 0.04842536319070304,
+        "C(model)[T.eegnet]": 0.04828954657220598,
+        "C(model)[T.shallow]": 0.047161803521365016,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.csoanet]": 0.11400807383401997,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.eegnet]": 0.11800069417705336,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.shallow]": 0.09997902615730844
+      }
+    },
+    "gee": {
+      "coef": {
+        "Intercept": 1.6723923098507891,
+        "C(type, Treatment('none'))[T.congruent]": 1.5683984855499091,
+        "C(model)[T.csoanet]": -0.18011372929777045,
+        "C(model)[T.eegnet]": -0.21686057043693258,
+        "C(model)[T.shallow]": -0.18011372929777014,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.csoanet]": -0.15802067105068365,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.eegnet]": -0.04253040577021262,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.shallow]": -0.466804144988319
+      },
+      "ci_low": {
+        "Intercept": 1.3667958370457296,
+        "C(type, Treatment('none'))[T.congruent]": 0.9799588595692069,
+        "C(model)[T.csoanet]": -0.35389581342090615,
+        "C(model)[T.eegnet]": -0.39845181778173255,
+        "C(model)[T.shallow]": -0.39272156085768817,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.csoanet]": -0.47801558508169506,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.eegnet]": -0.33736910893129357,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.shallow]": -0.868323480080726
+      },
+      "ci_high": {
+        "Intercept": 1.9779887826558487,
+        "C(type, Treatment('none'))[T.congruent]": 2.1568381115306114,
+        "C(model)[T.csoanet]": -0.006331645174634776,
+        "C(model)[T.eegnet]": -0.0352693230921326,
+        "C(model)[T.shallow]": 0.032494102262147856,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.csoanet]": 0.16197424298032773,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.eegnet]": 0.25230829739086835,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.shallow]": -0.06528480989591201
+      },
+      "p": {
+        "Intercept": 7.68487231184367e-27,
+        "C(type, Treatment('none'))[T.congruent]": 1.7510530833142333e-07,
+        "C(model)[T.csoanet]": 0.04221706098299989,
+        "C(model)[T.eegnet]": 0.01925095490345001,
+        "C(model)[T.shallow]": 0.09683176059876944,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.csoanet]": 0.3331071967075424,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.eegnet]": 0.7773881934587512,
+        "C(type, Treatment('none'))[T.congruent]:C(model)[T.shallow]": 0.0226882823325625
+      }
+    },
+    "dispersion": 6.311657897287219
+  },
+  "bias_corrected": {
+    "cbramod": {
+      "estimate": -0.004210311282147217,
+      "ci_low": -0.03018143922580905,
+      "ci_high": 0.020519059065265917,
+      "pass": false
+    },
+    "csoanet": {
+      "estimate": -0.013826584142763054,
+      "ci_low": -0.03434647371839667,
+      "ci_high": 0.008391810263564932,
+      "pass": false
+    },
+    "eegnet": {
+      "estimate": -0.00282615079463433,
+      "ci_low": -0.028800358008197514,
+      "ci_high": 0.023377968202009537,
+      "pass": false
+    },
+    "shallow": {
+      "estimate": -0.004030813530375266,
+      "ci_low": -0.031216548879681068,
+      "ci_high": 0.025141035820836016,
+      "pass": false
+    }
+  }
+}
