@@ -1,0 +1,606 @@
+# =============================================================================
+# Paper 3 — shortcut-audit ground-truth test.  Single source of truth for all
+# numeric settings.  Section numbers refer to 论文三详细写作大纲 v8.1.
+#
+# Values marked in `tbd_registry` (bottom) are PROVISIONAL: they are filled by
+# pilot experiments (P1–P12).  `p3audit tbd` lists them; `--confirmatory` runs
+# refuse to start while any of them is not listed under `confirmed`.
+# =============================================================================
+
+paths:
+  data_root: ~/mne_data            # mne.datasets.eegbci download root
+  shu_root: ~/data/SHU-MI          # SHU-MI .mat files (P11)
+  eegeyenet_root: ~/data/EEGEyeNet # P10a
+  cache: ./cache                   # per-subject bases (memmap), components
+  results: ./results
+  access_log: ./results/signal_access_log.jsonl
+cache_dtype: float32               # float16 halves disk (~30 GB -> ~15 GB for 4-s windows)
+
+seeds:
+  pilot_draw: 20260918     # 3.2 pilot-subject draw (preregistered)
+  split: 20260919          # 3.2 test/val draw
+  half_split: 20260920     # 3.8 odd/even background-window split
+  pseudo_label: 20260921   # 3.4.1 pseudo labels
+  model_seeds: [0, 1, 2]   # 3.5: p-series 3 seeds; factorial/corner/mismatch 2
+
+# ---------------------------------------------------------------- 3.1 data
+physionet:
+  n_subjects: 109
+  sfreq: 160.0
+  # 2026-09-19 RESOLVED — not by finding the value, but by showing nothing depends on it.
+  # EEGMMIDB's reference is undocumented: the PhysioNet page gives the 10-10 montage (and notes
+  # that A1, A2, TP9, TP10 are excluded) but never names a reference; the BCI2000 paper's only
+  # reference sentence, "the vertex referenced to both mastoids", describes the SCP
+  # implementation, not these Wadsworth sensorimotor recordings.
+  # It does not matter, because every consumer is invariant to a common reference:
+  #   - model / spectral streams set avg_ref (streams.py: y - y.mean(axis=-2)), and injection is
+  #     linear, so a Δ plus any per-channel constant streams to the same model input;
+  #   - saccade detection uses HEOG = AF7 − AF8 (detect.py), a bipolar difference;
+  #   - saccade.amplitude_uv is defined on that same difference;
+  #   - the P6 sign rule is now applied to the spatially mean-centred pattern (saccade_ica.py).
+  # null therefore means "apply no conversion", which is the correct behaviour rather than a
+  # placeholder: spike_template() leaves its literature topography uncentred and the average
+  # reference downstream removes the offset regardless.
+  original_reference: null
+  baseline_runs: {eyes_open: 1, eyes_closed: 2}
+  exec_lr_runs: [3, 7, 11]
+  imag_lr_runs: [4, 8, 12]
+  imag_ff_runs: [6, 10, 14]
+  known_bad_sfreq: [88]      # 88 is 128 Hz; rule below also catches others
+exclusion:                   # metadata only (3.1)
+  required_sfreq: 160.0
+  max_trial_count_dev: 2     # |n_trials - mode| > 2  -> exclude
+  max_duration_dev_s: 5.0    # |duration - mode| > 5 s -> exclude
+
+# ---------------------------------------------------------------- 3.2 split
+split:
+  n_pilot: 15
+  n_test: 34
+  n_val: 10
+  real_audit_folds: 5
+
+# ---------------------------------------------------------------- 3.3 streams
+streams:
+  model:   {sfreq: 200.0, l_freq: 0.5, h_freq: 75.0, notch: 60.0, avg_ref: true}
+  spectral: {sfreq: 200.0, l_freq: 1.0, h_freq: 40.0, avg_ref: true,
+             aperiodic_range: [2.0, 30.0], aperiodic_min_r2: 0.9}   # R² floor, confirmed 15.10
+  eye:     {l_freq: 0.1, avg_ref: false, heog: [AF7, AF8], veog: [Fp1, Fp2]}
+  emg:     {band: [40.0, 55.0]}
+  pad_s: 1.0                  # padding kept around each window for filtering/interventions
+normalization: global_train   # or per_subject_zscore (transductive sensitivity)
+
+# ---------------------------------------------------------------- 3.4.1 background
+background:
+  # P2 (2026-09-18, 15 pilot subjects): T0 segments 4.1 s (p5 4.1, p95 4.2); return-saccade
+  # detection rate 0.32; 95th pct of latency+duration 1388 ms.  trim_start is therefore infeasible
+  # on this dataset (1388 ms + 3.0 s > 4.1 s -> zero windows at both 3 s and 4 s), and
+  # drop_saccade_windows alone leaves every retained window starting at target offset, where the
+  # undetected share of return saccades sits.  Design revision recorded for preregistration:
+  # trim_and_drop, i.e. a sub-95th-percentile trim plus the saccade mask.
+  #
+  # RULE (fixed before the counts were read): the trim is the HIGHEST quantile of the return-saccade
+  # latency+duration distribution that the T0 segment length admits.  q90 = 1213 ms exceeds the
+  # 1100 ms of headroom a 3-s window leaves in a 4.1-s segment; q75 = 901.6 ms fits, so trim = 900 ms
+  # and the mask drops whatever the remaining quartile still overlaps.
+  # P2 re-run counts per pilot subject (mean / min): drop-only 50.8 / 9; trim 600 ms 56.5 / 11;
+  # trim 900 ms 60.1 / 15; trim_start 0 / 0.  Trimming RAISES the count, because a window moved past
+  # the return saccade no longer has to be dropped by the mask.
+  window_s: 3.0               # 3 s, not 4 s: 4 s leaves only 100 ms of headroom and admits no trim
+  trim_ms: 900                # q75 of return-saccade latency+duration, highest feasible quantile
+  trim_mode: trim_and_drop    # trim_start | drop_saccade_windows | trim_and_drop
+  align_samples: 4            # window starts on a 4-sample grid (160->200 Hz polyphase exactness)
+  # ---------------- 2026-09-19 19:30 Lisbon: bad_window revised (POST HOC; declared before re-run) ----------------
+  # FINDING (results/pilots/bad_window_diag.json, 15 pilot subjects only): the whole-window
+  # 200 uV rule kept 290/901 pilot windows (32%); pilot 9 lost all, 39/90 kept 3, 61 kept 2.
+  # The worst channels were frontal/ocular (Fp1/Fp2/AF7/AF8, median peaks 260-470 uV):
+  # blinks/eye movements at rest, i.e. physiological, not the non-physiological artefacts
+  # (electrode pops, disconnections) the rule exists to catch.  Ignoring the 1-3 worst channels
+  # did not help, so a single-bad-channel explanation is falsified.  The pre-run reading had
+  # only two cases (bad channel / bad recording); the ocular reading was formed AFTER seeing
+  # the result and is recorded as post hoc.
+  # RULE: max_abs is applied to all channels EXCEPT saccade.ocular_sites -- the 8-site list
+  # declared for P6 on 2026-09-19, before this finding, reused unchanged (not chosen from these
+  # data).  Threshold 200 uV unchanged; the flat-signal check (min_std) still covers all 64.
+  # Ocular activity left in the background is label-independent (pseudo-labels are random),
+  # so it is realistic noise, not a second ground truth.
+  # FLOOR: a subject needs >= min_windows usable windows (>= 2 per class in each split half
+  # in expectation under balanced pseudo-labels and the 3.8 parity split: 2 x 2 x 2 = 8).
+  # COMMITMENT: no further change to this rule, whatever the re-run shows; if pilot retention
+  # is still poor, it goes to the supervisor, not back into the config.
+  # v8.1 value for the audit trail: {max_abs_uv: 200.0, min_std_uv: 0.5}, whole window, all channels.
+  # ---------------- 2026-09-19 ~20:00 Lisbon: SECOND revision, decided by Yu Gao ----------------
+  # Supervisor has NOT reviewed this (memo v2 item 5 still open); if the supervisor rules
+  # otherwise, that ruling replaces this one and is logged as a further deviation.
+  # Why the absolute rule is dropped: with ocular sites excluded, 200 uV still kept only 36% of
+  # pilot windows and the cache held 48/66 subjects (test 15).  A fixed absolute threshold on
+  # unprocessed EEGMMIDB recordings measures each subject's overall amplitude scale, not
+  # artefacts.  The rule's purpose is to drop OUTLIER windows, so it is made relative to the
+  # subject's own windows.
+  # RULE (amp_rule: robust_z): per subject, statistic = log10 of the largest channel peak-to-peak
+  # in the model-stream core; reject a window if its robust z (median / 1.4826*MAD over that
+  # subject's windows) exceeds 3.0.  k = 3 is the conventional FASTER criterion (Nolan et al.
+  # 2010, |z| > 3) -- taken from the literature, not fitted to these data.  All channels (ocular
+  # exclusion dropped: frequent blinks are part of the subject's distribution, not outliers).
+  # Flat-signal check and min_windows = 8 unchanged.  Declared before this rule was run on
+  # any data; committed to whatever it yields.
+  # History: v8.1 {max_abs_uv: 200, all channels}; rev 1 (post hoc) ocular sites excluded.
+  bad_window: {max_abs_uv: 200.0, min_std_uv: 0.5, max_abs_exclude: none, min_windows: 8,
+               amp_rule: robust_z, robust_z_max: 3.0}   # confirmed (PILOT_LOG 15.10) amp_rule: absolute (v8.1) | robust_z
+
+# ---------------------------------------------------------------- 3.4.2 task signal
+task_component:
+  band: [8.0, 13.0]
+  fir_transition_hz: 2.0
+  reg: 0.01                   # GED shrinkage (v8.1 default, not tuned; confirmed 15.10)
+  left_neighborhood:  [C3, C1, C5, FC3, FC1, FC5, CP3, CP1, CP5]
+  right_neighborhood: [C4, C2, C6, FC4, FC2, FC6, CP4, CP2, CP6]
+  emg_band: [20.0, 40.0]
+  # P1a 2026-09-19: these four decided the mu inclusion rate and were previously invisible -
+  # hard-coded defaults of components.band_peak(), absent from this file and from tbd_registry.
+  # segments=rest is the 2026-09-19 fix (mu is suppressed during movement; see components.py).
+  # min_db is NOT relaxed: measured on 105 subjects, a C3 Laplacian at rest has a median residual
+  # of 0.84 dB (IQR -0.07..3.23), i.e. genuine mu sits on this bar in this dataset, and lowering
+  # it trades sample size for the risk of injecting a non-oscillatory component.
+  band_peak: {fit_range: [2.0, 30.0], exclude: [7.0, 14.0], min_db: 1.0, psd_nperseg_s: 2.0,
+              segments: rest}
+  n_candidates: 32            # search budget, NOT a criterion; screening stops at eigval <= 1
+
+  # ---------------- 2026-09-19: single-hemisphere task signal (3.4.2 revision) ----------------
+  # DECLARED BEFORE THE IMPLEMENTATION AND BEFORE THE THRESHOLD BELOW WAS COMPUTED.
+  # Rationale in PILOT_LOG 5; the numbers the decision rests on are in PILOT_LOG 2.5.
+  hemisphere: single          # single | both ; 'both' is the v8.1 bilateral-contrast design
+  side_rule: higher_rest_band_peak_db
+  # Pick, among the sides that pass every criterion, the one with the larger rest-segment
+  # band-peak residual (checks.band_peak_db); ties -> left.  A subject with no passing side
+  # has no task component.
+  #
+  # EXPECTED CONSEQUENCE, measured on the 2026-09-19 re-run BEFORE this rule was implemented,
+  # recorded here so it cannot be read as post hoc: of the 70 usable subjects, 37 pass on both
+  # sides (the rule picks L 22 / R 15), 18 pass only mu_L and 15 only mu_R -> overall L 40 /
+  # R 30.  The left bias comes from mu_R's higher no_candidate rate (20/45 vs 5/41 sides), not
+  # from the rule itself.
+  #
+  # Anti-contamination criterion [TBD 7.3].  With only one hemisphere retained, the bilateral
+  # requirement no longer guards against a GED component that is really posterior alpha, which
+  # would make the task signal and the confound degenerate by construction.
+  # PRINCIPLE (declared before the value was computed, and independent of any mu pass rate):
+  #   posterior_ratio(a) = sum(a[alpha_component.posterior]^2) / sum(a^2)
+  # the cap is the 10th percentile of posterior_ratio over the alpha components ACCEPTED FOR
+  # THE PILOT SUBJECTS.  Reading: a mu candidate carrying as large a posterior share as the
+  # least-posterior verified alpha component cannot be told apart from alpha on topography, so
+  # it is rejected.  Estimated on pilot subjects only; the full-sample pass rate is not consulted.
+  posterior_ratio_max: 0.425   # p10 of pilot accepted-alpha posterior share (scripts/fit_posterior_ratio_cap.py)
+  # 2026-09-23 21:12 Lisbon (Claude, authorised by Yu Gao; PILOT_LOG 15.4 D7).  0.2 was written before any data
+  # and is KEPT - not re-set after seeing P1a.  It fired twice: 65.7 % (09-19, double hemisphere) ->
+  # the single-hemisphere redesign of PILOT_LOG 5 IS the redesign this rule demands; after it the
+  # pilot failure is 4/15 = 0.267 (P1a 2026-09-23), still above 0.2.  No second redesign: the one
+  # remaining lever, lowering min_db, was rejected on principle (PILOT_LOG 5).  Reported in 4.1 and
+  # as a limitation: 'rule triggered; one redesign; residual failure 26.7 % in pilot'.
+  max_fail_fraction: 0.2      # pilot failure fraction triggering redesign (triggered; see above)
+  s_star: 0.5                 # task strength s*  [TBD P4]; single: y=1 -> g = 1 - s/2, y=0 -> g = 1 + s/2 (both: g = 1 - s)
+  s_low: 0.35                 # [TBD P4] (±10 pp accuracy at p=0.5)  -- v8.1 placeholder, NOT valid under symmetric modulation
+  s_high: 0.65                # [TBD P4]                               -- v8.1 placeholder, NOT valid under symmetric modulation
+  # 2026-09-20 (PILOT_LOG 11.16; Yu Gao delegated, adopted; supervisor not consulted): s* is calibrated
+  # PER CONFOUND.  These override s_star/s_low/s_high above for cells of that confound.
+  # alpha: P4 run 3 + P5 (ec_eo reference, a* = 1): s* = 1.077 (rule 11.9).  saccade: P4, s* = 1.333.
+  # s_low/s_high: from the p = 0.5 curve incl. the extension points calibration.s_grid_extension (null until run).
+  by_confound:
+    alpha:   {s_star: 1.077, s_low: 0.652, s_high: 1.8}     # s_high: +10 pp NOT reached (+7.2 pp at 1.8), taken per 11.16
+    # 2026-09-23 22:35 Lisbon: saccade s* 1.333 -> 1.6 by the pre-written rule calibration.p8b (PILOT_LOG 15.4 D1):
+    # P8b 8-run mean at 1.333 = 0.288 (> 0.28); P8c 8-run mean at 1.6 = 0.266 (in window) -> adopt 1.6.
+    # s_low / s_high re-derived mechanically by 11.16 (_crossing on P4_saccade p05_curve, anchor 1.6,
+    # BA 0.761): s_low 0.974 (target 0.661, reached); s_high 1.8 (+10 pp NOT reached: +3.0 pp).
+    # Previous: {s_star: 1.333, s_low: 0.899, s_high: 1.8}.
+    saccade: {s_star: 1.6, s_low: 0.974, s_high: 1.8}   # s_high: +10 pp NOT reached (+3.0 pp at 1.8), taken per 11.16
+
+# ---------------------------------------------------------------- 3.4.3 alpha
+alpha_component:
+  band: [8.0, 13.0]
+  fir_transition_hz: 2.0
+  reg: 0.01                   # GED shrinkage (v8.1 default, not tuned; confirmed 15.10)
+  posterior: [O1, Oz, O2, PO7, PO3, POz, PO4, PO8, P7, P5, P3, P1, Pz, P2, P4, P6, P8, Iz]
+  central: [C3, Cz, C4]
+  band_peak: {fit_range: [2.0, 30.0], exclude: [7.0, 14.0], min_db: 1.0, psd_nperseg_s: 2.0,
+              segments: eyes_closed}   # same hidden defaults, lifted into the config; confirmed 15.10
+  taper_s: 0.25               # cosine edge ramp length of e(t)  (design constant, not tuned; confirmed 15.10)
+  k_ref: 1.0                  # reference amplitude: k = 1 sigma
+  # ---------------- 2026-09-20 ~14:25 Lisbon (PILOT_LOG 11.13; Yu Gao delegated the decision, adopted it;
+  # supervisor not consulted).  POST HOC: declared after P5 under the sigma reference was infeasible
+  # (results/pilots/P5_alpha_sigma.json).  New reference = eyes-closed minus eyes-open log power of the
+  # alpha component: ln(GED eigenvalue) of estimate_alpha (EC vs EO), median over PILOT subjects whose
+  # alpha component passed (14 of 15; 103 failed).  Computed from stored component files only, AFTER the
+  # rule was written.  Values ln(lambda): 1.24-3.79, median 2.760 (~16x power).  lambda is the GED maximum,
+  # so this is biased upward relative to the true EC/EO contrast -- report.
+  reference: ec_eo            # sigma (v8.1) | ec_eo
+  ec_eo_log_ratio: 2.760
+  a_star: 1.0                 # a* in units of the EC-EO reference; P5 2026-09-20 first cell in window (11.14); confirmed 15.10
+  min_projection_ratio: 0.1   # below -> generator underestimates overlap; handling = 15.4 D8 (no exclusion; sensitivity); confirmed
+  # 2026-09-23 21:12 Lisbon (Claude, authorised by Yu Gao; PILOT_LOG 15.4 D6): both values were written before any
+  # data (outline 3.4.3 already states split-half < 0.5) and are KEPT.  P8 cannot inform them (n = 7
+  # validation subjects, split-half -2.10..0.93).  Evaluated per cell on the test set (n = 20).
+  degenerate_truth: {min_delta_ba_neu: 0.02, min_split_half: 0.5}
+  max_degenerate_fraction: 0.2   # pre-data value kept, as degenerate_truth (15.4 D6); confirmed 15.10
+
+# ---------------------------------------------------------------- 3.4.4 saccade
+saccade:
+  lateral_runs: [3, 7, 11, 4, 8, 12]
+  highpass: 0.1
+  epoch: [-0.5, 1.5]
+  activation_window: [0.0, 1.0]
+  activation_lowpass: 4.0
+  n_pca: 30
+  n_permutations: 1000
+  null_quantile: 0.95
+  max_failed_subjects: 5      # of 15 -> saccade injection infeasible (P6 rule)
+  # ---------------- 2026-09-19 P6 selection redesign ----------------
+  # FORMULATED AFTER SEEING results/pilots/P6_components_diag.json — recorded as post hoc;
+  # see PILOT_LOG 3 (hypothesis five) and 6.11.  The diagnostic showed the old order asks the
+  # wrong question: it ranks all 30 components by side-correlation and pays a 30-way
+  # multiple-comparison penalty, while the generator only needs one stable OCULAR template.
+  # Seven of the eight failing subjects carry a component with >=2x ocular enrichment,
+  # bipolarity >=0.7 and the right polarity, rejected only because |r| misses that inflated
+  # threshold (subject 61 half 1 by 0.0027); meanwhile subject 86 sits in the main pool with a
+  # template at chance ocular enrichment (1.07x / 0.96x).
+  #
+  # topography_first: gate on topography, THEN rank by side-correlation.  The gate uses only
+  # enrichment and bipolarity, both computed from the pattern alone and therefore INDEPENDENT
+  # OF THE SIDE LABELS — so the permutation null may legitimately be taken over the gated
+  # family instead of all 30 components.  Polarity depends on sign(r) and so stays
+  # label-dependent, applied after the gate.
+  # REVERTED 2026-09-19 12:22 after the re-run: topography_first is measurably WORSE.
+  # It lowered the permutation threshold as designed (0.19-0.39 vs 0.43-0.46) but by gating
+  # first it often leaves only 1-2 candidates, and the survivor is frequently not the
+  # side-tracking one.  Net 9 failures instead of 8, and the templates that do pass are less
+  # stable: split-half r 0.34/0.37/0.38 for three of six passers, against this project's own
+  # reliability bar of 0.5 (alpha_component.degenerate_truth.min_split_half); the old passers
+  # were 0.53-0.99.  Decisively, subject 90 - the cleanest subject in the set, split-half 0.99,
+  # ocular enrichment 2.99x/3.26x - is EXCLUDED, because its saccade component's bipolarity is
+  # 0.92 and 0.89, just under the 1.0 bar.  The gate discarded the best template in the dataset
+  # and kept a more extreme-looking component that does not track side (r 0.197/0.199).
+  # Lowering bipolarity_min to recover subject 90 would be pass-rate tuning, which this project
+  # does not do, so the value stands and the ORDER is reverted instead.
+  # The gate code, the two thresholds and the audit fields are kept: they are what produced the
+  # evidence, and topography_first remains reproducible by setting this key.
+  selection_order: correlation_first   # topography_first | correlation_first (v8.1)
+  # ---------------- 2026-09-19 ~20:10 Lisbon: template construct replaced (decided by Yu Gao,
+  # supervisor not yet reviewed; PILOT_LOG 10.5).  Deviation from 6.4 (2) as worded: the
+  # confound is KEPT, the ICA template construct is replaced by EOG regression
+  # (generator/saccade_regression.py).  All values below declared BEFORE the first run;
+  # committed to the result.  If > max_failed_subjects fail, confound 2 is replaced wholesale
+  # under 6.4 (2), with no further iteration.
+  #   min_split_half 0.5 = this project's existing reliability floor (degenerate_truth).
+  #   min_events_per_half 10: a 2-regressor fit needs well over 2 events; 10 is a round floor
+  #     fixed here, not tuned.  guard_ms 50: skip the ramp itself either side of the step.
+  template_method: eog_regression   # ica (v8.1) | eog_regression
+  regression: {min_split_half: 0.5, min_events_per_half: 10, guard_ms: 50}
+  ocular_sites: [AF7, AF8, F7, F8, Fp1, Fp2, FT7, FT8]
+  ocular_enrichment_min: 1.0   # ocular energy share / chance share (8/64 = 0.125); >1 means
+                               # "above chance" — the selectivity comes from bipolarity
+  bipolarity_min: 1.0          # |p[AF7] - p[AF8]| / max|p|.  Anchored on dipole geometry, not
+                               # on any pass rate: for a pure horizontal dipole whose extrema
+                               # are AF7/AF8 this equals 2.0, so 1.0 requires the horizontal
+                               # contrast to be at least as large as the pattern's own peak.
+                               # A blink fails it — subject 61 half 1's Fp1 component has
+                               # enrichment 3.09x but bipolarity 0.15.
+  left_sites: [F7, AF7]
+  right_sites: [F8, AF8]
+  rightward_sign: -1          # rightward gaze -> AF7-AF8 negative (cornea-positive dipole)
+  mode: presence              # presence: z=1 inject rightward step; direction: z=1 right, z=0 left
+  ramp_ms: 40                 # step rise time
+  onset_window_s: [0.3, 1.5]  # onset jitter inside window core
+  topo_jitter: 0.1            # per-trial relative topography noise
+  amplitude_uv: 149.34        # a* reference (AF7-AF8, µV) = median real cue-evoked saccade step, P6-stage pilot
+                              # measurement (n = 389, q25 121.73, q75 188.55).  Set 2026-09-20 (PILOT_LOG 11.13 B;
+                              # Yu Gao delegated, adopted).  Detection truncates from below -> biased LARGE.
+                              # P10a (EEGEyeNet, degrees, other montage) is descriptive only.  Was 40.0 (placeholder).
+  spike:
+    enabled: true
+    duration_ms: 25
+    # 15.10 (Claude, authorised by Yu Gao): 0.3 is an ASSUMPTION of this project, not a value read from
+    # Keren et al. 2010 (NeuroImage 49(3):2248-63, doi 10.1016/j.neuroimage.2009.10.057 - citation verified).
+    # The abstract gives shape only (sharp biphasic, ~22 ms from saccade onset, ~20-90 Hz, larger for larger
+    # saccades, steeper ipsilateral gradients); no SP/step ratio could be verified from accessible text.
+    # KEPT because both arms were calibrated with it (P4/P8/P8b); report as an assumption.
+    amplitude_ratio: 0.3      # SP peak / step amplitude  (assumption; see above)
+    latency_jitter_ms: 5
+    amp_jitter: 0.2
+  mismatch_pool_n: 4          # pilot templates held out for the mismatch cell (test-time only)
+  mismatch:
+    dipole_rotation_deg: 20
+    frontotemporal_ratio: [0.7, 1.4]
+
+# ---------------------------------------------------------------- 3.4.5 design
+design:
+  p_series: [null, 0.5, 0.75, 0.9, 1.0]
+  factorial_p: 0.9
+  factorial_s: [s_low, s_star, s_high]
+  factorial_amp: [0.5, 1.0, 1.5]
+  corner_p: 1.0
+  corner_s: [s_low, s_high]
+  corner_amp: [0.5, 1.5]
+  mismatch_alpha_shift_hz: [-2.0, 2.0]
+  regressor_contamination: [0.0, 0.1, 0.25]   # 0/low/mid  (design levels; confirmed 15.10)
+  h1_test_amps: [0.0, 0.125, 0.25, 0.5, 1.0]
+  core_models: [csoanet, eegnet, shallow, cbramod]
+  supplementary_models: [labram]
+  seeds_p_series: 3
+  seeds_other: 2
+  p_series_seed_overrides: {0.75: 2}   # extra p = 0.75 seeds cancelled (table 7, −16)
+  supplementary:                        # LaBraM scope; align with table 7 (15 p-series + 10 factorial)
+    confounds: [alpha]
+    p_series_seeds: 3
+    factorial_seeds: 2
+    factorial_cells: [[s_star, 1.0], [s_low, 1.0], [s_high, 1.0], [s_star, 0.5], [s_star, 1.5]]
+  reference_models: []                  # e.g. [linear_raw, random_eegnet] — descriptive only, never in decisions
+
+# ---------------------------------------------------------------- 3.4.7 calibration
+calibration:
+  min_ba_p05: 0.65
+  target_delta_ba_neu: [0.12, 0.28]
+  calib_models: [csoanet, cbramod]
+  # ---------------- 2026-09-19 18:36 Lisbon: P4 grid re-declared BEFORE any P4 run ----------------
+  # The v8.1 grid was defined for g = 1 - s (between-class component log-power contrast
+  # |2 ln(1-s)|).  Under symmetric modulation the contrast is 2[ln(1+s/2) - ln(1-s/2)].
+  # PRINCIPLE: keep the same contrast levels as the v8.1 grid.  Equating the two contrasts
+  # gives the exact map  s_new = 2 s_old / (2 - s_old);  each v8.1 grid point is mapped through
+  # it (rounded to 3 dp).  Anchored on the analytic contrast only; no pass rate, accuracy or
+  # P4 output was consulted.  v8.1 bracket [0.35, 0.65] maps to [0.424, 0.963].
+  # Upper point 1.333 -> gains 0.333 / 1.667 (must stay < 2 so that 1 - s/2 > 0).
+  # v8.1 grid (for the audit trail): [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
+  s_grid: [0.222, 0.353, 0.5, 0.667, 0.857, 1.077, 1.333]
+  amp_grid: [1.0, 1.5, 2.0, 3.0]
+  amp_grid_by_confound: {alpha: [1.0, 1.5, 2.0]}   # 11.13: grid in units of the EC-EO reference
+  # 2026-09-20 ~12:36 Lisbon (Yu Gao; before the last four cbramod rows of P4 run 2 existed):
+  # if P4 finds no s meeting both conditions, P5 runs at the SMALLEST s where every core model has
+  # BA >= min_ba_p05 at p = 0.5 (calibration.py writes it as P4_<confound>.json 's_for_p5').
+  p5_s_rule: smallest_all_ba_ok
+  # 11.16: p = 0.5-only extension points (4 core models) used ONLY to locate s_low / s_high
+  # (3.4.7: p = 0.5 accuracy -/+ 10 pp around s*); never candidates for s*.  Must stay < 2.
+  s_grid_extension: [1.6, 1.8]
+  # ---------------- 2026-09-23 21:12 Lisbon: P8b rule, written BEFORE any P8b run ----------------
+  # (Claude, authorised by Yu Gao; PILOT_LOG 15.4 D1.)  P8 put the saccade calibration cell
+  # (p 0.9, s* 1.333, a* 1) at median 0.289, above target_delta_ba_neu.  Add seeds 2 and 3 for both
+  # calib_models on that cell only (same roles as P8).  Statistic: unweighted MEAN of dBA_neu over
+  # all 8 runs (P8 seeds 0-1 + P8b seeds 2-3; 2 models x 4 seeds).  [Memo v3.1 said 'six runs';
+  # 2 x 2 + 2 x 2 = 8 - corrected here, before the data.]
+  #   mean in [0.12, 0.28]  -> keep saccade s* = 1.333.
+  #   mean > 0.28           -> saccade s* = 1.6 IF the same 8-run check (seeds 0-3, 2 models) at
+  #                            s = 1.6 lands in the window; s_low / s_high then re-derived by the
+  #                            existing 11.16 definition.  If 1.6 also fails, keep 1.333, stop,
+  #                            and report the arm as calibrated above the window.
+  #   mean < 0.12           -> symmetric: try 1.077 by the same check; else keep 1.333 and report.
+  # No other grid point, seed count or statistic will be tried.
+  p8b: {confound: saccade, seeds: [2, 3], rule: mean_of_8_in_window}
+
+# ---------------------------------------------------------------- 3.5 training
+training:
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0
+  max_epochs: 60
+  patience: 8
+  # 2026-09-23 (PILOT_LOG 13.9; Yu Gao): 'auto' fell back to the CPU without an error after the GPU
+  # was lost on 2026-09-20 (P9 then produced CPU timings that looked like GPU ones).  'cuda' makes a
+  # lost GPU an error: pilot commands stop, run-units writes the unit to units_failed/ and moves on.
+  device: cuda
+  num_workers: 0
+foundation:
+  cbramod: {repo_path: D:/project/CBraMod, checkpoint: D:/project/CBraMod/pretrained_weights/pretrained_weights.pth, patch_size: 200, input_scale: 0.01}   # µV -> 100 µV units; VERIFIED 2026-09-20 against the local official repo:
+  #   preprocessing/preprocessing_physio.py uses epochs.get_data(units='uV'); datasets/physio_dataset.py returns data/100
+  # 15.10: input_scale VERIFIED against the official repo (github.com/935963004/LaBraM, main, read
+  # 2026-09-23): dataset_maker/make_TUAB.py saves raw.get_data(units='uV') after 0.1-75 Hz, 50 Hz notch,
+  # resample 200 Hz; engine_for_finetuning.py feeds samples.float() / 100 in both train_one_epoch and
+  # evaluate -> x_uV * 0.01, same convention as CBraMod.
+  # 2026-09-24 00:09 Lisbon (PILOT_LOG 15.26; Claude, authorised by Yu Gao): LaBraM wired to the official repo
+  # (github.com/935963004/LaBraM, commit c431221e, 2025-09-29) and its bundled checkpoints/labram-base.pth
+  # (96,612,769 bytes; 'model' dict, 'student.*' keys).  Load verified: 219/221 model keys; missing only
+  # fc_norm.* (new at fine-tuning), unexpected only mask_token, lm_head.*, norm.* - build_labram refuses
+  # any other difference.  model_kwargs = README TUAB command (--disable_qkv_bias --disable_rel_pos_bias
+  # --abs_pos_emb) + run_class_finetuning defaults (layer_scale_init_value 0.1, drop_path 0.1,
+  # init_scale 0.001, use_mean_pooling).  Official preprocessing differs from our shared model stream
+  # (0.1-75 Hz, 50 Hz notch vs 0.5-75 Hz, 60 Hz notch, average reference): all models share one stream.
+  labram:  {repo_path: "D:/project/LaBraM", checkpoint: "D:/project/LaBraM/checkpoints/labram-base.pth",
+            patch_size: 200, input_scale: 0.01,
+            model_kwargs: {qkv_bias: false, use_rel_pos_bias: false, use_abs_pos_emb: true, init_values: 0.1,
+                           drop_path: 0.1, init_scale: 0.001, use_mean_pooling: true}}
+  # Official LaBraM-Base fine-tuning recipe (paper table 5; README TUAB command; optim_factory layer ids).
+  # Deviations, recorded: batch 64 (paper 512 = 8 GPUs x 64; the official code does NOT rescale lr by
+  # batch, so lr is kept); early stopping truncates the 50-epoch cosine (schedule spans training.max_epochs);
+  # binary task -> label smoothing 0 (official binary tasks use BCE on one logit, no smoothing).
+  labram_finetune: {lr: 5.0e-4, min_lr: 1.0e-6, warmup_epochs: 5, layer_decay: 0.65, weight_decay: 0.05,
+                    label_smoothing: 0.0}
+  # ---------------- 2026-09-20: official fine-tuning recipe for foundation models ----------------
+  # PRINCIPLE (declared in PILOT_LOG 11.2 before diag_cbramod.py was run): foundation models are
+  # fine-tuned with the recipe published in the official repository, not with the conv-net settings
+  # of `training`.  Source: D:/project/CBraMod finetune_main.py defaults + finetune_trainer.py
+  # (multi_lr: backbone lr, other params 1e-3*sqrt(batch/256); AdamW; grad-norm clip; cosine to 1e-6;
+  # label smoothing) and models/model_for_physio.py (classifier 'all_patch_reps' = default).
+  # Evidence the old settings were broken: results/pilots/cbramod_diag.json (arm A collapses to a
+  # constant class; arm B, same data, official optimiser, learns).  The HEAD was chosen by Yu Gao on
+  # 2026-09-20 AFTER seeing arms B/C, on the stated ground that all_patch_reps is the official default.
+  # Known deviation: official = fixed 50 epochs; ours = max_epochs + early stopping, so the cosine
+  # schedule (T_max = max_epochs * steps) is not completed when early stopping fires.
+  finetune: {backbone_lr: 1.0e-4, head_lr_base: 1.0e-3, head_lr_ref_batch: 256, weight_decay: 5.0e-2,
+             clip_grad_norm: 1.0, cosine_eta_min: 1.0e-6, label_smoothing: 0.1}
+  cbramod_head: {type: all_patch_reps, dropout: 0.1}   # all_patch_reps | avgpooling_patch_reps
+
+# ---------------------------------------------------------------- 3.6 metrics
+probe:
+  Cs: [0.001, 0.01, 0.1, 1.0, 10.0]
+  inner_folds: 5
+  pca_dims: [16, 64, 256]
+  within_subject_folds: 5
+  max_train_windows: 3000     # probe fitting subsample of training-subject windows
+erasure:
+  reg: 1.0e-6
+  p_levels: [0.5, 0.75, 0.9, 1.0]   # computed for all; 3.6.2 table: judged at 0.9 (p = 1 unidentifiable)
+intervention:
+  alpha_band: [8.0, 13.0]
+  control_band: [20.0, 25.0]   # equal-width (5 Hz) non-alpha band for SRI; confirmed 15.10 (harmonic caveat there)
+  transition_hz: 1.0
+  heog_method: saccade_locked   # saccade_locked (primary) | ols (sensitivity); confirmed 15.10
+ig:
+  bands: {delta: [0.0, 4.0], theta: [4.0, 8.0], alpha: [8.0, 13.0], beta: [13.0, 30.0], gamma: [30.0, 75.0]}
+  steps: 32
+  # 2026-09-23 (PILOT_LOG 13.9; Yu Gao): kept at 200.  P9's job was affordability: IG for the four
+  # core models at 200 windows is 3.35 GPU h (results/pilots/P9.json) against ~17 h of training, so
+  # the budget does not bind and gives no reason to cut.  Whether 200 is PRECISE enough is a separate
+  # question, answered by the IG-metric reliability in P8, not here.
+  windows_per_unit: 200
+  p_levels: [0.9, 1.0]
+  zero_baseline: true          # sensitivity analysis
+  # Windows per ig_filterbank batch (PILOT_LOG 13.8).  Each window becomes `steps` model inputs,
+  # so the effective batch is batch x steps (16 x 32 = 512).  Pure performance setting: results are
+  # batch-invariant in eval mode (test_ig_batch_invariance).  16 = the ig_filterbank default that
+  # run_unit used implicitly until 2026-09-23; P9 reports whether it fits in dedicated VRAM.
+  # 2026-09-23 (PILOT_LOG 13.9; Yu Gao), RTX 4060 Laptop, 8188 MB dedicated.  Peak MB measured by P9:
+  #   csoanet 16 -> 2918 | eegnet 16 -> 2012 | shallow 4 -> 7381 (90.1 %) | cbramod 4 -> 4840.
+  # Batch 16 would need ~29.5 GB (shallow) / ~19.4 GB (cbramod): under WDDM that spills into shared
+  # system memory instead of failing.  shallow at 4 sits on the 90 % line, so 2 (predicted ~3.7 GB,
+  # measured by the next P9).  Pure performance setting (test_ig_batch_invariance).
+  batch: 16
+  # 15.26/15.28: labram 4 ran out of memory in IG (P8L, 6.54 GB allocated of 8 GB: full attention over
+  # 64 ch x 3 patches = 192 tokens, x 32 IG steps); set to 1.  Performance only (test_ig_batch_invariance).
+  batch_by_model: {shallow: 2, cbramod: 4, labram: 1}
+  frontal_lateral: [F7, AF7, F8, AF8, FT7, FT8, Fp1, Fp2]
+
+# ---------------------------------------------------------------- 3.7 real data
+saccade_detection:
+  lowpass: 20.0
+  window: [0.0, 1.0]
+  step_window_ms: 100          # matched step detector half-window
+  step_mad_k: 5.0              # threshold = max(k * MAD(step statistic), min_amplitude); used for the 149.34 uV reference - frozen (15.10)
+  min_amplitude_uv: 15.0       # frozen with step_mad_k (15.10)
+  return_saccade_window: [0.0, 1.5]
+h4:
+  k_min: 10
+real_audit:
+  window: [0.0, 4.0]          # relative to cue (T1/T2 onset)
+
+# ---------------------------------------------------------------- 3.8 stats
+stats:
+  n_boot: 2000
+  ci: 0.95
+  # 2026-09-23 22:54 Lisbon (Claude, authorised by Yu Gao; PILOT_LOG 15.14): all five values below were written
+  # before any data and are KEPT.  P12 (results/pilots/P12.json) gives H3 power 1.00 at every grid point
+  # (mean r 0.67-0.97; sd_seed 0.044) -> H3 is not power-limited at h3_min_corr_lower 0.3, and a SESOI is
+  # a substantive choice, not something to raise or lower after reading a power grid.  P12 covers H3 only.
+  sesoi_ba_pp: 5.0             # (kept; 15.14)
+  sesoi_delta_ba_neu: 0.05     # (kept; 15.14)
+  h2_delta: 0.05               # δ   (kept; 15.14)
+  # 15.17: H2 TOST power (diag_h2_power.py, rule written before running): at 2 factorial seeds and
+  # n = 20, power(mu = 0) = 0.43 (csoanet) / 0.91 (cbramod); 4 seeds -> 0.68 / 1.00.  Reading P2 ->
+  # H2 preregistered as UNDERPOWERED as is; seeds and delta unchanged.  A failed TOST = inconclusive.
+  h2_d_range: [0.3, 0.8]
+  h3_min_corr_lower: 0.3       # (kept; 15.14)
+  h3r_max_bias: 0.05           # (kept; 15.14)
+  min_reliability: 0.5
+  # 2026-09-23 21:12 Lisbon (Claude, authorised by Yu Gao; PILOT_LOG 15.4 D2), before P12 has run:
+  # the factorial / corner amplitude grid [0.5, 1.0, 1.5] x a* is KEPT for both confounds (no
+  # second post-hoc change to the alpha arm).  For alpha, 1.5 a* = 4.14 log units exceeds every
+  # pilot EC-EO contrast (max 3.79): it is declared a SUPRA-PHYSIOLOGICAL STRESS LEVEL, and every
+  # analysis using the amplitude axis is reported with and without it.  P12 EXCLUDES that cell
+  # from both the cell means and the seed SD (P8: it inflates the means, 0.30 vs 0.16, and its SDs
+  # are small), so the power analysis is conservative, not optimistic.  P12 also reads P8b.
+  # 2026-09-23 22:35: after P8c the saccade calibration cell is s = 1.6.  P8/P8b saccade units are named
+  # 'saccade_p0.9_s_star_a1' but were run at the OLD s* 1.333 -> excluded; P8c (8 runs at 1.6) replaces them.
+  p12_exclude_cells: [alpha_p0.9_s_low_a1.5, saccade_p0.9_s_star_a1]
+  p12_extra_results: [P8c]
+
+# ---------------------------------------------------------------- TBD registry
+tbd_registry:
+  - {key: background.window_s,            source: P2}
+  - {key: background.trim_ms,             source: P2}
+  - {key: background.trim_mode,           source: P2}
+  - {key: background.bad_window,          source: prereg-6}
+  - {key: streams.spectral.aperiodic_min_r2, source: prereg-6}
+  - {key: task_component.reg,             source: P1a}
+  - {key: task_component.band_peak,       source: P1a}
+  - {key: task_component.max_fail_fraction, source: P1a}
+  - {key: task_component.hemisphere,        source: P1a}
+  - {key: task_component.side_rule,         source: P1a}
+  - {key: task_component.posterior_ratio_max, source: P1a}
+  - {key: alpha_component.band_peak,      source: P1a}
+  - {key: task_component.s_star,          source: P4}
+  - {key: task_component.s_low,           source: P4}
+  - {key: task_component.s_high,          source: P4}
+  - {key: task_component.by_confound,     source: P4+P8b/P8c}   # the values actually read (11.16)
+  - {key: alpha_component.reg,            source: P1a}
+  - {key: alpha_component.taper_s,        source: P1a}
+  - {key: alpha_component.a_star,         source: P5}
+  - {key: alpha_component.min_projection_ratio, source: P1a}
+  - {key: alpha_component.degenerate_truth, source: P1a+P8}
+  - {key: alpha_component.max_degenerate_fraction, source: P1a}
+  - {key: saccade.amplitude_uv,           source: P6/P10a}
+  - {key: saccade.selection_order,        source: P6}
+  - {key: saccade.ocular_enrichment_min,  source: P6}
+  - {key: saccade.bipolarity_min,         source: P6}
+  - {key: saccade.spike.amplitude_ratio,  source: 待核实}
+  - {key: design.regressor_contamination, source: prereg}
+  - {key: intervention.control_band,      source: prereg}
+  - {key: intervention.heog_method,       source: prereg}
+  - {key: ig.windows_per_unit,            source: P9}
+  - {key: ig.batch,                       source: P9}
+  - {key: ig.batch_by_model,              source: P9}
+  - {key: training.device,                source: P9}
+  - {key: saccade_detection.step_mad_k, source: pilot}
+  - {key: saccade_detection.min_amplitude_uv, source: pilot}
+  - {key: stats.sesoi_ba_pp,              source: P12}
+  - {key: stats.sesoi_delta_ba_neu,       source: P12}
+  - {key: stats.h2_delta,                 source: P12}
+  - {key: stats.h3_min_corr_lower,        source: P12}
+  - {key: stats.h3r_max_bias,             source: P12}
+  - {key: foundation.cbramod.input_scale, source: official_repo}
+  - {key: foundation.labram.input_scale,  source: 待核实}
+  - {key: foundation.labram,              source: official_repo}
+  - {key: foundation.labram_finetune,     source: official_repo}
+# Settled by a pilot and frozen for preregistration.  Justification sits beside each value; the
+# evidence is in results/pilots/<P>.json.
+confirmed:
+  - physionet.original_reference   # 2026-09-19: undocumented, and provably irrelevant — every
+                                   # consumer is invariant to a common reference (see above)
+  - background.window_s        # P2 2026-09-19: 4 s admits no trim (100 ms headroom); 3 s admits q75
+  - background.trim_ms         # P2 2026-09-19: 900 ms = q75 of return-saccade latency+duration
+  - background.trim_mode       # P2 2026-09-19: trim_start infeasible; trim_and_drop beats drop-only
+  - foundation.cbramod.input_scale   # 2026-09-20: µV/100, read from the official repo (see comment at the key)
+  - saccade.amplitude_uv       # 2026-09-20: pilot median 149.34 µV (PILOT_LOG 11.13 B); P10a descriptive only
+  - ig.windows_per_unit        # 2026-09-23: 200 affordable (IG 3.35 GPU h); precision is P8's question (13.9)
+  - ig.batch                   # 2026-09-23: 16 fits for csoanet / eegnet (P9; 13.9)
+  - ig.batch_by_model          # 2026-09-23: shallow 2, cbramod 4 - dedicated VRAM, not results (13.9)
+  - training.device            # 2026-09-23: cuda, so a lost GPU is an error, not a silent CPU run (13.9)
+  - task_component.max_fail_fraction  # 2026-09-23: 0.2 kept; triggered, one redesign (PILOT_LOG 5, 15.4 D7)
+  - alpha_component.degenerate_truth  # 2026-09-23: pre-data values kept; P8 uninformative (15.4 D6)
+  - background.bad_window                   # 2026-09-23: PILOT_LOG 15.10
+  - streams.spectral.aperiodic_min_r2       # 2026-09-23: PILOT_LOG 15.10
+  - task_component.reg                      # 2026-09-23: PILOT_LOG 15.10
+  - task_component.band_peak                # 2026-09-23: PILOT_LOG 15.10
+  - task_component.hemisphere               # 2026-09-23: PILOT_LOG 15.10
+  - task_component.side_rule                # 2026-09-23: PILOT_LOG 15.10
+  - task_component.posterior_ratio_max      # 2026-09-23: PILOT_LOG 15.10
+  - alpha_component.band_peak               # 2026-09-23: PILOT_LOG 15.10
+  - alpha_component.reg                     # 2026-09-23: PILOT_LOG 15.10
+  - alpha_component.taper_s                 # 2026-09-23: PILOT_LOG 15.10
+  - alpha_component.a_star                  # 2026-09-23: PILOT_LOG 15.10
+  - alpha_component.min_projection_ratio    # 2026-09-23: PILOT_LOG 15.10
+  - alpha_component.max_degenerate_fraction # 2026-09-23: PILOT_LOG 15.10
+  - saccade.selection_order                 # 2026-09-23: PILOT_LOG 15.10
+  - saccade.ocular_enrichment_min           # 2026-09-23: PILOT_LOG 15.10
+  - saccade.bipolarity_min                  # 2026-09-23: PILOT_LOG 15.10
+  - saccade.spike.amplitude_ratio           # 2026-09-23: PILOT_LOG 15.10
+  - design.regressor_contamination          # 2026-09-23: PILOT_LOG 15.10
+  - intervention.control_band               # 2026-09-23: PILOT_LOG 15.10
+  - intervention.heog_method                # 2026-09-23: PILOT_LOG 15.10
+  - saccade_detection.step_mad_k            # 2026-09-23: PILOT_LOG 15.10
+  - saccade_detection.min_amplitude_uv      # 2026-09-23: PILOT_LOG 15.10
+  - foundation.labram.input_scale           # 2026-09-23: PILOT_LOG 15.10
+  - foundation.labram                      # 2026-09-24: official repo + checkpoint, load verified (15.26)
+  - foundation.labram_finetune             # 2026-09-24: official recipe, deviations noted (15.26)
+  - task_component.s_star                   # 2026-09-23: DEAD placeholder - every read goes through
+  - task_component.s_low                    #   cfg.task_strength(name, confound) and both confounds are in
+  - task_component.s_high                   #   by_confound (grep, 15.10)
+  - task_component.by_confound             # 2026-09-23: alpha P4+P5 (11.14/11.18); saccade P8c (15.11)
+  - stats.sesoi_ba_pp                       # 2026-09-23: pre-data value kept; P12 (15.14)
+  - stats.sesoi_delta_ba_neu                # 2026-09-23: pre-data value kept; P12 (15.14)
+  - stats.h2_delta                          # 2026-09-23: pre-data value kept; P12 (15.14)
+  - stats.h3_min_corr_lower                 # 2026-09-23: pre-data value kept; P12 (15.14)
+  - stats.h3r_max_bias                      # 2026-09-23: pre-data value kept; P12 (15.14)

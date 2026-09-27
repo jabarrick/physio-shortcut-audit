@@ -1,0 +1,26 @@
+# Fast end-to-end dry run on synthetic data (use with --synthetic 14).
+# Exercises every code path in minutes on a CPU; numbers are meaningless.
+paths:
+  cache: ./dryrun/cache
+  results: ./dryrun/results
+  access_log: ./dryrun/results/signal_access_log.jsonl
+split: {n_pilot: 5, n_test: 4, n_val: 2}
+background: {window_s: 3.0}
+saccade: {n_permutations: 100, mismatch_pool_n: 1}
+training: {max_epochs: 4, patience: 2}
+probe: {max_train_windows: 300, pca_dims: [16]}
+ig: {windows_per_unit: 12, steps: 4}
+stats: {n_boot: 50}
+design:
+  h1_test_amps: [0.0, 0.5, 1.0]
+  p_series: [null, 0.9]
+  factorial_s: [s_low, s_high]
+  factorial_amp: [1.0]
+  corner_s: [s_low]
+  corner_amp: [1.5]
+  core_models: [eegnet, csoanet]
+  supplementary_models: []
+  seeds_p_series: 2
+  seeds_other: 2
+calibration: {s_grid: [0.4, 0.6], amp_grid: [1.0, 2.0], calib_models: [csoanet]}
+saccade_detection: {step_mad_k: 3.0}
