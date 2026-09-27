@@ -20,7 +20,7 @@ import pandas as pd
 
 from ..data.splits import real_audit_folds
 from ..data.streams import apply_stream, out_index, stream_specs
-from ..metrics.attribution import ig_filterbank, relevance_summary, ig_batch_for
+from ..metrics.attribution import ig_filterbank, relevance_summary
 from ..metrics.erasure import delta_ba_keep, fit_leace, residual_concept
 from ..metrics.intervention import (apply_heog_regression, bandstop_channels, crop, fit_heog_regression)
 from ..metrics.probe import D_from_ba, fit_probe
@@ -128,8 +128,7 @@ def run_real_fold(ctx: Context, fold: dict, model_name: str, seed: int, device=N
     # --- attribution (both targets)
     idx = np.random.default_rng(seed).permutation(len(TE["y"]))[: cfg["ig"]["windows_per_unit"]]
     names, R, fx = ig_filterbank(model, crop(TE["X"][idx], pad, L), sf, cfg["ig"]["bands"], cfg["ig"]["steps"],
-                                 "band_removed", device,
-                                 batch=ig_batch_for(cfg, model_name))  # DEVIATION D-2026-09-26 (PILOT_LOG 17.18)
+                                 "band_removed", device)
     rec["ig"] = {}
     for tgt, (chs, band) in {"alpha": (cfg["alpha_component"]["posterior"], "alpha"),
                              "saccade": (cfg["ig"]["frontal_lateral"], "delta")}.items():

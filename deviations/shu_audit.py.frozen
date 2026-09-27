@@ -14,7 +14,7 @@ from scipy.signal import resample_poly
 
 from ..data.external import load_shu
 from ..data.streams import fir
-from ..metrics.attribution import ig_filterbank, relevance_summary, ig_batch_for
+from ..metrics.attribution import ig_filterbank, relevance_summary
 from ..metrics.erasure import delta_ba_keep, fit_leace, residual_concept
 from ..metrics.intervention import bandstop_channels, crop
 from ..metrics.spectral import log_band_power
@@ -82,8 +82,7 @@ def run_shu_audit(ctx: Context, models=None, seeds=(0, 1, 2), n_subjects: int = 
                 rec["alpha_erasure"] = delta_ba_keep(fit_leace(H_tr, r_tr), W, b, H_te, yte)
                 idx = np.random.default_rng(sd).permutation(len(yte))[: cfg["ig"]["windows_per_unit"]]
                 names, R, fx = ig_filterbank(m, crop(Xte[idx], pad, L), sf, cfg["ig"]["bands"], cfg["ig"]["steps"],
-                                             "band_removed", device,
-                                 batch=ig_batch_for(cfg, m_name))  # DEVIATION D-2026-09-26 (PILOT_LOG 17.18)
+                                             "band_removed", device)
                 rec["ig_alpha"] = relevance_summary(R, fx, names, ch, SHU_POSTERIOR, "alpha")
                 rec["ig_frontal_delta"] = relevance_summary(R, fx, names, ch, SHU_FRONTAL, "delta")
                 out.append(rec)
