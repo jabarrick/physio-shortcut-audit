@@ -1,10 +1,10 @@
-# Do physiological shortcut audits work for EEG decoders?
+# Do shortcut audits measure reliance in EEG decoders?
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22994247.svg)](https://doi.org/10.5281/zenodo.22994247)
 
 Code and unit-level results for
 
-> Yu Gao. *Do Physiological Shortcut Audits Work for EEG Decoders? A Semi-Synthetic Ground-Truth Test with a Natural Counterfactual Anchor.* Manuscript, 2026.
+> Yu Gao. *Do shortcut audits measure reliance in EEG decoders? A preregistered semi-synthetic ground-truth test and a real-data check of eye-movement use.* Manuscript, 2026.
 
 The study was **preregistered on OSF** after the pilot phase and before any confirmatory unit was trained:
 [doi:10.17605/OSF.IO/8Q7N6](https://doi.org/10.17605/OSF.IO/8Q7N6) (project [osf.io/37s6b](https://osf.io/37s6b)).
@@ -38,7 +38,7 @@ scripts/               post-registration summaries, figures and post hoc analyse
   data/                data download / extraction helpers
   archive/             the overnight pilot script as it was run (from the repo root, before scripts/ was reorganised)
 results/               unit-level results (see below)
-figures/               manuscript figures (scripts/make_figures.py)
+figures/               manuscript figures (scripts/make_figures.py; fig_eye_posthoc = figure 6, fig6 = figure 7)
 docs/                  original implementation notes (Chinese, 2026-09-18, pre-pilot; partly superseded)
 ```
 
@@ -50,7 +50,7 @@ Comments in the code refer to sections of the execution log (`PILOT_LOG x.y`) an
 |---|---|---|
 | `eegnet` | EEGNet-8,2 (Lawhern et al., 2018) | |
 | `shallow` | ShallowConvNet (Schirrmeister et al., 2017) | |
-| `csoanet` | compact multi-scale CNN, class `CSOANetPlaceholder` | three temporal branches with ~72 / 200 / 776 ms receptive fields feeding a depthwise-spatial / separable stage (3,510 parameters). It reproduces only this multi-scale property of CSOANet; it is **not** the published CSOANet implementation. It was used unchanged in every experiment, because the code was frozen by hash. |
+| `csoanet` | MS-CNN in the manuscript: compact multi-scale CNN, class `CSOANetPlaceholder` | three temporal branches with ~72 / 200 / 776 ms receptive fields feeding a depthwise-spatial / separable stage (3,510 parameters). It reproduces only this multi-scale property of CSOANet; it is **not** the published CSOANet implementation. It was used unchanged in every experiment, because the code was frozen by hash. |
 | `cbramod` | CBraMod (official repository + weights, official fine-tuning recipe) | |
 | `labram` | LaBraM-base (official repository, commit `c431221e`, bundled checkpoint) | supplementary; excluded from the real PhysioNet audit because EEGMMIDB is in its pretraining corpus |
 
