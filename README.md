@@ -1,5 +1,7 @@
 # Do physiological shortcut audits work for EEG decoders?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22994247.svg)](https://doi.org/10.5281/zenodo.22994247)
+
 Code and unit-level results for
 
 > Yu Gao. *Do Physiological Shortcut Audits Work for EEG Decoders? A Semi-Synthetic Ground-Truth Test with a Natural Counterfactual Anchor.* Manuscript, 2026.
@@ -7,6 +9,8 @@ Code and unit-level results for
 The study was **preregistered on OSF** after the pilot phase and before any confirmatory unit was trained:
 [doi:10.17605/OSF.IO/8Q7N6](https://doi.org/10.17605/OSF.IO/8Q7N6) (project [osf.io/37s6b](https://osf.io/37s6b)).
 The registration fixed the configuration and the analysis code by hash; this repository lets you check both (see [Verifying the registered code](#verifying-the-registered-code)).
+
+Release v1.0.0 of this repository is archived on Zenodo: [doi:10.5281/zenodo.22994247](https://doi.org/10.5281/zenodo.22994247).
 
 The package is called `p3audit` (the working name of the project); the name is kept because the registered code hash covers the package as it was frozen.
 
@@ -153,4 +157,4 @@ Code: MIT (see `LICENSE`). The datasets are subject to their own licences (EEGMM
 
 ## Citation
 
-See `CITATION.cff`. Please cite the article and the preregistration (doi:10.17605/OSF.IO/8Q7N6).
+See `CITATION.cff`. Please cite the article, this software (doi:10.5281/zenodo.22994247) and the preregistration (doi:10.17605/OSF.IO/8Q7N6).
