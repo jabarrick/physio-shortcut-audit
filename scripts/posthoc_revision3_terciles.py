@@ -94,30 +94,33 @@ for arm, mm in out.items():
 
 # ---------------------------------------------------------------- registered tests (Amendment 1)
 # A1-R1 (placebo): pooled over models, the tercile gradient of the main - control gap
-#   G(arm) = gap_t2 - gap_t0 is larger for heog_ols than for plc_P7P8:  G(heog_ols) - G(plc_P7P8) > 0.
+#   G(arm) = gap_t2 - gap_t0 is larger for heog_ols than for the placebo arm.
+#   Update 1 (before any Part B run): primary placebo plc_O1O2 (ocular loading ~0.03 of F7 - F8 in the
+#   exploratory scalp profile); plc_P7P8 (loading ~0.18) is secondary.  Primary: G(heog_ols) - G(plc_O1O2) > 0.
 # A1-R2 (frontal-only): pooled over models, frontal-only accuracy is above chance (acc_all > 0.5) and
 #   rises across terciles of the deflection in trials without a detected saccade (acc_t2 - acc_t0 > 0).
 # Decision: lower bound of the subject-bootstrap 95% interval > 0 (for acc_all: > 0.5).
 wide = None
-for arm in ("heog_ols", "plc_P7P8", "frontal"):
+for arm in ("heog_ols", "plc_O1O2", "plc_P7P8", "frontal"):
     if arm not in set(arms.arm):
         continue
     A = prep(arms[arms.arm == arm]).rename(columns={"correct": arm})[key + [arm]]
     wide = (M.rename(columns={"correct": "main"}) if wide is None else wide).merge(A, on=key)
-if wide is not None and {"heog_ols", "plc_P7P8", "frontal"} <= set(wide.columns):
+if wide is not None and {"heog_ols", "plc_O1O2", "plc_P7P8", "frontal"} <= set(wide.columns):
     wide = tert(wide)
 
     def reg_stats(w):
         o = {}
         nn = w[w.type == "none"]
         G = lambda arm: ((nn[nn.tert == 2].main - nn[nn.tert == 2][arm]).mean() - (nn[nn.tert == 0].main - nn[nn.tert == 0][arm]).mean())
-        o["G_heog_ols"], o["G_plc_P7P8"] = G("heog_ols"), G("plc_P7P8")
-        o["R1_diff"] = o["G_heog_ols"] - o["G_plc_P7P8"]
+        o["G_heog_ols"], o["G_plc_O1O2"], o["G_plc_P7P8"] = G("heog_ols"), G("plc_O1O2"), G("plc_P7P8")
+        o["R1_diff"] = o["G_heog_ols"] - o["G_plc_O1O2"]                 # primary (Update 1)
+        o["R1_diff_P7P8"] = o["G_heog_ols"] - o["G_plc_P7P8"]            # secondary
         o["R2_acc_all"] = w.frontal.mean()
         o["R2_gradient"] = nn[nn.tert == 2].frontal.mean() - nn[nn.tert == 0].frontal.mean()
         return o
     res = boot(wide, reg_stats)   # pooled over models: each model's trials enter once
-    res["decisions"] = {"A1-R1": res["R1_diff"]["ci"][0] > 0,
+    res["decisions"] = {"A1-R1": res["R1_diff"]["ci"][0] > 0, "A1-R1_secondary_P7P8": res["R1_diff_P7P8"]["ci"][0] > 0,
                         "A1-R2": res["R2_acc_all"]["ci"][0] > 0.5 and res["R2_gradient"]["ci"][0] > 0}
     json.dump(res, open("results/analysis/amendment1_real.json", "w"), indent=1, default=bool)
     print("registered:", {k: v for k, v in res.items()})

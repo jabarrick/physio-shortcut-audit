@@ -1,0 +1,69 @@
+{
+ "n_none": 3247,
+ "tercile_means_cue_signed": {
+  "0": -20.188398615916753,
+  "1": 11.5124637205257,
+  "2": 46.84652615749275
+ },
+ "tercile_means_random_sign": {
+  "lowest": -37.62319457005482,
+  "highest": 37.62013095686183,
+  "highest_2.5_97.5": [
+   35.994517435827674,
+   39.012559433746475
+  ]
+ },
+ "sd_within_subject_none": 30.299623978697692,
+ "redetect": {
+  "congruent": {
+   "n": 966,
+   "share_step_0_1s": 0.937888198757764,
+   "share_step_1_2s_only": 0.007246376811594203,
+   "share_step_0_1s_towards_cue": 0.8881987577639752,
+   "median_latency_0_1s": 0.295,
+   "median_step_over_thr_0_1s": 1.313524455025571,
+   "share_from_high_threshold_subjects": 0.5269151138716356
+  },
+  "incongruent": {
+   "n": 203,
+   "share_step_0_1s": 0.8423645320197044,
+   "share_step_1_2s_only": 0.04926108374384237,
+   "share_step_0_1s_towards_cue": 0.03940886699507389,
+   "median_latency_0_1s": 0.64,
+   "median_step_over_thr_0_1s": 1.300949398826514,
+   "share_from_high_threshold_subjects": 0.6305418719211823
+  },
+  "none_t0": {
+   "n": 1082,
+   "share_step_0_1s": 0.054528650646950096,
+   "share_step_1_2s_only": 0.06746765249537892,
+   "share_step_0_1s_towards_cue": 0.022181146025878003,
+   "median_latency_0_1s": 0.39,
+   "median_step_over_thr_0_1s": 0.5507912519690688,
+   "share_from_high_threshold_subjects": 0.49168207024029575
+  },
+  "none_t1": {
+   "n": 1082,
+   "share_step_0_1s": 0.034195933456561925,
+   "share_step_1_2s_only": 0.0767097966728281,
+   "share_step_0_1s_towards_cue": 0.026802218114602587,
+   "median_latency_0_1s": 0.375,
+   "median_step_over_thr_0_1s": 0.5474878509056,
+   "share_from_high_threshold_subjects": 0.4611829944547135
+  },
+  "none_t2": {
+   "n": 1083,
+   "share_step_0_1s": 0.10156971375807941,
+   "share_step_1_2s_only": 0.07756232686980609,
+   "share_step_0_1s_towards_cue": 0.08956602031394276,
+   "median_latency_0_1s": 0.265,
+   "median_step_over_thr_0_1s": 0.6673416320774805,
+   "share_from_high_threshold_subjects": 0.47645429362880887
+  }
+ },
+ "threshold_uv_median_range": [
+  91.30554962158203,
+  19.883352279663086,
+  318.7527770996094
+ ]
+}

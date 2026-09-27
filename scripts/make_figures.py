@@ -184,10 +184,12 @@ fig.tight_layout(); fig.savefig(O+'fig6.png'); plt.close()
 print('ok')
 
 # ---------- Post hoc eye-movement figure (manuscript figure 6; exploratory)
+# (a,b) from posthoc_revision2_real.py; (c,d) selection-free cue-signed HEOG deflection from posthoc_revision3_deflection.py
 o=json.load(open(R+'analysis/posthoc_revision2_real.json'))
+dj=json.load(open(R+'analysis/posthoc_revision3_deflection.json')); dc=np.load(R+'analysis/posthoc_revision3_deflection_curves.npz')
 M=['csoanet','eegnet','shallow','cbramod']
-fig,axs=plt.subplots(1,2,figsize=(W,2.6),gridspec_kw={'width_ratios':[1.15,1]})
-ax=axs[0]; xs=np.arange(3)
+fig,axs=plt.subplots(2,2,figsize=(W,5.2),gridspec_kw={'width_ratios':[1.15,1]})
+ax=axs[0,0]; xs=np.arange(3)
 for i,m in enumerate(M):
     off=(i-1.5)*0.05
     for arm,ls,key in (('main','-','main'),('control','--','ctrl')):
@@ -196,13 +198,27 @@ for i,m in enumerate(M):
         ax.errorbar(xs+off,v,yerr=[np.subtract(v,lo),np.subtract(hi,v)],color=COL[m],ls=ls,marker=MK[m],ms=3.5,lw=1,elinewidth=0.6,capsize=0,
                     mfc=COL[m] if arm=='main' else 'white',label=NAME[m] if arm=='main' else None)
 ax.set_xticks(xs); ax.set_xticklabels(['low','middle','high']); ax.set_xlabel('HEOG deflection towards the cued side (tercile)')
-ax.set_ylabel('Accuracy, trials without detected saccade'); ax.set_title('(a) solid: main model; dashed: control model',fontsize=7.5,loc='left')
+ax.set_ylabel('Accuracy, no detected saccade'); ax.set_title('(a) solid: main model; dashed: control model',fontsize=7.5,loc='left')
 ax.legend(fontsize=6.5,loc='upper left'); ax.grid(axis='y')
-ax=axs[1]; ty=[('congruent','Congruent'),('incongruent','Incongruent'),('none','No saccade')]
+ax=axs[0,1]; ty=[('congruent','Congruent'),('incongruent','Incongruent'),('none','No saccade')]
 for i,m in enumerate(M):
     off=(i-1.5)*0.14
     for j,(k,_) in enumerate(ty):
         e=o[m][f'gap_{k}']; ax.errorbar(j+off,e['est'],yerr=[[e['est']-e['ci'][0]],[e['ci'][1]-e['est']]],color=COL[m],marker=MK[m],ms=3.5,elinewidth=0.7,capsize=0)
 ax.axhline(0,color='#777',lw=0.6); ax.set_xticks(range(3)); ax.set_xticklabels([t for _,t in ty])
 ax.set_ylabel('Main − control accuracy'); ax.set_title('(b) gain from the HEOG signal by trial type',fontsize=7.5,loc='left'); ax.grid(axis='y')
+ax=axs[1,0]; t=dc['t']
+ax.axvspan(0.3,1.2,color='#f1f1ef',zorder=0); ax.axhline(0,color='#999',lw=0.6); ax.axvline(0,color='#999',lw=0.6)
+ax.plot(t,dc['AF7-AF8__congruent'],color='#eb6834',lw=1.3,label='congruent saccade')
+ax.plot(t,dc['AF7-AF8__none'],color='#2a78d6',lw=1.3,label='no detected saccade (all)')
+ax.plot(t,dc['AF7-AF8__incongruent'],color='#777',lw=1.0,ls='--',label='incongruent saccade')
+ax.set_xlim(-0.5,3); ax.set_xlabel('time from cue (s)'); ax.set_ylabel('AF7 − AF8, signed towards cue (µV)')
+ax.set_title('(c) cue-signed HEOG deflection',fontsize=7.5,loc='left'); ax.legend(fontsize=6,loc='upper right')
+ax=axs[1,1]; pairs=dj['pairs']; x=np.arange(len(pairs))
+for g,col,mk,lab in (('congruent','#eb6834','s','congruent saccade'),('none','#2a78d6','o','no detected saccade (all)')):
+    v=np.array([dj['amp_0.3_1.2'][p][g]['mean_uV'] for p in pairs]); v=v/dj['amp_0.3_1.2']['F7-F8'][g]['mean_uV']
+    ax.plot(x,v,color=col,marker=mk,ms=4,lw=1.2,label=lab)
+ax.axhline(0,color='#999',lw=0.6); ax.set_xticks(x); ax.set_xticklabels([p.replace('-','−') for p in pairs],rotation=60,fontsize=6)
+ax.set_ylabel('0.3–1.2 s deflection (relative to F7 − F8)'); ax.set_title('(d) front-to-back profile',fontsize=7.5,loc='left')
+ax.legend(fontsize=6,loc='upper right'); ax.grid(axis='y')
 fig.tight_layout(); fig.savefig(O+'fig_eye_posthoc.png'); plt.close()
