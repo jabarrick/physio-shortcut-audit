@@ -1,0 +1,20 @@
+{
+ "arm": "frontal",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 0,
+ "ba": 0.8103362079740033,
+ "training": {
+  "best_val_ba": 0.8367346938775511,
+  "epochs": 25
+ },
+ "seconds": 100.46043705940247,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ]
+}

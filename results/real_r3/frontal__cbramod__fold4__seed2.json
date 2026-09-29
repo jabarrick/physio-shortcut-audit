@@ -1,0 +1,20 @@
+{
+ "arm": "frontal",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 4,
+ "ba": 0.816137566137566,
+ "training": {
+  "best_val_ba": 0.8435374149659864,
+  "epochs": 9
+ },
+ "seconds": 275.3234701156616,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ]
+}

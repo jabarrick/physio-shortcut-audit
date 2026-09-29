@@ -1,0 +1,17 @@
+{
+ "arm": "plc_P7P8",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 1,
+ "ba": 0.75,
+ "training": {
+  "best_val_ba": 0.9081632653061225,
+  "epochs": 16
+ },
+ "seconds": 480.5704197883606,
+ "pair": [
+  "P7",
+  "P8"
+ ],
+ "b_norm": 1.6732898950576782
+}

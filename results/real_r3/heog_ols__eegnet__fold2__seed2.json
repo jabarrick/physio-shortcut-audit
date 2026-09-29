@@ -1,0 +1,17 @@
+{
+ "arm": "heog_ols",
+ "model": "eegnet",
+ "seed": 2,
+ "fold": 2,
+ "ba": 0.8082010582010581,
+ "training": {
+  "best_val_ba": 0.8775510204081632,
+  "epochs": 16
+ },
+ "seconds": 40.27475452423096,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "b_norm": 0.8960785865783691
+}

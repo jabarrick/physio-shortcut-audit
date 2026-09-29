@@ -1,0 +1,20 @@
+{
+ "arm": "frontal",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 3,
+ "ba": 0.8274024441049854,
+ "training": {
+  "best_val_ba": 0.8843537414965986,
+  "epochs": 14
+ },
+ "seconds": 35.362836599349976,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "arm": "frontal",
+ "model": "shallow",
+ "seed": 1,
+ "fold": 2,
+ "ba": 0.7777777777777777,
+ "training": {
+  "best_val_ba": 0.8639455782312925,
+  "epochs": 23
+ },
+ "seconds": 367.26521921157837,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ]
+}
