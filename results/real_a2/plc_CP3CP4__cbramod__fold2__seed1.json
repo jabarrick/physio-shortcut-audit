@@ -1,0 +1,17 @@
+{
+ "arm": "plc_CP3CP4",
+ "model": "cbramod",
+ "seed": 1,
+ "fold": 2,
+ "ba": 0.8412698412698413,
+ "training": {
+  "best_val_ba": 0.8809523809523809,
+  "epochs": 11
+ },
+ "seconds": 329.8746371269226,
+ "pair": [
+  "CP3",
+  "CP4"
+ ],
+ "b_norm": 2.0201401710510254
+}

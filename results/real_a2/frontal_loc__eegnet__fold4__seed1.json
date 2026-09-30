@@ -1,0 +1,21 @@
+{
+ "arm": "frontal_loc",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 4,
+ "ba": 0.8095238095238095,
+ "training": {
+  "best_val_ba": 0.846938775510204,
+  "epochs": 21
+ },
+ "seconds": 51.48511028289795,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local mean of the six"
+}

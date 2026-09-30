@@ -1,0 +1,21 @@
+{
+ "arm": "frontal_loc",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 1,
+ "ba": 0.7645502645502645,
+ "training": {
+  "best_val_ba": 0.870748299319728,
+  "epochs": 14
+ },
+ "seconds": 418.14683294296265,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local mean of the six"
+}

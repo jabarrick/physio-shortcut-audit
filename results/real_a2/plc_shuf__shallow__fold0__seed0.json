@@ -1,0 +1,18 @@
+{
+ "arm": "plc_shuf",
+ "model": "shallow",
+ "seed": 0,
+ "fold": 0,
+ "ba": 0.7945152689247177,
+ "training": {
+  "best_val_ba": 0.8231292517006803,
+  "epochs": 37
+ },
+ "seconds": 680.1711819171906,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "shuffled_within_subject": true,
+ "shuf_seed": 20261001
+}

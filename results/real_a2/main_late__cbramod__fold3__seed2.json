@@ -1,0 +1,16 @@
+{
+ "arm": "main_late",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 3,
+ "ba": 0.7774441049854186,
+ "training": {
+  "best_val_ba": 0.7857142857142857,
+  "epochs": 10
+ },
+ "seconds": 296.69089007377625,
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

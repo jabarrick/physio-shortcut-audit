@@ -1,0 +1,16 @@
+{
+ "arm": "main_late",
+ "model": "eegnet",
+ "seed": 0,
+ "fold": 1,
+ "ba": 0.6798941798941799,
+ "training": {
+  "best_val_ba": 0.7380952380952381,
+  "epochs": 11
+ },
+ "seconds": 27.618544340133667,
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

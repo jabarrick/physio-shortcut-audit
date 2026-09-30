@@ -1,0 +1,18 @@
+{
+ "arm": "plc_shuf",
+ "model": "eegnet",
+ "seed": 0,
+ "fold": 2,
+ "ba": 0.8214285714285714,
+ "training": {
+  "best_val_ba": 0.8809523809523809,
+  "epochs": 26
+ },
+ "seconds": 70.97640442848206,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "shuffled_within_subject": true,
+ "shuf_seed": 20261001
+}

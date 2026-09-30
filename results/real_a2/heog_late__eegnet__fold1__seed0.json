@@ -1,0 +1,21 @@
+{
+ "arm": "heog_late",
+ "model": "eegnet",
+ "seed": 0,
+ "fold": 1,
+ "ba": 0.6746031746031746,
+ "training": {
+  "best_val_ba": 0.7142857142857143,
+  "epochs": 26
+ },
+ "seconds": 84.73618006706238,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "mask_s": [
+  0,
+  1.5
+ ],
+ "b_norm": 0.913322389125824
+}

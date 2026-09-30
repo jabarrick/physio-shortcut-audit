@@ -1,0 +1,17 @@
+{
+ "arm": "plc_CP3CP4",
+ "model": "csoanet",
+ "seed": 2,
+ "fold": 1,
+ "ba": 0.7195767195767195,
+ "training": {
+  "best_val_ba": 0.8503401360544218,
+  "epochs": 15
+ },
+ "seconds": 61.613856077194214,
+ "pair": [
+  "CP3",
+  "CP4"
+ ],
+ "b_norm": 2.014704465866089
+}

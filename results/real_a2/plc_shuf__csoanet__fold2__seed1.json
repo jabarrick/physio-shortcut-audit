@@ -1,0 +1,18 @@
+{
+ "arm": "plc_shuf",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 2,
+ "ba": 0.8002645502645502,
+ "training": {
+  "best_val_ba": 0.8707482993197279,
+  "epochs": 11
+ },
+ "seconds": 48.33765149116516,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "shuffled_within_subject": true,
+ "shuf_seed": 20261001
+}

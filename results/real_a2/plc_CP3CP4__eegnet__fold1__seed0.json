@@ -1,0 +1,17 @@
+{
+ "arm": "plc_CP3CP4",
+ "model": "eegnet",
+ "seed": 0,
+ "fold": 1,
+ "ba": 0.7328042328042328,
+ "training": {
+  "best_val_ba": 0.8503401360544218,
+  "epochs": 13
+ },
+ "seconds": 32.11670231819153,
+ "pair": [
+  "CP3",
+  "CP4"
+ ],
+ "b_norm": 2.014704465866089
+}

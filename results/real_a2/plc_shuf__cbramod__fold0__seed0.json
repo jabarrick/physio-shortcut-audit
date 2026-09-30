@@ -1,0 +1,18 @@
+{
+ "arm": "plc_shuf",
+ "model": "cbramod",
+ "seed": 0,
+ "fold": 0,
+ "ba": 0.8445402658001082,
+ "training": {
+  "best_val_ba": 0.8435374149659864,
+  "epochs": 10
+ },
+ "seconds": 307.96828389167786,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "shuffled_within_subject": true,
+ "shuf_seed": 20261001
+}

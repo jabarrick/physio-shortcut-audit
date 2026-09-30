@@ -1,0 +1,17 @@
+{
+ "arm": "plc_CP3CP4",
+ "model": "shallow",
+ "seed": 2,
+ "fold": 0,
+ "ba": 0.8012331791859351,
+ "training": {
+  "best_val_ba": 0.8231292517006803,
+  "epochs": 19
+ },
+ "seconds": 332.7062768936157,
+ "pair": [
+  "CP3",
+  "CP4"
+ ],
+ "b_norm": 1.9987246990203857
+}

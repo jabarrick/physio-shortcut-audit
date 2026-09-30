@@ -1,0 +1,16 @@
+{
+ "arm": "main_late",
+ "model": "shallow",
+ "seed": 1,
+ "fold": 1,
+ "ba": 0.5436507936507937,
+ "training": {
+  "best_val_ba": 0.6156462585034014,
+  "epochs": 21
+ },
+ "seconds": 360.62021255493164,
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

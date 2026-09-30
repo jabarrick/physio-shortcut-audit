@@ -1,0 +1,21 @@
+{
+ "arm": "heog_late",
+ "model": "shallow",
+ "seed": 2,
+ "fold": 4,
+ "ba": 0.6838624338624338,
+ "training": {
+  "best_val_ba": 0.6802721088435375,
+  "epochs": 45
+ },
+ "seconds": 820.473522901535,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "mask_s": [
+  0,
+  1.5
+ ],
+ "b_norm": 0.8744593858718872
+}

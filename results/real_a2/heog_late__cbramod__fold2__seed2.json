@@ -1,0 +1,21 @@
+{
+ "arm": "heog_late",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 2,
+ "ba": 0.6997354497354498,
+ "training": {
+  "best_val_ba": 0.7244897959183674,
+  "epochs": 9
+ },
+ "seconds": 265.6397559642792,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "mask_s": [
+  0,
+  1.5
+ ],
+ "b_norm": 0.8960785865783691
+}

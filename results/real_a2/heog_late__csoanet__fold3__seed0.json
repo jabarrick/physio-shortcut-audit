@@ -1,0 +1,21 @@
+{
+ "arm": "heog_late",
+ "model": "csoanet",
+ "seed": 0,
+ "fold": 3,
+ "ba": 0.7114706290792945,
+ "training": {
+  "best_val_ba": 0.7312925170068028,
+  "epochs": 19
+ },
+ "seconds": 77.9099771976471,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "mask_s": [
+  0,
+  1.5
+ ],
+ "b_norm": 0.9242384433746338
+}

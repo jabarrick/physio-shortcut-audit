@@ -1,0 +1,16 @@
+{
+ "arm": "main_late",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 3,
+ "ba": 0.7404527149007083,
+ "training": {
+  "best_val_ba": 0.782312925170068,
+  "epochs": 10
+ },
+ "seconds": 42.15053153038025,
+ "mask_s": [
+  0,
+  1.5
+ ]
+}
