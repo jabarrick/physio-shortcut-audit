@@ -1,0 +1,25 @@
+{
+ "arm": "post_loc_late",
+ "model": "shallow",
+ "seed": 0,
+ "fold": 0,
+ "ba": 0.5117901928925551,
+ "training": {
+  "best_val_ba": 0.5170068027210885,
+  "epochs": 9
+ },
+ "seconds": 131.239905834198,
+ "channels": [
+  "O1",
+  "O2",
+  "PO7",
+  "PO8",
+  "PO3",
+  "PO4"
+ ],
+ "reference": "local",
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "arm": "cent_loc",
+ "model": "shallow",
+ "seed": 1,
+ "fold": 1,
+ "ba": 0.7222222222222223,
+ "training": {
+  "best_val_ba": 0.8095238095238095,
+  "epochs": 19
+ },
+ "seconds": 254.25079131126404,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local"
+}

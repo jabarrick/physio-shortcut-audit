@@ -1,0 +1,25 @@
+{
+ "arm": "frontal_loc_late",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 1,
+ "ba": 0.6865079365079365,
+ "training": {
+  "best_val_ba": 0.7755102040816326,
+  "epochs": 30
+ },
+ "seconds": 122.1275839805603,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local",
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

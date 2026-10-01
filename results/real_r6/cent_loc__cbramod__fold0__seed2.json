@@ -1,0 +1,21 @@
+{
+ "arm": "cent_loc",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 0,
+ "ba": 0.7705078531850185,
+ "training": {
+  "best_val_ba": 0.8027210884353742,
+  "epochs": 10
+ },
+ "seconds": 292.8695070743561,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local"
+}

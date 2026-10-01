@@ -1,0 +1,15 @@
+{
+ "arm": "plc_orth",
+ "model": "cbramod",
+ "seed": 0,
+ "fold": 0,
+ "ba": 0.8341040703245428,
+ "training": {
+  "best_val_ba": 0.8877551020408163,
+  "epochs": 13
+ },
+ "seconds": 387.7978413105011,
+ "pattern": "random, orthogonal to b, same norm",
+ "cos_q_b": -1.3158681744743773e-12,
+ "orth_seed": 20261007
+}

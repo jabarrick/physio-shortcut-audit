@@ -1,0 +1,17 @@
+{
+ "arm": "plc_rev",
+ "model": "cbramod",
+ "seed": 1,
+ "fold": 0,
+ "ba": 0.8250947798191892,
+ "training": {
+  "best_val_ba": 0.891156462585034,
+  "epochs": 10
+ },
+ "seconds": 281.9210104942322,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "time_reversed": true
+}

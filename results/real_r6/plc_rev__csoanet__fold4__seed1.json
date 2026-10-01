@@ -1,0 +1,17 @@
+{
+ "arm": "plc_rev",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 4,
+ "ba": 0.835978835978836,
+ "training": {
+  "best_val_ba": 0.8367346938775511,
+  "epochs": 13
+ },
+ "seconds": 56.03288722038269,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "time_reversed": true
+}

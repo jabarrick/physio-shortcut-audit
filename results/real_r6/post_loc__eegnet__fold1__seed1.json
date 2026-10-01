@@ -1,0 +1,21 @@
+{
+ "arm": "post_loc",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 1,
+ "ba": 0.6468253968253969,
+ "training": {
+  "best_val_ba": 0.6972789115646258,
+  "epochs": 23
+ },
+ "seconds": 57.87502408027649,
+ "channels": [
+  "O1",
+  "O2",
+  "PO7",
+  "PO8",
+  "PO3",
+  "PO4"
+ ],
+ "reference": "local"
+}

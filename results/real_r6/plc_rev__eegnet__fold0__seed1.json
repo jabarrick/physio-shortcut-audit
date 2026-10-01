@@ -1,0 +1,17 @@
+{
+ "arm": "plc_rev",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 0,
+ "ba": 0.786610007082448,
+ "training": {
+  "best_val_ba": 0.826530612244898,
+  "epochs": 13
+ },
+ "seconds": 34.22294330596924,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "time_reversed": true
+}

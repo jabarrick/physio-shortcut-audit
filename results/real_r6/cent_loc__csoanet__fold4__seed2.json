@@ -1,0 +1,21 @@
+{
+ "arm": "cent_loc",
+ "model": "csoanet",
+ "seed": 2,
+ "fold": 4,
+ "ba": 0.7724867724867726,
+ "training": {
+  "best_val_ba": 0.8129251700680272,
+  "epochs": 11
+ },
+ "seconds": 46.639376640319824,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local"
+}

@@ -1,0 +1,21 @@
+{
+ "arm": "cent_loc",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 1,
+ "ba": 0.7433862433862434,
+ "training": {
+  "best_val_ba": 0.8435374149659864,
+  "epochs": 17
+ },
+ "seconds": 42.422125816345215,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local"
+}

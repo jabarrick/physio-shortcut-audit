@@ -1,0 +1,15 @@
+{
+ "arm": "plc_orth",
+ "model": "shallow",
+ "seed": 0,
+ "fold": 1,
+ "ba": 0.7857142857142857,
+ "training": {
+  "best_val_ba": 0.8503401360544218,
+  "epochs": 20
+ },
+ "seconds": 1001.7832276821136,
+ "pattern": "random, orthogonal to b, same norm",
+ "cos_q_b": -1.2276940316244102e-12,
+ "orth_seed": 20261007
+}

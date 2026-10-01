@@ -1,0 +1,25 @@
+{
+ "arm": "post_loc_late",
+ "model": "cbramod",
+ "seed": 1,
+ "fold": 1,
+ "ba": 0.5462962962962963,
+ "training": {
+  "best_val_ba": 0.5544217687074829,
+  "epochs": 13
+ },
+ "seconds": 370.10913705825806,
+ "channels": [
+  "O1",
+  "O2",
+  "PO7",
+  "PO8",
+  "PO3",
+  "PO4"
+ ],
+ "reference": "local",
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "arm": "post_loc_late",
+ "model": "csoanet",
+ "seed": 2,
+ "fold": 1,
+ "ba": 0.5383597883597884,
+ "training": {
+  "best_val_ba": 0.6020408163265306,
+  "epochs": 13
+ },
+ "seconds": 55.0148446559906,
+ "channels": [
+  "O1",
+  "O2",
+  "PO7",
+  "PO8",
+  "PO3",
+  "PO4"
+ ],
+ "reference": "local",
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "arm": "frontal_loc_late",
+ "model": "cbramod",
+ "seed": 0,
+ "fold": 3,
+ "ba": 0.7220004166088043,
+ "training": {
+  "best_val_ba": 0.7551020408163265,
+  "epochs": 11
+ },
+ "seconds": 327.07154154777527,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local",
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

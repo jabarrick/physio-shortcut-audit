@@ -1,0 +1,15 @@
+{
+ "arm": "plc_orth",
+ "model": "eegnet",
+ "seed": 2,
+ "fold": 3,
+ "ba": 0.8498159977780864,
+ "training": {
+  "best_val_ba": 0.8979591836734694,
+  "epochs": 16
+ },
+ "seconds": 42.32869029045105,
+ "pattern": "random, orthogonal to b, same norm",
+ "cos_q_b": -1.2483997147071231e-12,
+ "orth_seed": 20261007
+}

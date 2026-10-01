@@ -1,0 +1,25 @@
+{
+ "arm": "frontal_loc_late",
+ "model": "shallow",
+ "seed": 0,
+ "fold": 2,
+ "ba": 0.5912698412698413,
+ "training": {
+  "best_val_ba": 0.6258503401360545,
+  "epochs": 26
+ },
+ "seconds": 1025.3017959594727,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local",
+ "mask_s": [
+  0,
+  1.5
+ ]
+}

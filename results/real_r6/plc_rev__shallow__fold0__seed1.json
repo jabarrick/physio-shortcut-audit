@@ -1,0 +1,17 @@
+{
+ "arm": "plc_rev",
+ "model": "shallow",
+ "seed": 1,
+ "fold": 0,
+ "ba": 0.8025246844144482,
+ "training": {
+  "best_val_ba": 0.8197278911564626,
+  "epochs": 23
+ },
+ "seconds": 376.36195278167725,
+ "pair": [
+  "AF7",
+  "AF8"
+ ],
+ "time_reversed": true
+}

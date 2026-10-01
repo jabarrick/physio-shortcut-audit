@@ -15,6 +15,9 @@ scripts/amendment2_controls.py, whose helpers it reuses.  Output: results/real_r
   plc_rev           control: the trial's own AF7 - AF8 signal, reversed in time, is subtracted with the
                     heog_ols coefficients (same spatial pattern and spectrum, no time alignment)
 
+Note: the first run wrote the pattern seed under the key "seed" in the plc_orth records, overwriting the training
+seed there (the trial files were correct); the records were repaired from their file names on 2 Oct 2026 and the
+key is now "orth_seed".
 Regression coefficients are fitted on training-fold trials only.  Runs resume (finished files are skipped).
 Suggested order (fast models first):
   python scripts/posthoc_revision6_controls.py --models csoanet eegnet
@@ -74,7 +77,7 @@ def transform(arm, TR, ES, TE, ch, sfreq):
     if arm == "plc_orth":
         q = orth_pattern(np.asarray(reg["b"], float))
         f = lambda X: (X - q[None, :, None] * own_signal(X, ch)[:, None, :]).astype(np.float32)
-        return (*[f(d["X"]) for d in D], {"pattern": "random, orthogonal to b, same norm", "seed": ORTH_SEED,
+        return (*[f(d["X"]) for d in D], {"pattern": "random, orthogonal to b, same norm", "orth_seed": ORTH_SEED,
                                            "cos_q_b": float(q @ reg["b"] / (np.linalg.norm(q) * np.linalg.norm(reg["b"]) + 1e-12))})
     if arm == "plc_rev":
         f = lambda X: (X - np.asarray(reg["b"])[None, :, None] * own_signal(X, ch)[:, None, ::-1]).astype(np.float32)

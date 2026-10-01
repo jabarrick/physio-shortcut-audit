@@ -1,0 +1,23 @@
+{
+ "arm": "frontal_loc_heog",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 3,
+ "ba": 0.764234134148035,
+ "training": {
+  "best_val_ba": 0.8435374149659864,
+  "epochs": 14
+ },
+ "seconds": 400.13605189323425,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local",
+ "after": "heog_ols",
+ "b_norm": 0.9242384433746338
+}

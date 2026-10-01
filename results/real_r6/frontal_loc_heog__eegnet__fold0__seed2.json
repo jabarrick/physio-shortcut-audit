@@ -1,0 +1,23 @@
+{
+ "arm": "frontal_loc_heog",
+ "model": "eegnet",
+ "seed": 2,
+ "fold": 0,
+ "ba": 0.768018581010707,
+ "training": {
+  "best_val_ba": 0.7857142857142857,
+  "epochs": 9
+ },
+ "seconds": 23.427711725234985,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local",
+ "after": "heog_ols",
+ "b_norm": 0.9148905277252197
+}

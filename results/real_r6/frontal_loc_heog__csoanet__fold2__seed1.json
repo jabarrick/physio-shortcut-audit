@@ -1,0 +1,23 @@
+{
+ "arm": "frontal_loc_heog",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 2,
+ "ba": 0.7896825396825397,
+ "training": {
+  "best_val_ba": 0.826530612244898,
+  "epochs": 12
+ },
+ "seconds": 50.066750049591064,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF7",
+  "AF8",
+  "F7",
+  "F8"
+ ],
+ "reference": "local",
+ "after": "heog_ols",
+ "b_norm": 0.8960785865783691
+}
