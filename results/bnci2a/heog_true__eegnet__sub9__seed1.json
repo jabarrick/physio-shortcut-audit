@@ -1,0 +1,14 @@
+{
+ "arm": "heog_true",
+ "model": "eegnet",
+ "seed": 1,
+ "test_subject": 9,
+ "es_subject": 1,
+ "ba": 0.7847222222222222,
+ "training": {
+  "best_val_ba": 0.8125,
+  "epochs": 45
+ },
+ "seconds": 20.15412402153015,
+ "b_norm": 0.21066705882549286
+}

@@ -1,0 +1,15 @@
+{
+ "arm": "plc_orth",
+ "model": "shallow",
+ "seed": 1,
+ "test_subject": 5,
+ "es_subject": 6,
+ "ba": 0.8923611111111112,
+ "training": {
+  "best_val_ba": 0.8576388888888888,
+  "epochs": 13
+ },
+ "seconds": 69.00713086128235,
+ "orth_seed": 20261012,
+ "cos_q_b": -6.201584588941439e-09
+}

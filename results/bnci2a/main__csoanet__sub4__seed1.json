@@ -1,0 +1,13 @@
+{
+ "arm": "main",
+ "model": "csoanet",
+ "seed": 1,
+ "test_subject": 4,
+ "es_subject": 5,
+ "ba": 0.7743055555555556,
+ "training": {
+  "best_val_ba": 0.8958333333333333,
+  "epochs": 36
+ },
+ "seconds": 25.530120611190796
+}

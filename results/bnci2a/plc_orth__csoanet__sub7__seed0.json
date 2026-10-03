@@ -1,0 +1,15 @@
+{
+ "arm": "plc_orth",
+ "model": "csoanet",
+ "seed": 0,
+ "test_subject": 7,
+ "es_subject": 8,
+ "ba": 0.9548611111111112,
+ "training": {
+  "best_val_ba": 0.9791666666666667,
+  "epochs": 26
+ },
+ "seconds": 18.214343786239624,
+ "orth_seed": 20261012,
+ "cos_q_b": -7.0977626929436156e-09
+}

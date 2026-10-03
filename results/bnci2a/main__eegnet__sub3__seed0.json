@@ -1,0 +1,13 @@
+{
+ "arm": "main",
+ "model": "eegnet",
+ "seed": 0,
+ "test_subject": 3,
+ "es_subject": 4,
+ "ba": 0.8506944444444444,
+ "training": {
+  "best_val_ba": 0.7847222222222222,
+  "epochs": 26
+ },
+ "seconds": 10.376365900039673
+}

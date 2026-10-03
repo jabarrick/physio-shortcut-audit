@@ -1,0 +1,14 @@
+{
+ "arm": "eog_all",
+ "model": "shallow",
+ "seed": 0,
+ "test_subject": 1,
+ "es_subject": 2,
+ "ba": 0.8090277777777778,
+ "training": {
+  "best_val_ba": 0.6736111111111112,
+  "epochs": 15
+ },
+ "seconds": 97.06847929954529,
+ "B_norm": 0.4709976017475128
+}

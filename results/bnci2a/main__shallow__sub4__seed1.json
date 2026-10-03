@@ -1,0 +1,13 @@
+{
+ "arm": "main",
+ "model": "shallow",
+ "seed": 1,
+ "test_subject": 4,
+ "es_subject": 5,
+ "ba": 0.6736111111111112,
+ "training": {
+  "best_val_ba": 0.8993055555555556,
+  "epochs": 15
+ },
+ "seconds": 94.42403221130371
+}

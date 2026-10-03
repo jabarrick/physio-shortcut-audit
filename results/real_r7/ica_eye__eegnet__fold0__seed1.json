@@ -1,0 +1,13 @@
+{
+ "arm": "ica_eye",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 0,
+ "ba": 0.6810815314752323,
+ "training": {
+  "best_val_ba": 0.7346938775510203,
+  "epochs": 13
+ },
+ "seconds": 33.17366361618042,
+ "cleaning": "ICA (extended infomax, 30 components), ICLabel eye class p >= 0.5 removed, per subject"
+}

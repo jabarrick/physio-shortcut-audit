@@ -1,0 +1,15 @@
+{
+ "arm": "plc_orth",
+ "model": "eegnet",
+ "seed": 1,
+ "test_subject": 2,
+ "es_subject": 3,
+ "ba": 0.7743055555555556,
+ "training": {
+  "best_val_ba": 0.8541666666666666,
+  "epochs": 28
+ },
+ "seconds": 13.232816696166992,
+ "orth_seed": 20261012,
+ "cos_q_b": -2.0069300927200064e-09
+}

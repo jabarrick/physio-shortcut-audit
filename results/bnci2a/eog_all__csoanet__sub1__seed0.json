@@ -1,0 +1,14 @@
+{
+ "arm": "eog_all",
+ "model": "csoanet",
+ "seed": 0,
+ "test_subject": 1,
+ "es_subject": 2,
+ "ba": 0.5763888888888888,
+ "training": {
+  "best_val_ba": 0.6458333333333333,
+  "epochs": 13
+ },
+ "seconds": 10.855255365371704,
+ "B_norm": 0.4709976017475128
+}

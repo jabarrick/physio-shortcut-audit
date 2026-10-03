@@ -1,0 +1,14 @@
+{
+ "arm": "heog_true",
+ "model": "shallow",
+ "seed": 0,
+ "test_subject": 6,
+ "es_subject": 7,
+ "ba": 0.8229166666666667,
+ "training": {
+  "best_val_ba": 0.8611111111111112,
+  "epochs": 24
+ },
+ "seconds": 140.16213536262512,
+ "b_norm": 0.20732907950878143
+}
