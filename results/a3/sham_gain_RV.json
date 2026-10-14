@@ -1,0 +1,12 @@
+{
+ "arm": "RV",
+ "gain": 1.2065289116493931,
+ "gain_source": "RH calibration (results/a3/sham_gain_RH.json)",
+ "reason": "The sham stands for the non-ocular background that comes with a real epoch. RH events measure it without eye-movement activity; the extra pre-onset power of RV events is ocular (vertical movements and blinks before the detected saccade) and belongs to the RV confound, so it is not balanced.",
+ "rv_own_calibration": {
+  "n_windows": 1948,
+  "pre_onset_power_event": 2264.892863197249,
+  "pre_onset_power_sham_gain1": 531.7332348104246,
+  "gain": 2.063844292852782
+ }
+}

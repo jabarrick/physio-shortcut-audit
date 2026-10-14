@@ -1,0 +1,24 @@
+{
+ "arm": "RV",
+ "n_test_subjects": 20,
+ "sham_gain": 1.2065289116493931,
+ "z_exactness_matched_max_dev": 0.0,
+ "pre_onset_power": {
+  "z1_event": 2815.9263560811282,
+  "z0_sham": 750.6393265050642,
+  "ratio": 3.751370673838697,
+  "n_windows": 1023
+ },
+ "injected_power_whole_window": {
+  "frontal_z1": 7202.510624128218,
+  "frontal_z0": 935.2734058042664,
+  "other_z1": 1028.3617148432509,
+  "other_z0": 545.559891879587
+ },
+ "background_power_X0": {
+  "frontal": 1991.27392578125,
+  "other": 593.5145874023438
+ },
+ "z_exactness_neutral_max_dev": 0.0,
+ "z_exactness_reversed_max_dev": 0.0
+}

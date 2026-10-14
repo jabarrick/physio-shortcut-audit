@@ -1,0 +1,8 @@
+{
+ "arm": "RH",
+ "subjects": "training",
+ "n_windows": 1948,
+ "pre_onset_power_event": 685.3777379165114,
+ "pre_onset_power_sham_gain1": 470.8195927635062,
+ "gain": 1.2065289116493931
+}
