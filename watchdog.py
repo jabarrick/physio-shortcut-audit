@@ -206,6 +206,10 @@ def main() -> int:
                     help="seconds between nvidia-smi checks for a lost GPU (0 = off)")
     ap.add_argument("--telemetry", type=int, default=10,
                     help="seconds between GPU telemetry samples (0 = off)")
+    ap.add_argument("--script", default=None,
+                    help="run this Python script (path relative to the repository root) instead of "
+                         "p3audit.cli, e.g. scripts/amendment3_run_units.py; the arguments after -- "
+                         "are passed to it unchanged")
     ap.add_argument("cmd", nargs=argparse.REMAINDER,
                     help="p3audit arguments, after a literal --  (e.g. -- pilot P8)")
     a = ap.parse_args()
@@ -218,7 +222,10 @@ def main() -> int:
     dumps = ROOT / "results" / "hang_dumps"
     stall = a.stall_min * 60.0
     # -u: unbuffered, so the child's progress lines appear here immediately
-    full = [sys.executable, "-u", "-m", "p3audit.cli", *cmd]
+    if a.script:
+        full = [sys.executable, "-u", str(ROOT / a.script), *cmd]
+    else:
+        full = [sys.executable, "-u", "-m", "p3audit.cli", *cmd]
 
     print(f"[watchdog] command : {' '.join(full)}")
     print(f"[watchdog] watching: {watch}")

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\scripts\amendment3_run_units.py", line 64, in main
+    rec = U.run_unit(ctx, u, out_dir=str(rel), max_epochs=a.max_epochs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\experiments\unit.py", line 78, in run_unit
+    device = device or resolve_device(cfg["training"]["device"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Yu Gao\Desktop\paper3-audit\paper3-audit\p3audit\training\trainer.py", line 22, in resolve_device
+    raise RuntimeError("training.device is 'cuda' but CUDA is unavailable.  If nvidia-smi says "
+RuntimeError: training.device is 'cuda' but CUDA is unavailable.  If nvidia-smi says 'GPU is lost', reboot (PILOT_LOG 13.8).  Nothing was computed on the CPU.
