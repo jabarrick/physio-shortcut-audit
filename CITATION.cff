@@ -6,10 +6,10 @@ authors:
     given-names: Yu
     affiliation: "Faculty of Engineering, University of Porto (FEUP); CISTER/ISEP"
 license: MIT
-doi: 10.5281/zenodo.22994247
+doi: 10.5281/zenodo.23439346
 repository-code: "https://github.com/jabarrick/physio-shortcut-audit"
-version: 1.0.0
-date-released: 2026-09-27
+version: 1.3.0
+date-released: 2026-10-17
 keywords: [EEG, brain-computer interface, shortcut learning, interpretability, preregistration]
 references:
   - type: generic

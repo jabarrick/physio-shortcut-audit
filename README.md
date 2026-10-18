@@ -1,6 +1,6 @@
 # Do shortcut audits measure reliance in EEG decoders?
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22994247.svg)](https://doi.org/10.5281/zenodo.22994247)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23439346.svg)](https://doi.org/10.5281/zenodo.23439346)
 
 Code and unit-level results for
 
@@ -10,7 +10,12 @@ The study was **preregistered on OSF** after the pilot phase and before any conf
 [doi:10.17605/OSF.IO/8Q7N6](https://doi.org/10.17605/OSF.IO/8Q7N6) (project [osf.io/37s6b](https://osf.io/37s6b)).
 The registration fixed the configuration and the analysis code by hash; this repository lets you check both (see [Verifying the registered code](#verifying-the-registered-code)).
 
-Release v1.0.0 of this repository is archived on Zenodo: [doi:10.5281/zenodo.22994247](https://doi.org/10.5281/zenodo.22994247).
+Releases of this repository are archived on Zenodo:
+
+- v1.3.0 (results of Amendment 3): [doi:10.5281/zenodo.23439346](https://doi.org/10.5281/zenodo.23439346)
+- v1.2.0 (results of Amendments 1 and 2): [doi:10.5281/zenodo.23054849](https://doi.org/10.5281/zenodo.23054849)
+- v1.1.0: [doi:10.5281/zenodo.23035750](https://doi.org/10.5281/zenodo.23035750)
+- v1.0.0 (preregistered experiment): [doi:10.5281/zenodo.22994247](https://doi.org/10.5281/zenodo.22994247)
 
 The package is called `p3audit` (the working name of the project); the name is kept because the registered code hash covers the package as it was frozen.
 
@@ -157,4 +162,4 @@ Code: MIT (see `LICENSE`). The datasets are subject to their own licences (EEGMM
 
 ## Citation
 
-See `CITATION.cff`. Please cite the article, this software (doi:10.5281/zenodo.22994247) and the preregistration (doi:10.17605/OSF.IO/8Q7N6).
+See `CITATION.cff`. Please cite the article, this software (doi:10.5281/zenodo.23439346 for v1.3.0) and the preregistration (doi:10.17605/OSF.IO/8Q7N6).
