@@ -1,6 +1,6 @@
 # Do shortcut audits measure reliance in EEG decoders?
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23566405.svg)](https://doi.org/10.5281/zenodo.23566405)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23869807.svg)](https://doi.org/10.5281/zenodo.23869807)
 
 Code and unit-level results for
 
@@ -12,6 +12,7 @@ The registration fixed the configuration and the analysis code by hash; this rep
 
 Releases of this repository are archived on Zenodo:
 
+- v1.5.0 (results of Amendment 4, eye-tracking replication; doi:10.17605/OSF.IO/VMEAS): [doi:10.5281/zenodo.23869807](https://doi.org/10.5281/zenodo.23869807)
 - v1.4.0 (exploratory analyses after review): [doi:10.5281/zenodo.23566405](https://doi.org/10.5281/zenodo.23566405)
 - v1.3.0 (results of Amendment 3): [doi:10.5281/zenodo.23439346](https://doi.org/10.5281/zenodo.23439346)
 - v1.2.0 (results of Amendments 1 and 2): [doi:10.5281/zenodo.23054849](https://doi.org/10.5281/zenodo.23054849)
@@ -163,4 +164,4 @@ Code: MIT (see `LICENSE`). The datasets are subject to their own licences (EEGMM
 
 ## Citation
 
-See `CITATION.cff`. Please cite the article, this software (doi:10.5281/zenodo.23566405 for v1.4.0) and the preregistration (doi:10.17605/OSF.IO/8Q7N6).
+See `CITATION.cff`. Please cite the article, this software (doi:10.5281/zenodo.23869807 for v1.5.0) and the preregistration (doi:10.17605/OSF.IO/8Q7N6).
