@@ -20,6 +20,9 @@
 
 # results: keep unit-level records, drop caches and build bundles
 /results/real_cache/
+/results/gf2025_cache/
+/results/gf2025_dryrun/
+/results/bnci2a_cache/
 /results/*.zip
 
 # Python / tooling
