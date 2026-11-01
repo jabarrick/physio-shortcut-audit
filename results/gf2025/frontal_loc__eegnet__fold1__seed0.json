@@ -1,0 +1,31 @@
+{
+ "arm": "frontal_loc",
+ "model": "eegnet",
+ "seed": 0,
+ "fold": 1,
+ "test_subjects": [
+  10,
+  12,
+  13,
+  17,
+  18,
+  28
+ ],
+ "es_subject": 1,
+ "ba": 0.7,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.625,
+  "epochs": 17
+ },
+ "seconds": 24.69064164161682,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF3",
+  "AF4",
+  "F7",
+  "F8"
+ ],
+ "reference": "local mean"
+}

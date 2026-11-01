@@ -1,0 +1,22 @@
+{
+ "arm": "main",
+ "model": "eegnet",
+ "seed": 0,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.835,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.7083333333333333,
+  "epochs": 19
+ },
+ "seconds": 28.287137985229492
+}

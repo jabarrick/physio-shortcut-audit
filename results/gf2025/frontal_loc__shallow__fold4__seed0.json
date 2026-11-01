@@ -1,0 +1,31 @@
+{
+ "arm": "frontal_loc",
+ "model": "shallow",
+ "seed": 0,
+ "fold": 4,
+ "test_subjects": [
+  1,
+  3,
+  22,
+  26,
+  27,
+  29
+ ],
+ "es_subject": 17,
+ "ba": 0.540625,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.55,
+  "epochs": 20
+ },
+ "seconds": 123.15072798728943,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF3",
+  "AF4",
+  "F7",
+  "F8"
+ ],
+ "reference": "local mean"
+}

@@ -1,0 +1,31 @@
+{
+ "arm": "central_loc",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.7925,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.7833333333333333,
+  "epochs": 12
+ },
+ "seconds": 173.83735513687134,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local mean"
+}

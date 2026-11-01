@@ -1,0 +1,24 @@
+{
+ "arm": "hor_ols",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 2,
+ "test_subjects": [
+  4,
+  9,
+  11,
+  14,
+  21,
+  23
+ ],
+ "es_subject": 25,
+ "ba": 0.7464285714285714,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.8,
+  "epochs": 16
+ },
+ "seconds": 23.225167274475098,
+ "regressor": "F8-F7",
+ "b_norm": 1.6499545574188232
+}

@@ -1,0 +1,22 @@
+{
+ "arm": "main",
+ "model": "shallow",
+ "seed": 2,
+ "fold": 1,
+ "test_subjects": [
+  10,
+  12,
+  13,
+  17,
+  18,
+  28
+ ],
+ "es_subject": 1,
+ "ba": 0.6,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.525,
+  "epochs": 18
+ },
+ "seconds": 91.6287636756897
+}

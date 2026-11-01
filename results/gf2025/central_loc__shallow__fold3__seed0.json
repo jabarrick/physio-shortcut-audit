@@ -1,0 +1,31 @@
+{
+ "arm": "central_loc",
+ "model": "shallow",
+ "seed": 0,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.46749999999999997,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.5666666666666667,
+  "epochs": 11
+ },
+ "seconds": 54.80743360519409,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local mean"
+}

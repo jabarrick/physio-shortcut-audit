@@ -1,0 +1,24 @@
+{
+ "arm": "hor_ols",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.7875,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.725,
+  "epochs": 22
+ },
+ "seconds": 53.636860847473145,
+ "regressor": "F8-F7",
+ "b_norm": 1.6980520486831665
+}

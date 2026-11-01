@@ -1,0 +1,22 @@
+{
+ "arm": "main",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.83,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.7083333333333333,
+  "epochs": 18
+ },
+ "seconds": 42.98922109603882
+}

@@ -1,0 +1,24 @@
+{
+ "arm": "hor_ols",
+ "model": "cbramod",
+ "seed": 1,
+ "fold": 1,
+ "test_subjects": [
+  10,
+  12,
+  13,
+  17,
+  18,
+  28
+ ],
+ "es_subject": 1,
+ "ba": 0.7883333333333333,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.85,
+  "epochs": 12
+ },
+ "seconds": 148.30957174301147,
+ "regressor": "F8-F7",
+ "b_norm": 1.7760248184204102
+}

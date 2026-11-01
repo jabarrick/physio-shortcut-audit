@@ -1,0 +1,24 @@
+{
+ "arm": "veo_ols",
+ "model": "cbramod",
+ "seed": 1,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.8674999999999999,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.825,
+  "epochs": 11
+ },
+ "seconds": 155.05908107757568,
+ "regressor": "VEO (channel labelled HEO)",
+ "b_norm": 0.5599576830863953
+}

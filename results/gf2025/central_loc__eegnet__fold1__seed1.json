@@ -1,0 +1,31 @@
+{
+ "arm": "central_loc",
+ "model": "eegnet",
+ "seed": 1,
+ "fold": 1,
+ "test_subjects": [
+  10,
+  12,
+  13,
+  17,
+  18,
+  28
+ ],
+ "es_subject": 1,
+ "ba": 0.6733333333333333,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.55,
+  "epochs": 9
+ },
+ "seconds": 13.536110401153564,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local mean"
+}

@@ -1,0 +1,24 @@
+{
+ "arm": "hor_ols",
+ "model": "shallow",
+ "seed": 1,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.7775000000000001,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.7083333333333334,
+  "epochs": 38
+ },
+ "seconds": 245.75720763206482,
+ "regressor": "F8-F7",
+ "b_norm": 1.6980520486831665
+}

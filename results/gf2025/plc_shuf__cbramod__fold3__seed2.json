@@ -1,0 +1,24 @@
+{
+ "arm": "plc_shuf",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.8500000000000001,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.825,
+  "epochs": 10
+ },
+ "seconds": 148.19323682785034,
+ "regressor": "F8-F7 of a paired trial of the same subject",
+ "shuf_seed": 20261103
+}

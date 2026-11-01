@@ -1,0 +1,22 @@
+{
+ "arm": "main",
+ "model": "cbramod",
+ "seed": 2,
+ "fold": 2,
+ "test_subjects": [
+  4,
+  9,
+  11,
+  14,
+  21,
+  23
+ ],
+ "es_subject": 25,
+ "ba": 0.8160714285714286,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.6875,
+  "epochs": 11
+ },
+ "seconds": 139.8185749053955
+}

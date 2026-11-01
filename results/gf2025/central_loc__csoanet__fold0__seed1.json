@@ -1,0 +1,32 @@
+{
+ "arm": "central_loc",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 0,
+ "test_subjects": [
+  5,
+  8,
+  15,
+  16,
+  19,
+  20,
+  25
+ ],
+ "es_subject": 28,
+ "ba": 0.7875,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.85,
+  "epochs": 10
+ },
+ "seconds": 23.54128885269165,
+ "channels": [
+  "FC3",
+  "FC4",
+  "C3",
+  "C4",
+  "CP3",
+  "CP4"
+ ],
+ "reference": "local mean"
+}

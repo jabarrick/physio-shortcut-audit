@@ -1,0 +1,31 @@
+{
+ "arm": "frontal_loc",
+ "model": "csoanet",
+ "seed": 2,
+ "fold": 2,
+ "test_subjects": [
+  4,
+  9,
+  11,
+  14,
+  21,
+  23
+ ],
+ "es_subject": 25,
+ "ba": 0.7214285714285715,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.9125,
+  "epochs": 14
+ },
+ "seconds": 31.276602029800415,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF3",
+  "AF4",
+  "F7",
+  "F8"
+ ],
+ "reference": "local mean"
+}

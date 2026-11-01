@@ -1,0 +1,24 @@
+{
+ "arm": "plc_shuf",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.795,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.7166666666666667,
+  "epochs": 13
+ },
+ "seconds": 34.25557541847229,
+ "regressor": "F8-F7 of a paired trial of the same subject",
+ "shuf_seed": 20261103
+}

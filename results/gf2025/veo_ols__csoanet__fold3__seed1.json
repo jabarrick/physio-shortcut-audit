@@ -1,0 +1,24 @@
+{
+ "arm": "veo_ols",
+ "model": "csoanet",
+ "seed": 1,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.8200000000000001,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.7250000000000001,
+  "epochs": 28
+ },
+ "seconds": 66.04865980148315,
+ "regressor": "VEO (channel labelled HEO)",
+ "b_norm": 0.5599576830863953
+}

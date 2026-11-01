@@ -1,0 +1,31 @@
+{
+ "arm": "frontal_loc",
+ "model": "cbramod",
+ "seed": 1,
+ "fold": 3,
+ "test_subjects": [
+  2,
+  6,
+  7,
+  24,
+  30,
+  31
+ ],
+ "es_subject": 23,
+ "ba": 0.8275,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.725,
+  "epochs": 16
+ },
+ "seconds": 251.52614760398865,
+ "channels": [
+  "Fp1",
+  "Fp2",
+  "AF3",
+  "AF4",
+  "F7",
+  "F8"
+ ],
+ "reference": "local mean"
+}

@@ -1,0 +1,24 @@
+{
+ "arm": "plc_shuf",
+ "model": "shallow",
+ "seed": 1,
+ "fold": 4,
+ "test_subjects": [
+  1,
+  3,
+  22,
+  26,
+  27,
+  29
+ ],
+ "es_subject": 17,
+ "ba": 0.51875,
+ "max_epochs_override": null,
+ "training": {
+  "best_val_ba": 0.6166666666666667,
+  "epochs": 9
+ },
+ "seconds": 62.28224015235901,
+ "regressor": "F8-F7 of a paired trial of the same subject",
+ "shuf_seed": 20261103
+}
