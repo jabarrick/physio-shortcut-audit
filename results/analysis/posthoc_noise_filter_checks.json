@@ -1,0 +1,106 @@
+{
+ "physionet": {
+  "none": {
+   "auc_deflection_label": [
+    0.6978245368323969,
+    104
+   ],
+   "cohen_d_cue_signed": [
+    0.4035573636245229,
+    104
+   ],
+   "lda_all_channels_auc": [
+    0.679256214861786,
+    98
+   ],
+   "corr_early_late_cue_signed": [
+    0.8344291508070969,
+    104
+   ],
+   "corr_early_late_random_signs": [
+    0.8277653623736033,
+    104
+   ],
+   "n_trials": 3247
+  },
+  "congruent": {
+   "auc_deflection_label": [
+    0.958498052873053,
+    42
+   ],
+   "cohen_d_cue_signed": [
+    1.4773888776471895,
+    42
+   ],
+   "lda_all_channels_auc": [
+    0.9364735279574853,
+    17
+   ],
+   "corr_early_late_cue_signed": [
+    0.8193135669480098,
+    42
+   ],
+   "corr_early_late_random_signs": [
+    0.8534344170669692,
+    42
+   ],
+   "n_trials": 966
+  }
+ },
+ "eye_tracking": {
+  "none": {
+   "auc_deflection_label": [
+    0.5509702589875004,
+    12
+   ],
+   "cohen_d_cue_signed": [
+    0.019891071171049424,
+    12
+   ],
+   "lda_all_channels_auc": [
+    0.5209014177509474,
+    11
+   ],
+   "corr_early_late_cue_signed": [
+    0.6294426145186214,
+    12
+   ],
+   "corr_early_late_random_signs": [
+    0.6413762171043608,
+    12
+   ],
+   "n_trials": 382
+  },
+  "congruent": {
+   "auc_deflection_label": [
+    0.87905921393955,
+    28
+   ],
+   "cohen_d_cue_signed": [
+    1.0439102995126945,
+    28
+   ],
+   "lda_all_channels_auc": [
+    0.8406441295498719,
+    27
+   ],
+   "corr_early_late_cue_signed": [
+    0.7664626849868331,
+    28
+   ],
+   "corr_early_late_random_signs": [
+    0.8449822471959729,
+    28
+   ],
+   "n_trials": 1113
+  }
+ },
+ "eye_tracking_step_vector_positive_control": {
+  "ridge_r2_before": 0.6577518229773405,
+  "ridge_r2_after_step_vector": 0.5748026387679646,
+  "lda_auc_congruent_before": 0.8385322407755518,
+  "lda_auc_congruent_after_step_vector": 0.8054134569229076,
+  "n_subjects_lda": 27,
+  "note": "coefficients per fold from training subjects' gaze-classified saccade trials, b_c = sum(dX_c dH) / sum(dH^2) on 0.3-1.2 s deflections"
+ }
+}
