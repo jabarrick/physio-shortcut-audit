@@ -9,6 +9,8 @@ without a saccade, as in a pipeline that rejects saccade trials; they are tested
                restricted training trials, training restricted likewise
   Eye-tracking dataset (folds, seeds and settings of Amendment 4; output results/gf2025_a5):
     main_excl, ols_excl (F8 - F7, as hor_ols)  with training and early-stopping trials restricted to trials without a
+               (early stopping on the kept trials of the registered early-stopping subject plus three training
+               subjects drawn with default_rng(20261105 + fold), which are then not used for training)
                saccade on the F8 - F7 detector AND without a gaze-classified saccade (gaze classification with the
                corrected step statistic of scripts/posthoc_a4_corrected_gaze_step.py; trials without valid gaze are
                kept if the F8 - F7 detector found no saccade)
@@ -31,7 +33,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "scripts"))
 
 MODELS = ["csoanet", "eegnet", "shallow", "cbramod"]
-N_BOOT, BOOT_SEED, ALPHA = 2000, 20261104, 0.0125        # four tests: two-sided 98.75 % intervals
+N_BOOT, BOOT_SEED, ALPHA = 2000, 20261104, 0.0125
+EXCL_ES_SEED = 20261105                                   # + fold: extra early-stopping subjects, eye-tracking exclusion arms        # four tests: two-sided 98.75 % intervals
 
 
 def subset(D, keep):
@@ -152,16 +155,21 @@ def train_gf(a):
         if a.folds is not None and f["fold"] not in a.folds:
             continue
         TR, ES, TE = gf_load(a4, f["train"]), gf_load(a4, [f["es"]]), gf_load(a4, f["test"]); pad, L = TE["pad"], TE["core_len"]
-        kt = np.array([keepmap[(int(s), int(k))] for s, k in zip(TR["subj"], TR["trial"])])
-        ke = np.array([keepmap[(int(s), int(k))] for s, k in zip(ES["subj"], ES["trial"])])
+        # exclusion arms: the registered early-stopping subject keeps too few trials, so early stopping uses the kept
+        # trials of that subject plus three training subjects drawn with a fixed generator (removed from training)
+        extra = sorted(int(x) for x in np.random.default_rng(EXCL_ES_SEED + f["fold"]).choice(f["train"], 3, replace=False))
+        tr_x = [s for s in f["train"] if s not in extra]
+        TRx0, ESx0 = gf_load(a4, tr_x), gf_load(a4, [f["es"]] + extra)
+        kt = np.array([keepmap[(int(s), int(k))] for s, k in zip(TRx0["subj"], TRx0["trial"])])
+        ke = np.array([keepmap[(int(s), int(k))] for s, k in zip(ESx0["subj"], ESx0["trial"])])
         for arm in a.arms:
             if arm == "main_excl":
-                TRa, ESa = subset(TR, kt), subset(ES, ke); Xtr, Xes, Xte = TRa["X"], ESa["X"], TE["X"]
-                info = {"training_trials": "no saccade on F8-F7 and none on gaze (corrected step statistic)"}
+                TRa, ESa = subset(TRx0, kt), subset(ESx0, ke); Xtr, Xes, Xte = TRa["X"], ESa["X"], TE["X"]
+                info = {"training_trials": "no saccade on F8-F7 and none on gaze (corrected step statistic)", "es_subjects": [f["es"]] + extra}
             elif arm == "ols_excl":
-                TRa, ESa = subset(TR, kt), subset(ES, ke); b = a4.fit_ols(TRa["X"], TRa["HOR"][:, None, :])
+                TRa, ESa = subset(TRx0, kt), subset(ESx0, ke); b = a4.fit_ols(TRa["X"], TRa["HOR"][:, None, :])
                 Xtr, Xes, Xte = (a4.apply_ols(d["X"], d["HOR"][:, None, :], b) for d in (TRa, ESa, TE))
-                info = {"regressor": "F8-F7", "b_norm": float(np.linalg.norm(b)), "training_trials": "as main_excl"}
+                info = {"regressor": "F8-F7", "b_norm": float(np.linalg.norm(b)), "training_trials": "as main_excl", "es_subjects": [f["es"]] + extra}
             elif arm == "gaze_ols":
                 TRa, ESa = TR, ES
                 (Rtr, oktr), (Res, _), (Rte, _) = gaze_regressors(TR, a4), gaze_regressors(ES, a4), gaze_regressors(TE, a4)
