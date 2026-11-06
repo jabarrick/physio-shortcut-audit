@@ -1,0 +1,188 @@
+{
+ "physionet": {
+  "tercile_accuracy": {
+   "main": [
+    0.683,
+    0.787,
+    0.872
+   ],
+   "heog_ols": [
+    0.71,
+    0.753,
+    0.816
+   ],
+   "main_excl": [
+    0.683,
+    0.781,
+    0.864
+   ],
+   "ols_excl": [
+    0.701,
+    0.756,
+    0.814
+   ]
+  },
+  "per_model": {
+   "cbramod": {
+    "G_excl": 0.06524064171122995,
+    "G_full": 0.0784313725490196,
+    "acc_main_excl": 0.8278746258144039,
+    "acc_ols_excl": 0.8065680577566473
+   },
+   "csoanet": {
+    "G_excl": 0.0680926916221034,
+    "G_full": 0.09269162210338681,
+    "acc_main_excl": 0.8085930621588308,
+    "acc_ols_excl": 0.7891354111639373
+   },
+   "eegnet": {
+    "G_excl": 0.07415329768270945,
+    "G_full": 0.10623885918003564,
+    "acc_main_excl": 0.8118506779362564,
+    "acc_ols_excl": 0.7910723718964606
+   },
+   "shallow": {
+    "G_excl": 0.06631016042780749,
+    "G_full": 0.05561497326203209,
+    "acc_main_excl": 0.7996126078534953,
+    "acc_ols_excl": 0.780771262546223
+   }
+  },
+  "accuracy_by_type": {
+   "main": {
+    "congruent": 0.943,
+    "incongruent": 0.814,
+    "none": 0.781
+   },
+   "heog_ols": {
+    "congruent": 0.92,
+    "incongruent": 0.809,
+    "none": 0.76
+   },
+   "main_excl": {
+    "congruent": 0.937,
+    "incongruent": 0.801,
+    "none": 0.776
+   },
+   "ols_excl": {
+    "congruent": 0.913,
+    "incongruent": 0.788,
+    "none": 0.757
+   }
+  }
+ },
+ "eye_tracking": {
+  "n_trials": 420,
+  "tercile_accuracy_hor": {
+   "main": [
+    0.481,
+    0.611,
+    0.701
+   ],
+   "hor_ols": [
+    0.601,
+    0.64,
+    0.602
+   ],
+   "gaze_ols": [
+    0.501,
+    0.576,
+    0.701
+   ],
+   "main_excl": [
+    0.512,
+    0.552,
+    0.564
+   ],
+   "ols_excl": [
+    0.541,
+    0.536,
+    0.545
+   ]
+  },
+  "tercile_accuracy_gaze": {
+   "main": [
+    0.576,
+    0.634,
+    0.583
+   ],
+   "hor_ols": [
+    0.605,
+    0.624,
+    0.614
+   ],
+   "gaze_ols": [
+    0.601,
+    0.604,
+    0.573
+   ],
+   "main_excl": [
+    0.55,
+    0.552,
+    0.525
+   ],
+   "ols_excl": [
+    0.547,
+    0.518,
+    0.558
+   ]
+  },
+  "per_model": {
+   "cbramod": {
+    "G_excl": 0.08809523809523807,
+    "gap_gaze_ols": -0.020634920634920638,
+    "G_gaze_ols": 0.047619047619047616,
+    "acc_main_excl": 0.680952380952381,
+    "acc_gaze_ols": 0.7767195767195767
+   },
+   "csoanet": {
+    "G_excl": 0.11904761904761907,
+    "gap_gaze_ols": 0.050793650793650794,
+    "G_gaze_ols": 0.04761904761904762,
+    "acc_main_excl": 0.5917989417989419,
+    "acc_gaze_ols": 0.7137566137566137
+   },
+   "eegnet": {
+    "G_excl": 0.02857142857142857,
+    "gap_gaze_ols": -0.011904761904761904,
+    "G_gaze_ols": 0.01428571428571428,
+    "acc_main_excl": 0.5921957671957673,
+    "acc_gaze_ols": 0.7376984126984127
+   },
+   "shallow": {
+    "G_excl": -0.045238095238095244,
+    "gap_gaze_ols": 0.0007936507936507908,
+    "G_gaze_ols": -0.03333333333333334,
+    "acc_main_excl": 0.5201058201058201,
+    "acc_gaze_ols": 0.6656084656084655
+   }
+  },
+  "accuracy_by_gaze_type": {
+   "main": {
+    "congruent": 0.823,
+    "incongruent": 0.599,
+    "none": 0.597
+   },
+   "hor_ols": {
+    "congruent": 0.795,
+    "incongruent": 0.642,
+    "none": 0.614
+   },
+   "gaze_ols": {
+    "congruent": 0.784,
+    "incongruent": 0.625,
+    "none": 0.593
+   },
+   "main_excl": {
+    "congruent": 0.624,
+    "incongruent": 0.556,
+    "none": 0.542
+   },
+   "ols_excl": {
+    "congruent": 0.607,
+    "incongruent": 0.59,
+    "none": 0.541
+   }
+  }
+ }
+}
