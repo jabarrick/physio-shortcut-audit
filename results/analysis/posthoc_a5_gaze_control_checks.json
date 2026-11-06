@@ -1,0 +1,18 @@
+{
+ "pool": {
+  "kept": 655,
+  "kept_gaze_valid": 371,
+  "kept_without_valid_gaze": 284,
+  "gaze_valid_trials_hor_none": 889,
+  "of_which_gaze_saccade": 518,
+  "share_gaze_saccade_among_hor_none": 0.5826771653543307,
+  "estimated_saccade_trials_among_kept_without_gaze": 165.4803149606299
+ },
+ "gaze_ols_positive_control": {
+  "n_trials": 1761,
+  "ridge_r2_before": 0.6577518224486001,
+  "ridge_r2_after": 0.5060227174256394,
+  "lda_auc_congruent_before": 0.851199965536683,
+  "lda_auc_congruent_after": 0.8030986682388408
+ }
+}
